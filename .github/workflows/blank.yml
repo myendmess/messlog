@@ -2,7 +2,7 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 05 * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,13 +22,11 @@ jobs:
           RESPONSE=$(curl -s "https://zenquotes.io/api/random")
           QUOTE=$(echo "$RESPONSE" | jq -r '.[0].q')
           AUTHOR=$(echo "$RESPONSE" | jq -r '.[0].a')
+          DATE=$(date -u '+%Y-%m-%d')
 
-          EXISTING=$(grep -c "^- Day" README.md 2>/dev/null || echo 0)
-          DAY=$((EXISTING + 3))
-
-          echo "- Day $DAY - \"$QUOTE\" — $AUTHOR" >> README.md
+          printf "\n## %s\n\n> %s\n\n— %s\n" "$DATE" "$QUOTE" "$AUTHOR" >> README.md
 
           git add README.md
-          git commit -m "Day $DAY: \"$QUOTE\" — $AUTHOR"
+          git commit -m "$DATE: \"$QUOTE\" — $AUTHOR"
           git pull --rebase origin main
           git push
