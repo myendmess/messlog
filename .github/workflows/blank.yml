@@ -14,11 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Make daily commit
+      - name: Daily motivational commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> log.txt
-          git add -f log.txt
-          git commit -m "chore: daily update $(date -u '+%Y-%m-%d')"
+
+          RESPONSE=$(curl -s "https://zenquotes.io/api/random")
+          QUOTE=$(echo "$RESPONSE" | jq -r '.[0].q')
+          AUTHOR=$(echo "$RESPONSE" | jq -r '.[0].a')
+          DATE=$(date -u '+%Y-%m-%d')
+
+          printf "## %s\n\n> %s\n\n— %s\n\n" "$DATE" "$QUOTE" "$AUTHOR" >> quotes.md
+
+          git add quotes.md
+          git commit -m "\"$QUOTE\" — $AUTHOR"
           git push
