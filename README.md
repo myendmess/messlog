@@ -1,2 +1,7 @@
 # daily quote 
-- Day 1 - "Be where your enemy is not." — Sun Tzu
+
+## 2026-06-13
+
+> He who laughs at himself never runs out of things to laugh at.
+
+— Epictetus
