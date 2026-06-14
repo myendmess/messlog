@@ -24,7 +24,19 @@ jobs:
           AUTHOR=$(echo "$RESPONSE" | jq -r '.[0].a')
           DATE=$(date -u '+%Y-%m-%d')
 
-          printf "\n## %s\n\n> %s\n\n— %s\n" "$DATE" "$QUOTE" "$AUTHOR" >> README.md
+          # Build the new entry and insert it ABOVE the most recent one
+          ENTRY_FILE=$(mktemp)
+          printf "## %s\n\n> %s\n\n— %s\n\n" "$DATE" "$QUOTE" "$AUTHOR" > "$ENTRY_FILE"
+
+          awk -v ef="$ENTRY_FILE" '
+            !ins && /^## / {
+              while ((getline line < ef) > 0) print line
+              ins=1
+            }
+            { print }
+            END { if (!ins) while ((getline line < ef) > 0) print line }
+          ' README.md > README.tmp
+          mv README.tmp README.md
 
           git add README.md
           git commit -m "$DATE: \"$QUOTE\" — $AUTHOR"
