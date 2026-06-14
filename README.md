@@ -17,3 +17,9 @@
 > Life begins at the end of our comfort zone.
 
 — Neale Donald Walsch
+
+## 2026-06-14
+
+> One always begins to forgive a place as soon as it's left behind.
+
+— Charles Dickens
