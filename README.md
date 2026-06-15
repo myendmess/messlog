@@ -3,6 +3,12 @@
 
 ## 2026-06-15
 
+> Unless someone truly has the power to say no, they never truly have the power to say yes.
+
+— Dan Millman
+
+## 2026-06-15
+
 > The highest level of wisdom is when you not only accept but love adversity.
 
 — Maxime Lagace
