@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-06-17
+
+> If fear is too strong, the genius is suppressed.
+
+— Robert Kiyosaki
+
 ## 2026-06-16
 
 > What people say, what people do, and what they say they do are entirely different things.
