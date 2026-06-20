@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-06-20
+
+> You're always free to change your mind and choose a different future, or a different past.
+
+— Richard Bach
+
 ## 2026-06-19
 
 > We forge the chains we wear in life.
