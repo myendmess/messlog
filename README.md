@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-06-21
+
+> The spirit is beyond destruction. No one can bring an end to spirit which is everlasting.
+
+— Bhagavad Gita
+
 ## 2026-06-20
 
 > You're always free to change your mind and choose a different future, or a different past.
