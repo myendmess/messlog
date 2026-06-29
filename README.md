@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-06-29
+
+> The more you like yourself, the less you are like anyone else, which makes you unique.
+
+— Walt Disney
+
 ## 2026-06-28
 
 > You don't get in life what you want; you get in life what you are.
