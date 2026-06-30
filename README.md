@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-06-30
+
+> Why do you stay in prison when the door is so wide open?
+
+— Rumi
+
 ## 2026-06-29
 
 > The more you like yourself, the less you are like anyone else, which makes you unique.
