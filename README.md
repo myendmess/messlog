@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-07-01
+
+> I never said it would be easy, I only said it would be worth it.
+
+— Mae West
+
 ## 2026-06-30
 
 > Why do you stay in prison when the door is so wide open?
