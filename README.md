@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-07-02
+
+> Genius is the ability to act rightly without precedent - the power to do the right thing the first time.
+
+— Elbert Hubbard
+
 ## 2026-07-01
 
 > I never said it would be easy, I only said it would be worth it.
