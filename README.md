@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-07-03
+
+> Curiosity is the most powerful thing you own. Imagination is a force that can actually manifest a reality.
+
+— James Cameron
+
 ## 2026-07-02
 
 > Genius is the ability to act rightly without precedent - the power to do the right thing the first time.
