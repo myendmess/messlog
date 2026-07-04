@@ -1,6 +1,12 @@
 # daily quote 
 
 
+## 2026-07-04
+
+> Your vision will become clear only when you can look into your own heart.
+
+— Lolly Daskal
+
 ## 2026-07-03
 
 > Curiosity is the most powerful thing you own. Imagination is a force that can actually manifest a reality.
