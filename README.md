@@ -3,6 +3,12 @@
 
 ## 2026-07-05
 
+> Everything is created twice, first in the mind and then in reality.
+
+— Robin Sharma
+
+## 2026-07-05
+
 > Conquer the devils with a little thing called love.
 
 — Bob Marley
