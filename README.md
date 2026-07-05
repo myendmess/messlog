@@ -3,6 +3,12 @@
 
 ## 2026-07-05
 
+> Bad things are not the worst things that an happen to us. NOTHING is the worst thing that can happen to us.
+
+— Richard Bach
+
+## 2026-07-05
+
 > Others can stop you temporarily - you are the only one who can do it permanently.
 
 — Zig Ziglar
