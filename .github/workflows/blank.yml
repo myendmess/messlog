@@ -1,4 +1,4 @@
-name: Daily Commit
+name: Daily Quote
 
 on:
   schedule:
@@ -9,12 +9,12 @@ permissions:
   contents: write
 
 jobs:
-  commit:
+  daily:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Daily motivational commit
+      - name: Fetch quote and commit
         run: |
           git config user.name "myendmess"
           git config user.email "140411362+myendmess@users.noreply.github.com"
@@ -23,6 +23,10 @@ jobs:
           QUOTE=$(echo "$RESPONSE" | jq -r '.[0].q')
           AUTHOR=$(echo "$RESPONSE" | jq -r '.[0].a')
           DATE=$(date -u '+%Y-%m-%d')
+
+          # Save the raw quote/author so the video steps use the same quote.
+          printf '%s' "$QUOTE" > quote.txt
+          printf '%s' "$AUTHOR" > author.txt
 
           # Build the new entry and insert it ABOVE the most recent one
           ENTRY_FILE=$(mktemp)
@@ -42,3 +46,36 @@ jobs:
           git commit -m "$DATE: \"$QUOTE\" — $AUTHOR"
           git pull --rebase origin main
           git push
+
+      - name: Check YouTube secrets
+        id: yt
+        env:
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$YT_REFRESH_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::YouTube secrets not set — skipping video. See SETUP.md."
+          fi
+
+      - name: Render video
+        if: steps.yt.outputs.ready == 'true'
+        run: bash scripts/make_video.sh
+
+      - name: Set up Python
+        if: steps.yt.outputs.ready == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Upload to YouTube playlist
+        if: steps.yt.outputs.ready == 'true'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PLAYLIST_ID: ${{ secrets.YT_PLAYLIST_ID }}
+        run: |
+          pip install --quiet google-api-python-client google-auth google-auth-httplib2
+          python scripts/upload_youtube.py
