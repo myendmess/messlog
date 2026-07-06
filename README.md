@@ -21,6 +21,12 @@
 
 ---
 
+## 2026-07-06
+
+> A good system shortens the road to the goal.
+
+— Orison Swett Marden
+
 ## 2026-07-05
 
 > There is no value in anything until it is finished.
