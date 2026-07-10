@@ -21,6 +21,12 @@
 
 ---
 
+## 2026-07-10
+
+> Every time we liberate a woman, we liberate a man.
+
+— Margaret Mead
+
 ## 2026-07-09
 
 > Someone is sitting in the shade today because someone planted a tree a long time ago.
