@@ -41,6 +41,12 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 
 ## 2026-07-10
 
+> A warrior does not give up what he loves, he finds the love in what he does.
+
+— Dan Millman
+
+## 2026-07-10
+
 > Every time we liberate a woman, we liberate a man.
 
 — Margaret Mead
