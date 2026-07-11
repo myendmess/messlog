@@ -39,6 +39,12 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 
 ---
 
+## 2026-07-11
+
+> Imagination is the true magic carpet.
+
+— Norman Vincent Peale
+
 ## 2026-07-10
 
 > A warrior does not give up what he loves, he finds the love in what he does.
