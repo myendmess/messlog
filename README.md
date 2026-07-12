@@ -60,6 +60,12 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 
 ## 2026-07-12
 
+> You do not rise to the level of your goals. You fall to the level of your systems.
+
+— James Clear
+
+## 2026-07-12
+
 > Wheels of justice grind slow but grind fine.
 
 — Sun Tzu
