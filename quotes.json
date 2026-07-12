@@ -1,6 +1,6 @@
 {
   "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated; where a quote originated in a target language, use the authentic original form. Language keys must match locales.json codes.",
-  "epoch": "2026-07-13",
+  "epoch": "2026-07-12",
   "quotes": [
     {
       "quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
