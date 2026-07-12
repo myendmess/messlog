@@ -36,7 +36,7 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 - **Horizontal clips** now fit natively: by default the whole clip is shown letterboxed over a blurred copy of itself (`BG_FIT=blur`). Set `BG_FIT=pan` for a slow pan across the clip, or `BG_FIT=crop` for the old hard center-crop.
 - Have a **pic** instead of a clip? Convert it first:
   `ffmpeg -loop 1 -i pic.jpg -t 15 -r 30 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -pix_fmt yuv420p assets/backgrounds/pic.mp4`
-- **Text style:** quote set in Aspire Demibold (`assets/font/`, public domain) with a cyan→violet gradient fill and dark halo, lifted into the upper half so the scenery stays visible (darken is only 20%). Gradient ends are overridable per run (`GRAD_FROM`/`GRAD_TO`); author credit stays in brand gold.
+- **Text style:** bold white quote with a dark halo (max contrast on any footage — a design review killed the script font + hue-tinted gradient after a live Short proved unreadable), lifted into the upper half so the scenery stays visible (darken is 25%); author credit in brand gold. Swap fonts via `FONT_BOLD` env if ever needed.
 - **Preview without publishing:** run the workflow manually with `dry_run` checked — it renders `out.mp4` and attaches it as a run artifact, with no README commit and no YouTube upload.
 
 ### Quote bank & localized titles
