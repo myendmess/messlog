@@ -1,5 +1,5 @@
 {
-  "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated; where a quote originated in a target language, use the authentic original form. Language keys must match locales.json codes. SCALE DECISION (2026-07-12): quality ceiling ~2,000 curated entries (~5.5 years of dailies; beyond that the canon of strong, verifiable quotes runs dry). Standing target: keep >= 1 year (365) of runway, topped up in ~60-entry batches. JSON handles the full ceiling (~4.5 MB); migrate to SQLite in-repo only if a second consumer ever needs search/random access. No hosted database.",
+  "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated; where a quote originated in a target language, use the authentic original form. Language keys must match locales.json codes. Entries without translations publish with English metadata only (pick_quote skips locales that have no translation) — translations can be added to existing entries later without reordering. Bulk sources (e.g. Kaggle CSVs) go through datasets/ (gitignored): quality-filter (20-200 chars, real attribution, dedupe) then append here. SCALE DECISION (2026-07-12): quality ceiling ~2,000 curated entries; keep >= 1 year of runway; JSON handles the full ceiling; SQLite in-repo only if a second consumer ever needs search/random access. No hosted database.",
   "epoch": "2026-07-12",
   "quotes": [
     {
@@ -721,6 +721,451 @@
         "ru": "Не нужно быть великим, чтобы начать, но нужно начать, чтобы стать великим.",
         "pt": "Você não precisa ser incrível para começar, mas precisa começar para ser incrível."
       }
+    },
+    {
+      "quote": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.",
+      "author": "Jane Austen",
+      "translations": {}
+    },
+    {
+      "quote": "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "Try not to become a man of success. Rather become a man of value.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "It is better to be hated for what you are than to be loved for what you are not.",
+      "author": "Andr Gide",
+      "translations": {}
+    },
+    {
+      "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+      "author": "Thomas A. Edison",
+      "translations": {}
+    },
+    {
+      "quote": "A woman is like a tea bag; you never know how strong it is until it's in hot water.",
+      "author": "Eleanor Roosevelt",
+      "translations": {}
+    },
+    {
+      "quote": "A day without sunshine is like, you know, night.",
+      "author": "Steve Martin",
+      "translations": {}
+    },
+    {
+      "quote": "The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to.",
+      "author": "Jimi Hendrix",
+      "translations": {}
+    },
+    {
+      "quote": "To die will be an awfully big adventure.",
+      "author": "J.M. Barrie",
+      "translations": {}
+    },
+    {
+      "quote": "It takes courage to grow up and become who you really are.",
+      "author": "E.E. Cummings",
+      "translations": {}
+    },
+    {
+      "quote": "But better to get hurt by the truth than comforted with a lie.",
+      "author": "Khaled Hosseini",
+      "translations": {}
+    },
+    {
+      "quote": "You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.",
+      "author": "Harper Lee",
+      "translations": {}
+    },
+    {
+      "quote": "You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.",
+      "author": "Madeleine L'Engle",
+      "translations": {}
+    },
+    {
+      "quote": "Never tell the truth to people who are not worthy of it.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "A person's a person, no matter how small.",
+      "author": "Dr. Seuss",
+      "translations": {}
+    },
+    {
+      "quote": "... a mind needs books as a sword needs a whetstone, if it is to keep its edge.",
+      "author": "George R.R. Martin",
+      "translations": {}
+    },
+    {
+      "quote": "Anyone who has never made a mistake has never tried anything new.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.",
+      "author": "Jane Austen",
+      "translations": {}
+    },
+    {
+      "quote": "Some day you will be old enough to start reading fairy tales again.",
+      "author": "C.S. Lewis",
+      "translations": {}
+    },
+    {
+      "quote": "We are not necessarily doubting that God will do the best for us; we are wondering how painful the best will turn out to be.",
+      "author": "C.S. Lewis",
+      "translations": {}
+    },
+    {
+      "quote": "The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "A lie can travel half way around the world while the truth is putting on its shoes.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.",
+      "author": "C.S. Lewis",
+      "translations": {}
+    },
+    {
+      "quote": "If I had a flower for every time I thought of you...I could walk through my garden forever.",
+      "author": "Alfred Tennyson",
+      "translations": {}
+    },
+    {
+      "quote": "Some people never go crazy. What truly horrible lives they must lead.",
+      "author": "Charles Bukowski",
+      "translations": {}
+    },
+    {
+      "quote": "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.",
+      "author": "Terry Pratchett",
+      "translations": {}
+    },
+    {
+      "quote": "Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!",
+      "author": "Dr. Seuss",
+      "translations": {}
+    },
+    {
+      "quote": "The reason I talk to myself is because I™m the only one whose answers I accept.",
+      "author": "George Carlin",
+      "translations": {}
+    },
+    {
+      "quote": "You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.",
+      "author": "John Lennon",
+      "translations": {}
+    },
+    {
+      "quote": "I am free of all prejudice. I hate everyone equally.",
+      "author": "W.C. Fields",
+      "translations": {}
+    },
+    {
+      "quote": "The question isn't who is going to let me; it's who is going to stop me.",
+      "author": "Ayn Rand",
+      "translations": {}
+    },
+    {
+      "quote": "˛Classic˛ - a book which people praise and don't read.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "You don™t forget the face of the person who was your last hope.",
+      "author": "Suzanne Collins",
+      "translations": {}
+    },
+    {
+      "quote": "Remember, we're madly in love, so it's all right to kiss me anytime you feel like it.",
+      "author": "Suzanne Collins",
+      "translations": {}
+    },
+    {
+      "quote": "Not all those who wander are lost.",
+      "author": "J.R.R. Tolkien",
+      "translations": {}
+    },
+    {
+      "quote": "Do not pity the dead, Harry. Pity the living, and, above all those who live without love.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "There is nothing to writing. All you do is sit down at a typewriter and bleed.",
+      "author": "Ernest Hemingway",
+      "translations": {}
+    },
+    {
+      "quote": "I have never let my schooling interfere with my education.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.",
+      "author": "Jane Austen",
+      "translations": {}
+    },
+    {
+      "quote": "Do one thing every day that scares you.",
+      "author": "Eleanor Roosevelt",
+      "translations": {}
+    },
+    {
+      "quote": "I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.",
+      "author": "Haruki Murakami",
+      "translations": {}
+    },
+    {
+      "quote": "The difference between genius and stupidity is: genius has its limits.",
+      "author": "Alexandre Dumas fils",
+      "translations": {}
+    },
+    {
+      "quote": "He's like a drug for you, Bella.",
+      "author": "Stephenie Meyer",
+      "translations": {}
+    },
+    {
+      "quote": "There is no friend as loyal as a book.",
+      "author": "Ernest Hemingway",
+      "translations": {}
+    },
+    {
+      "quote": "When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.",
+      "author": "Helen Keller",
+      "translations": {}
+    },
+    {
+      "quote": "Life isn't about finding yourself. Life is about creating yourself.",
+      "author": "George Bernard Shaw",
+      "translations": {}
+    },
+    {
+      "quote": "A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.",
+      "author": "George R.R. Martin",
+      "translations": {}
+    },
+    {
+      "quote": "You can never get a cup of tea large enough or a book long enough to suit me.",
+      "author": "C.S. Lewis",
+      "translations": {}
+    },
+    {
+      "quote": "You believe lies so you eventually learn to trust no one but yourself.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "If you can make a woman laugh, you can make her do anything.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "A wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left.",
+      "author": "Marilyn Monroe",
+      "translations": {}
+    },
+    {
+      "quote": "Only in the darkness can you see the stars.",
+      "author": "Martin Luther King Jr.",
+      "translations": {}
+    },
+    {
+      "quote": "It matters not what someone is born, but what they grow to be.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.",
+      "author": "James Baldwin",
+      "translations": {}
+    },
+    {
+      "quote": "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
+      "author": "Dr. Seuss",
+      "translations": {}
+    },
+    {
+      "quote": "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.",
+      "author": "Bob Marley",
+      "translations": {}
+    },
+    {
+      "quote": "Not all of us can do great things. But we can do small things with great love.",
+      "author": "Mother Teresa",
+      "translations": {}
+    },
+    {
+      "quote": "To the well-organized mind, death is but the next great adventure.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "All you need is love. But a little chocolate now and then doesn't hurt.",
+      "author": "Charles M. Schulz",
+      "translations": {}
+    },
+    {
+      "quote": "We read to know we're not alone.",
+      "author": "William Nicholson",
+      "translations": {}
+    },
+    {
+      "quote": "Any fool can know. The point is to understand.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "I have always imagined that Paradise will be a kind of library.",
+      "author": "Jorge Luis Borges",
+      "translations": {}
+    },
+    {
+      "quote": "It is never too late to be what you might have been.",
+      "author": "George Eliot",
+      "translations": {}
+    },
+    {
+      "quote": "For every minute you are angry you lose sixty seconds of happiness.",
+      "author": "Ralph Waldo Emerson",
+      "translations": {}
+    },
+    {
+      "quote": "If you judge people, you have no time to love them.",
+      "author": "Mother Teresa",
+      "translations": {}
+    },
+    {
+      "quote": "Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.",
+      "author": "Garrison Keillor",
+      "translations": {}
+    },
+    {
+      "quote": "Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.",
+      "author": "Jim Henson",
+      "translations": {}
+    },
+    {
+      "quote": "Today you are You, that is truer than true. There is no one alive who is Youer than You.",
+      "author": "Dr. Seuss",
+      "translations": {}
+    },
+    {
+      "quote": "If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "Logic will get you from A to Z; imagination will get you everywhere.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "One good thing about music, when it hits you, you feel no pain.",
+      "author": "Bob Marley",
+      "translations": {}
+    },
+    {
+      "quote": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+      "author": "J.K. Rowling",
+      "translations": {}
+    },
+    {
+      "quote": "If you can't explain it to a six year old, you don't understand it yourself.",
+      "author": "Albert Einstein",
+      "translations": {}
+    },
+    {
+      "quote": "You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfectyou aren't either",
+      "author": "and the two of you may never be perfect together but if she can make you laugh",
+      "translations": {}
+    },
+    {
+      "quote": "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.",
+      "author": "Dr. Seuss",
+      "translations": {}
+    },
+    {
+      "quote": "I may not have gone where I intended to go, but I think I have ended up where I needed to be.",
+      "author": "Douglas Adams",
+      "translations": {}
+    },
+    {
+      "quote": "It is not a lack of love, but a lack of friendship that makes unhappy marriages.",
+      "author": "Friedrich Nietzsche",
+      "translations": {}
+    },
+    {
+      "quote": "Good friends, good books, and a sleepy conscience: this is the ideal life.",
+      "author": "Mark Twain",
+      "translations": {}
+    },
+    {
+      "quote": "Life is what happens to us while we are making other plans.",
+      "author": "Allen Saunders",
+      "translations": {}
     }
   ]
 }

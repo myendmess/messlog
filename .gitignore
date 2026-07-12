@@ -21,3 +21,6 @@ Analytics/
 
 # Local Claude Code agents/config — never publish
 .claude/
+
+# Raw bulk-quote datasets (Kaggle etc.) — processed into quotes.json, raw files stay local
+datasets/
