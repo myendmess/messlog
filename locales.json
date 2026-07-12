@@ -74,6 +74,30 @@
       "tags": ["励志", "名言", "正能量", "励志语录"]
     },
     {
+      "code": "ar",
+      "name": "العربية",
+      "market": "Arabic-speaking markets (Egypt, Morocco, Tunisia, and beyond — Modern Standard Arabic reads natively across all of them)",
+      "enabled": true,
+      "hashtags": "#تحفيز #اقتباسات #حكم #تطوير_الذات #نجاح",
+      "tags": ["تحفيز", "اقتباسات", "حكم وأقوال", "تطوير الذات"]
+    },
+    {
+      "code": "ru",
+      "name": "Русский",
+      "market": "Russia & Russophone audiences",
+      "enabled": true,
+      "hashtags": "#мотивация #цитаты #саморазвитие #успех #мудрость",
+      "tags": ["мотивация", "цитаты", "саморазвитие", "цитата дня"]
+    },
+    {
+      "code": "pt",
+      "name": "Português (Brasil)",
+      "market": "Brazil",
+      "enabled": true,
+      "hashtags": "#motivação #frases #frasesmotivacionais #inspiração #foco",
+      "tags": ["motivação", "frases motivacionais", "inspiração", "mentalidade"]
+    },
+    {
       "code": "vi",
       "name": "Tiếng Việt",
       "market": "Vietnam",

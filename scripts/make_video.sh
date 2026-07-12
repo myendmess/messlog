@@ -7,6 +7,10 @@
 #   Horizontal clips are fitted per BG_FIT: blur (default — full clip letterboxed
 #   over a blurred copy of itself), pan (slow horizontal pan across the clip),
 #   or crop (legacy hard center-crop).
+# Text: quote in Aspire Demibold filled with a cyan->violet gradient (via a
+#   maskedmerge of a gradients source through the glyphs) over a dark halo so it
+#   stays readable at the light 20% darken; author in gold below. The quote
+#   block sits in the upper half so the scenery stays visible.
 # Music:      a random *.mp3 from assets/music/       (falls back to silence).
 # Output: out.mp4 (override with OUT_FILE).
 set -euo pipefail
@@ -15,9 +19,19 @@ set -euo pipefail
 QUOTE_FILE="${QUOTE_FILE:-quote.txt}"
 AUTHOR_FILE="${AUTHOR_FILE:-author.txt}"
 OUT_FILE="${OUT_FILE:-out.mp4}"
-FONT_BOLD="${FONT_BOLD:-/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf}"
-FONT_REG="${FONT_REG:-/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf}"
 BG_FIT="${BG_FIT:-blur}"
+# Quote font: Aspire Demibold (public domain, assets/font/info.txt) with a
+# DejaVu fallback so a missing font can never kill the daily render.
+ASPIRE="assets/font/AspireDemibold-YaaO.ttf"
+DEJAVU_BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+DEJAVU_REG="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+if [ -z "${FONT_BOLD:-}" ]; then
+  if [ -f "$ASPIRE" ]; then FONT_BOLD="$ASPIRE"; else FONT_BOLD="$DEJAVU_BOLD"; fi
+fi
+FONT_REG="${FONT_REG:-$DEJAVU_REG}"
+# Gradient endpoints (quote fill), overridable per-run for A/B tests.
+GRAD_FROM="${GRAD_FROM:-0x38bdf8}"   # sky blue
+GRAD_TO="${GRAD_TO:-0xa855f7}"       # violet
 
 case "$BG_FIT" in
   blur|pan|crop) ;;
@@ -37,8 +51,15 @@ fold -s -w 26 "$QUOTE_FILE" > quote_wrapped.txt
 printf '— %s' "$(cat "$AUTHOR_FILE")" > author_line.txt
 
 DUR=15
+echo "Quote font: $FONT_BOLD"
 
-TEXT="drawtext=fontfile=${FONT_BOLD}:textfile=quote_wrapped.txt:fontcolor=white:fontsize=66:line_spacing=18:x=(w-text_w)/2:y=(h-text_h)/2-120,drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=46:x=(w-text_w)/2:y=(h-text_h)/2+280"
+# Shared quote geometry — the halo pass and the gradient mask MUST match
+# glyph-for-glyph, so both are built from this one string. The block is
+# lifted well above center to leave the lower half for the scenery.
+QUOTE_GEOM="fontfile=${FONT_BOLD}:textfile=quote_wrapped.txt:fontsize=60:line_spacing=16:x=(w-text_w)/2:y=(h-text_h)/2-320"
+QUOTE_HALO="drawtext=${QUOTE_GEOM}:fontcolor=black:borderw=6:bordercolor=black@0.85"
+QUOTE_MASK="drawtext=${QUOTE_GEOM}:fontcolor=white"
+AUTHOR_DRAW="drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=44:borderw=2:bordercolor=black@0.6:x=(w-text_w)/2:y=(h-text_h)/2+160"
 COVER="scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
 
 shopt -s nullglob
@@ -78,13 +99,23 @@ if [ ${#bgs[@]} -gt 0 ]; then
   else
     fit="$COVER"
   fi
-  # Darken for legibility, then draw the text.
-  vf="${fit},drawbox=x=0:y=0:w=iw:h=ih:color=black@0.35:t=fill,${TEXT}"
+  # Light darken (20%) keeps the scenery visible — the text halo carries legibility.
+  base_chain="${fit},drawbox=x=0:y=0:w=iw:h=ih:color=black@0.20:t=fill"
 else
   echo "No background clips — using solid color."
   video_in=(-f lavfi -i "color=c=0x0d1b2a:s=1080x1920:d=${DUR}")
-  vf="${TEXT}"
+  base_chain="null"
 fi
+
+# Gradient-filled quote: [base + halo] -> maskedmerge pulls the gradient
+# through the white-on-black glyph mask, leaving the dark halo as an outline.
+# rgb24 keeps the merge clean (no half-strength chroma blending in yuv).
+filter="
+[0:v]${base_chain},${AUTHOR_DRAW},${QUOTE_HALO},format=rgb24[base];
+gradients=s=1080x1920:c0=${GRAD_FROM}:c1=${GRAD_TO}:x0=0:y0=400:x1=1080:y1=1300:d=$((DUR+1)),format=rgb24[grad];
+color=c=black:s=1080x1920:d=$((DUR+1)),${QUOTE_MASK},format=rgb24[mask];
+[base][grad][mask]maskedmerge,format=yuv420p[vout]
+"
 
 # --- audio source ---
 if [ ${#tracks[@]} -gt 0 ]; then
@@ -112,8 +143,9 @@ else
 fi
 
 ffmpeg -y "${video_in[@]}" "${audio_in[@]}" \
-  -map 0:v -map 1:a \
-  -vf "$vf" "${af[@]}" \
+  -filter_complex "$filter" \
+  -map "[vout]" -map 1:a \
+  "${af[@]}" \
   -t ${DUR} -r 30 -c:v libx264 -pix_fmt yuv420p "${acodec[@]}" "$OUT_FILE"
 
 echo "Rendered $OUT_FILE"

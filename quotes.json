@@ -14,7 +14,10 @@
         "fr": "Tu ne t'élèves pas au niveau de tes objectifs. Tu retombes au niveau de tes systèmes.",
         "de": "Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.",
         "ja": "人は目標のレベルまで上がるのではなく、仕組みのレベルまで落ちる。",
-        "zh-CN": "你不会升到目标的高度，只会落到系统的水平。"
+        "zh-CN": "你不会升到目标的高度，只会落到系统的水平。",
+        "ar": "أنت لا ترتقي إلى مستوى أهدافك، بل تهبط إلى مستوى أنظمتك.",
+        "ru": "Ты не поднимаешься до уровня своих целей — ты опускаешься до уровня своих систем.",
+        "pt": "Você não sobe ao nível das suas metas. Você cai ao nível dos seus sistemas."
       }
     },
     {
@@ -29,7 +32,10 @@
         "fr": "Ce qui bloque le chemin devient le chemin.",
         "de": "Was im Weg steht, wird zum Weg.",
         "ja": "行く手を阻むものこそが、道となる。",
-        "zh-CN": "挡路之物，终成道路。"
+        "zh-CN": "挡路之物，终成道路。",
+        "ar": "ما يقف في الطريق يصبح هو الطريق.",
+        "ru": "То, что стоит на пути, становится путём.",
+        "pt": "O que bloqueia o caminho se torna o caminho."
       }
     },
     {
@@ -44,7 +50,10 @@
         "fr": "Nous souffrons plus souvent en imagination qu'en réalité.",
         "de": "Wir leiden öfter in der Vorstellung als in der Wirklichkeit.",
         "ja": "私たちは現実よりも、想像の中で苦しむことの方が多い。",
-        "zh-CN": "我们在想象中受的苦，往往多于现实。"
+        "zh-CN": "我们在想象中受的苦，往往多于现实。",
+        "ar": "نحن نتألم في خيالنا أكثر مما نتألم في الواقع.",
+        "ru": "Мы чаще страдаем в воображении, чем в реальности.",
+        "pt": "Sofremos mais na imaginação do que na realidade."
       }
     },
     {
@@ -59,7 +68,10 @@
         "fr": "Soit tu mènes ta journée, soit ta journée te mène.",
         "de": "Entweder du gestaltest den Tag, oder der Tag gestaltet dich.",
         "ja": "一日を動かすか、一日に動かされるかだ。",
-        "zh-CN": "不是你掌控这一天，就是这一天掌控你。"
+        "zh-CN": "不是你掌控这一天，就是这一天掌控你。",
+        "ar": "إما أن تقود يومك، أو يقودك يومك.",
+        "ru": "Либо ты управляешь своим днём, либо день управляет тобой.",
+        "pt": "Ou você comanda o seu dia, ou o dia comanda você."
       }
     },
     {
@@ -74,7 +86,10 @@
         "fr": "Que tu penses en être capable ou non, tu as raison.",
         "de": "Ob du glaubst, dass du es kannst, oder dass du es nicht kannst — du hast recht.",
         "ja": "できると思っても、できないと思っても、どちらも正しい。",
-        "zh-CN": "无论你认为自己行还是不行，你都是对的。"
+        "zh-CN": "无论你认为自己行还是不行，你都是对的。",
+        "ar": "سواء ظننت أنك قادر أو غير قادر، فأنت على حق.",
+        "ru": "Думаешь ли ты, что можешь, или что не можешь, — ты прав.",
+        "pt": "Se você acha que consegue, ou acha que não consegue — você está certo."
       }
     },
     {
@@ -89,7 +104,10 @@
         "fr": "Le secret pour avancer, c'est de commencer.",
         "de": "Das Geheimnis des Vorankommens liegt darin, anzufangen.",
         "ja": "前に進む秘訣は、まず始めることだ。",
-        "zh-CN": "取得进步的秘诀在于开始行动。"
+        "zh-CN": "取得进步的秘诀在于开始行动。",
+        "ar": "سر التقدم هو أن تبدأ.",
+        "ru": "Секрет продвижения вперёд — начать.",
+        "pt": "O segredo para avançar é começar."
       }
     },
     {
@@ -104,7 +122,10 @@
         "fr": "Fais ce que tu peux, avec ce que tu as, là où tu es.",
         "de": "Tu, was du kannst, mit dem, was du hast, dort, wo du bist.",
         "ja": "今いる場所で、持っているもので、できることをしなさい。",
-        "zh-CN": "在你所在之处，用你所有之物，做你所能之事。"
+        "zh-CN": "在你所在之处，用你所有之物，做你所能之事。",
+        "ar": "افعل ما تستطيع، بما تملك، حيثما كنت.",
+        "ru": "Делай, что можешь, с тем, что имеешь, там, где ты есть.",
+        "pt": "Faça o que puder, com o que tiver, onde estiver."
       }
     },
     {
@@ -119,7 +140,10 @@
         "fr": "Cela semble toujours impossible, jusqu'à ce que ce soit fait.",
         "de": "Es scheint immer unmöglich, bis es getan ist.",
         "ja": "何事も、成し遂げるまでは不可能に見えるものだ。",
-        "zh-CN": "凡事在完成之前，看起来总是不可能的。"
+        "zh-CN": "凡事在完成之前，看起来总是不可能的。",
+        "ar": "كل شيء يبدو مستحيلاً حتى يتحقق.",
+        "ru": "Всё кажется невозможным, пока не будет сделано.",
+        "pt": "Sempre parece impossível até que seja feito."
       }
     },
     {
@@ -134,7 +158,10 @@
         "fr": "Celui qui déplace une montagne commence par porter les petites pierres.",
         "de": "Wer einen Berg versetzt, beginnt damit, kleine Steine wegzutragen.",
         "ja": "山を動かす者は、小さな石を運ぶことから始める。",
-        "zh-CN": "移山之人，始于搬运小石。"
+        "zh-CN": "移山之人，始于搬运小石。",
+        "ar": "من يحرك جبلاً يبدأ بنقل الحجارة الصغيرة.",
+        "ru": "Тот, кто сдвигает гору, начинает с малых камней.",
+        "pt": "Quem move uma montanha começa carregando pedras pequenas."
       }
     },
     {
@@ -149,7 +176,10 @@
         "fr": "Tombe sept fois, relève-toi huit.",
         "ja": "七転び八起き。",
         "de": "Siebenmal hinfallen, achtmal aufstehen.",
-        "zh-CN": "跌倒七次，爬起八次。"
+        "zh-CN": "跌倒七次，爬起八次。",
+        "ar": "اسقط سبع مرات، وانهض ثماني.",
+        "ru": "Упади семь раз — поднимись восемь.",
+        "pt": "Caia sete vezes, levante-se oito."
       }
     },
     {
@@ -164,7 +194,10 @@
         "fr": "Savoir ne suffit pas, il faut appliquer. Vouloir ne suffit pas, il faut agir.",
         "de": "Es ist nicht genug zu wissen, man muss es auch anwenden; es ist nicht genug zu wollen, man muss es auch tun.",
         "ja": "知るだけでは足りない、活かさなければ。望むだけでは足りない、行動しなければ。",
-        "zh-CN": "知道不够，必须运用；想要不够，必须去做。"
+        "zh-CN": "知道不够，必须运用；想要不够，必须去做。",
+        "ar": "المعرفة وحدها لا تكفي، بل يجب التطبيق. والإرادة وحدها لا تكفي، بل يجب العمل.",
+        "ru": "Недостаточно знать — нужно применять. Недостаточно хотеть — нужно делать.",
+        "pt": "Saber não basta; é preciso aplicar. Querer não basta; é preciso fazer."
       }
     },
     {
@@ -179,7 +212,10 @@
         "fr": "L'inaction nourrit le doute et la peur. L'action nourrit la confiance et le courage.",
         "de": "Untätigkeit erzeugt Zweifel und Angst. Handeln erzeugt Zuversicht und Mut.",
         "ja": "何もしなければ疑いと恐れが育ち、行動すれば自信と勇気が育つ。",
-        "zh-CN": "不行动滋生疑虑和恐惧，行动带来自信和勇气。"
+        "zh-CN": "不行动滋生疑虑和恐惧，行动带来自信和勇气。",
+        "ar": "التقاعس يولّد الشك والخوف، والعمل يولّد الثقة والشجاعة.",
+        "ru": "Бездействие порождает сомнение и страх. Действие рождает уверенность и смелость.",
+        "pt": "A inação gera dúvida e medo. A ação gera confiança e coragem."
       }
     },
     {
@@ -194,7 +230,10 @@
         "fr": "Ne compte pas les jours, fais en sorte que les jours comptent.",
         "de": "Zähle nicht die Tage, lass die Tage zählen.",
         "ja": "日々を数えるな。日々を意味あるものにしろ。",
-        "zh-CN": "不要数日子，要让日子有价值。"
+        "zh-CN": "不要数日子，要让日子有价值。",
+        "ar": "لا تعدّ الأيام، بل اجعل الأيام ذات قيمة.",
+        "ru": "Не считай дни — сделай так, чтобы дни считались.",
+        "pt": "Não conte os dias, faça os dias valerem."
       }
     },
     {
@@ -209,7 +248,10 @@
         "fr": "Si tu traverses l'enfer, continue d'avancer.",
         "de": "Wenn du durch die Hölle gehst, geh weiter.",
         "ja": "地獄の中を進んでいるなら、そのまま進み続けろ。",
-        "zh-CN": "如果你正在经历至暗时刻，继续走下去。"
+        "zh-CN": "如果你正在经历至暗时刻，继续走下去。",
+        "ar": "إذا كنت تمر بأصعب الأوقات، فواصل المسير.",
+        "ru": "Если идёшь через ад — продолжай идти.",
+        "pt": "Se você está atravessando o inferno, continue andando."
       }
     },
     {
@@ -224,7 +266,10 @@
         "fr": "Choix difficiles, vie facile. Choix faciles, vie difficile.",
         "de": "Schwere Entscheidungen, leichtes Leben. Leichte Entscheidungen, schweres Leben.",
         "ja": "難しい選択は楽な人生を、楽な選択は難しい人生をつくる。",
-        "zh-CN": "艰难的选择，轻松的人生；轻松的选择，艰难的人生。"
+        "zh-CN": "艰难的选择，轻松的人生；轻松的选择，艰难的人生。",
+        "ar": "خيارات صعبة، حياة سهلة. خيارات سهلة، حياة صعبة.",
+        "ru": "Трудный выбор — лёгкая жизнь. Лёгкий выбор — трудная жизнь.",
+        "pt": "Escolhas difíceis, vida fácil. Escolhas fáceis, vida difícil."
       }
     },
     {
@@ -239,7 +284,10 @@
         "fr": "La grotte où tu crains d'entrer recèle le trésor que tu cherches.",
         "de": "In der Höhle, die du fürchtest, liegt der Schatz, den du suchst.",
         "ja": "入るのを恐れている洞窟にこそ、探している宝が眠っている。",
-        "zh-CN": "你害怕进入的洞穴，藏着你寻找的宝藏。"
+        "zh-CN": "你害怕进入的洞穴，藏着你寻找的宝藏。",
+        "ar": "الكهف الذي تخشى دخوله يخبئ الكنز الذي تبحث عنه.",
+        "ru": "Пещера, в которую ты боишься войти, хранит сокровище, которое ты ищешь.",
+        "pt": "A caverna que você teme entrar guarda o tesouro que você procura."
       }
     },
     {
@@ -254,7 +302,10 @@
         "fr": "Notre façon de passer nos journées est, bien sûr, notre façon de passer notre vie.",
         "de": "Wie wir unsere Tage verbringen, so verbringen wir natürlich auch unser Leben.",
         "ja": "日々の過ごし方が、そのまま人生の過ごし方になる。",
-        "zh-CN": "我们如何度过每一天，便是如何度过一生。"
+        "zh-CN": "我们如何度过每一天，便是如何度过一生。",
+        "ar": "طريقة قضائنا لأيامنا هي، بالطبع، طريقة قضائنا لحياتنا.",
+        "ru": "Как мы проводим свои дни, так мы проводим и свою жизнь.",
+        "pt": "A forma como passamos nossos dias é, claro, a forma como passamos nossa vida."
       }
     },
     {
@@ -269,7 +320,10 @@
         "fr": "La motivation te fait démarrer. L'habitude te fait continuer.",
         "de": "Motivation bringt dich in Gang. Gewohnheit hält dich in Bewegung.",
         "ja": "始める力はモチベーション、続ける力は習慣だ。",
-        "zh-CN": "动力让你开始，习惯让你坚持。"
+        "zh-CN": "动力让你开始，习惯让你坚持。",
+        "ar": "الحافز يجعلك تبدأ، والعادة تجعلك تستمر.",
+        "ru": "Мотивация помогает начать. Привычка помогает не останавливаться.",
+        "pt": "A motivação faz você começar. O hábito faz você continuar."
       }
     },
     {
@@ -284,7 +338,10 @@
         "fr": "L'énergie et la persévérance viennent à bout de tout.",
         "de": "Energie und Beharrlichkeit überwinden alles.",
         "ja": "活力と粘り強さは、すべてを制する。",
-        "zh-CN": "精力与坚持能征服一切。"
+        "zh-CN": "精力与坚持能征服一切。",
+        "ar": "الطاقة والمثابرة تقهران كل شيء.",
+        "ru": "Энергия и упорство побеждают всё.",
+        "pt": "Energia e persistência conquistam todas as coisas."
       }
     },
     {
@@ -299,7 +356,10 @@
         "fr": "Dans un an, tu regretteras peut-être de ne pas avoir commencé aujourd'hui.",
         "de": "In einem Jahr wirst du dir vielleicht wünschen, du hättest heute angefangen.",
         "ja": "一年後、今日始めていればよかったと思うかもしれない。",
-        "zh-CN": "一年后的你，也许会希望今天就已开始。"
+        "zh-CN": "一年后的你，也许会希望今天就已开始。",
+        "ar": "بعد عام من الآن، قد تتمنى لو أنك بدأت اليوم.",
+        "ru": "Через год ты, возможно, пожалеешь, что не начал сегодня.",
+        "pt": "Daqui a um ano, você pode desejar ter começado hoje."
       }
     },
     {
@@ -314,7 +374,10 @@
         "fr": "Celui qui a un pourquoi pour vivre peut supporter presque n'importe quel comment.",
         "de": "Wer ein Warum zum Leben hat, erträgt fast jedes Wie.",
         "ja": "生きる「なぜ」を持つ者は、ほとんどどんな「どうやって」にも耐えられる。",
-        "zh-CN": "知道为什么而活的人，几乎能承受任何一种生活。"
+        "zh-CN": "知道为什么而活的人，几乎能承受任何一种生活。",
+        "ar": "من يملك سبباً للعيش يستطيع تحمّل أي طريقة تقريباً.",
+        "ru": "Тот, кто знает, зачем жить, может вынести почти любое как.",
+        "pt": "Quem tem um porquê para viver pode suportar quase qualquer como."
       }
     },
     {
@@ -329,7 +392,10 @@
         "fr": "Ce que nous craignons le plus de faire est souvent ce que nous avons le plus besoin de faire.",
         "de": "Was wir am meisten fürchten zu tun, ist meist genau das, was wir am dringendsten tun müssen.",
         "ja": "最も恐れていることこそ、たいてい最もやるべきことだ。",
-        "zh-CN": "我们最害怕做的事，往往正是我们最需要做的事。"
+        "zh-CN": "我们最害怕做的事，往往正是我们最需要做的事。",
+        "ar": "ما نخاف فعله أكثر هو غالباً ما نحتاج فعله أكثر.",
+        "ru": "То, что мы больше всего боимся сделать, обычно и есть то, что нам больше всего нужно сделать.",
+        "pt": "O que mais tememos fazer costuma ser o que mais precisamos fazer."
       }
     },
     {
@@ -344,7 +410,10 @@
         "fr": "Tout ce que tu as toujours voulu se trouve de l'autre côté de la peur.",
         "de": "Alles, was du dir je gewünscht hast, liegt auf der anderen Seite der Angst.",
         "ja": "望むものはすべて、恐れの向こう側にある。",
-        "zh-CN": "你想要的一切，都在恐惧的另一边。"
+        "zh-CN": "你想要的一切，都在恐惧的另一边。",
+        "ar": "كل ما تمنيته يوماً يقع على الجانب الآخر من الخوف.",
+        "ru": "Всё, чего ты когда-либо хотел, находится по ту сторону страха.",
+        "pt": "Tudo o que você sempre quis está do outro lado do medo."
       }
     },
     {
@@ -359,7 +428,10 @@
         "fr": "L'action est la clé fondamentale de tout succès.",
         "de": "Handeln ist der Grundschlüssel zu jedem Erfolg.",
         "ja": "行動こそ、あらゆる成功の基本の鍵だ。",
-        "zh-CN": "行动是一切成功的根本关键。"
+        "zh-CN": "行动是一切成功的根本关键。",
+        "ar": "العمل هو المفتاح الأساسي لكل نجاح.",
+        "ru": "Действие — основной ключ к любому успеху.",
+        "pt": "A ação é a chave fundamental para todo sucesso."
       }
     },
     {
@@ -374,7 +446,10 @@
         "fr": "Peu importe la lenteur de ton pas, pourvu que tu ne t'arrêtes pas.",
         "de": "Es ist egal, wie langsam du gehst, solange du nicht stehen bleibst.",
         "ja": "どんなに歩みが遅くとも、止まりさえしなければよい。",
-        "zh-CN": "走得慢没有关系，只要你不停下脚步。"
+        "zh-CN": "走得慢没有关系，只要你不停下脚步。",
+        "ar": "لا يهم مدى بطئك ما دمت لا تتوقف.",
+        "ru": "Неважно, как медленно ты идёшь, если ты не останавливаешься.",
+        "pt": "Não importa a lentidão com que você anda, desde que não pare."
       }
     },
     {
@@ -389,7 +464,10 @@
         "fr": "La discipline est le pont entre les objectifs et leur accomplissement.",
         "de": "Disziplin ist die Brücke zwischen Zielen und Erfolgen.",
         "ja": "規律とは、目標と達成をつなぐ橋である。",
-        "zh-CN": "自律是连接目标与成就的桥梁。"
+        "zh-CN": "自律是连接目标与成就的桥梁。",
+        "ar": "الانضباط هو الجسر بين الأهداف والإنجاز.",
+        "ru": "Дисциплина — мост между целями и их достижением.",
+        "pt": "A disciplina é a ponte entre metas e conquistas."
       }
     },
     {
@@ -404,7 +482,10 @@
         "fr": "De petites actions accomplies valent mieux que de grandes actions planifiées.",
         "de": "Kleine Taten, die getan werden, sind besser als große Taten, die geplant werden.",
         "ja": "実行された小さな行いは、計画されただけの大きな行いに勝る。",
-        "zh-CN": "做成的小事，胜过计划中的大事。"
+        "zh-CN": "做成的小事，胜过计划中的大事。",
+        "ar": "أعمال صغيرة منجزة خير من أعمال عظيمة مخطط لها.",
+        "ru": "Малые дела, доведённые до конца, лучше великих дел, оставшихся в планах.",
+        "pt": "Pequenos feitos realizados valem mais que grandes feitos planejados."
       }
     },
     {
@@ -419,7 +500,10 @@
         "fr": "On ne bâtit pas une réputation sur ce qu'on a l'intention de faire.",
         "de": "Du kannst dir keinen Ruf auf dem aufbauen, was du erst noch tun willst.",
         "ja": "これからやるつもりのことで、評判は築けない。",
-        "zh-CN": "声誉无法建立在你打算做的事情上。"
+        "zh-CN": "声誉无法建立在你打算做的事情上。",
+        "ar": "لا يمكنك بناء سمعة على ما تنوي فعله.",
+        "ru": "Нельзя построить репутацию на том, что ты только собираешься сделать.",
+        "pt": "Você não constrói reputação com o que ainda vai fazer."
       }
     },
     {
@@ -434,7 +518,10 @@
         "fr": "Ce qui n'est pas commencé aujourd'hui ne sera jamais terminé demain.",
         "de": "Was heute nicht begonnen wird, wird morgen nicht vollendet.",
         "ja": "今日始めなかったことは、明日終わることはない。",
-        "zh-CN": "今天没有开始的事，明天永远无法完成。"
+        "zh-CN": "今天没有开始的事，明天永远无法完成。",
+        "ar": "ما لا يُبدأ اليوم لا يُنجز غداً.",
+        "ru": "Что не начато сегодня, не будет закончено завтра.",
+        "pt": "O que não se começa hoje nunca se termina amanhã."
       }
     },
     {
@@ -449,7 +536,10 @@
         "fr": "Tu as pouvoir sur ton esprit, pas sur les événements extérieurs. Comprends-le, et tu trouveras la force.",
         "de": "Du hast Macht über deinen Geist — nicht über äußere Ereignisse. Erkenne das, und du wirst Stärke finden.",
         "ja": "支配できるのは自分の心であって、外の出来事ではない。それに気づけば、力が湧いてくる。",
-        "zh-CN": "你能掌控的是自己的心，而非外界之事。明白这一点，你就会找到力量。"
+        "zh-CN": "你能掌控的是自己的心，而非外界之事。明白这一点，你就会找到力量。",
+        "ar": "سلطانك على عقلك لا على الأحداث الخارجية. أدرك ذلك تجد القوة.",
+        "ru": "Ты властен над своим разумом, а не над внешними событиями. Пойми это — и обретёшь силу.",
+        "pt": "Você tem poder sobre a sua mente — não sobre os acontecimentos externos. Perceba isso e encontrará força."
       }
     },
     {
@@ -464,7 +554,10 @@
         "fr": "Le succès n'est pas définitif, l'échec n'est pas fatal : c'est le courage de continuer qui compte.",
         "de": "Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Es ist der Mut weiterzumachen, der zählt.",
         "ja": "成功は終わりではなく、失敗は致命傷ではない。大事なのは続ける勇気だ。",
-        "zh-CN": "成功不是终点，失败并非末日：重要的是继续前行的勇气。"
+        "zh-CN": "成功不是终点，失败并非末日：重要的是继续前行的勇气。",
+        "ar": "النجاح ليس نهائياً، والفشل ليس قاتلاً: الشجاعة على الاستمرار هي ما يهم.",
+        "ru": "Успех не окончателен, неудача не смертельна: значение имеет лишь мужество продолжать.",
+        "pt": "O sucesso não é definitivo, o fracasso não é fatal: o que conta é a coragem de continuar."
       }
     },
     {
@@ -479,7 +572,10 @@
         "fr": "Ce que tu fais chaque jour compte plus que ce que tu fais de temps en temps.",
         "de": "Was du jeden Tag tust, zählt mehr als das, was du ab und zu tust.",
         "ja": "たまにやることより、毎日やることの方が大切だ。",
-        "zh-CN": "你每天做的事，比你偶尔做的事更重要。"
+        "zh-CN": "你每天做的事，比你偶尔做的事更重要。",
+        "ar": "ما تفعله كل يوم أهم مما تفعله من حين لآخر.",
+        "ru": "То, что ты делаешь каждый день, важнее того, что ты делаешь время от времени.",
+        "pt": "O que você faz todos os dias importa mais do que o que você faz de vez em quando."
       }
     },
     {
@@ -494,7 +590,10 @@
         "fr": "La rivière creuse la roche non par sa force, mais par sa persévérance.",
         "de": "Ein Fluss durchdringt den Fels nicht durch seine Kraft, sondern durch seine Beharrlichkeit.",
         "ja": "川が岩を穿つのは、力ではなく粘り強さゆえだ。",
-        "zh-CN": "河水穿石，靠的不是力量，而是坚持。"
+        "zh-CN": "河水穿石，靠的不是力量，而是坚持。",
+        "ar": "النهر يشق الصخر لا بقوته، بل بمثابرته.",
+        "ru": "Река пробивает скалу не силой, а постоянством.",
+        "pt": "O rio corta a rocha não pela força, mas pela persistência."
       }
     },
     {
@@ -509,7 +608,10 @@
         "fr": "Ne crains pas d'avancer lentement ; crains seulement de rester immobile.",
         "de": "Fürchte dich nicht vor dem langsamen Gehen, fürchte nur den Stillstand.",
         "ja": "ゆっくり進むことを恐れるな。恐れるべきは立ち止まることだけだ。",
-        "zh-CN": "不怕慢，只怕站。"
+        "zh-CN": "不怕慢，只怕站。",
+        "ar": "لا تخف من التقدم ببطء، بل خف من الوقوف في مكانك.",
+        "ru": "Не бойся идти медленно — бойся стоять на месте.",
+        "pt": "Não tenha medo de ir devagar; tenha medo apenas de ficar parado."
       }
     },
     {
@@ -524,7 +626,10 @@
         "fr": "La façon la plus efficace de le faire, c'est de le faire.",
         "de": "Der wirksamste Weg, etwas zu tun, ist, es zu tun.",
         "ja": "何かを成す最も確実な方法は、実際にやることだ。",
-        "zh-CN": "做成一件事最有效的方法，就是动手去做。"
+        "zh-CN": "做成一件事最有效的方法，就是动手去做。",
+        "ar": "أنجع وسيلة لفعل الشيء هي أن تفعله.",
+        "ru": "Самый действенный способ что-то сделать — сделать это.",
+        "pt": "A maneira mais eficaz de fazer é fazendo."
       }
     },
     {
@@ -539,7 +644,10 @@
         "fr": "Le guerrier qui réussit est un homme ordinaire, doté d'une concentration extrême.",
         "de": "Der erfolgreiche Krieger ist ein gewöhnlicher Mensch mit messerscharfem Fokus.",
         "ja": "成功する戦士とは、レーザーのような集中力を持つ、ごく普通の人間だ。",
-        "zh-CN": "成功的战士只是普通人，却有着激光般的专注。"
+        "zh-CN": "成功的战士只是普通人，却有着激光般的专注。",
+        "ar": "المحارب الناجح إنسان عادي، لكن بتركيز حاد كالليزر.",
+        "ru": "Успешный воин — это обычный человек с лазерной сосредоточенностью.",
+        "pt": "O guerreiro de sucesso é o homem comum, com um foco a laser."
       }
     },
     {
@@ -554,7 +662,10 @@
         "fr": "Un voyage de mille lieues commence par un premier pas.",
         "de": "Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.",
         "ja": "千里の道も一歩から。",
-        "zh-CN": "千里之行，始于足下。"
+        "zh-CN": "千里之行，始于足下。",
+        "ar": "رحلة الألف ميل تبدأ بخطوة واحدة.",
+        "ru": "Путь в тысячу ли начинается с первого шага.",
+        "pt": "Uma jornada de mil milhas começa com um único passo."
       }
     },
     {
@@ -569,7 +680,10 @@
         "fr": "Nul n'est libre s'il n'est maître de lui-même.",
         "de": "Kein Mensch ist frei, der nicht Herr über sich selbst ist.",
         "ja": "自分自身を制する者でなければ、自由な人間とは言えない。",
-        "zh-CN": "不能主宰自己的人，谈不上自由。"
+        "zh-CN": "不能主宰自己的人，谈不上自由。",
+        "ar": "لا حرية لمن لا يملك زمام نفسه.",
+        "ru": "Не свободен тот, кто не властен над собой.",
+        "pt": "Ninguém é livre se não for senhor de si mesmo."
       }
     },
     {
@@ -584,7 +698,10 @@
         "fr": "Rien ne fonctionnera si tu ne t'y mets pas.",
         "de": "Nichts funktioniert, wenn du es nicht tust.",
         "ja": "あなたが動かなければ、何も動かない。",
-        "zh-CN": "你不努力，一切都不会奏效。"
+        "zh-CN": "你不努力，一切都不会奏效。",
+        "ar": "لن ينجح شيء ما لم تعمل أنت.",
+        "ru": "Ничего не получится, пока ты не начнёшь работать.",
+        "pt": "Nada funciona a menos que você trabalhe."
       }
     },
     {
@@ -599,7 +716,10 @@
         "fr": "Tu n'as pas besoin d'être excellent pour commencer, mais tu dois commencer pour devenir excellent.",
         "de": "Du musst nicht großartig sein, um anzufangen, aber du musst anfangen, um großartig zu werden.",
         "ja": "始めるために偉大である必要はない。偉大になるためには始めるしかない。",
-        "zh-CN": "开始不需要伟大，但要伟大必须开始。"
+        "zh-CN": "开始不需要伟大，但要伟大必须开始。",
+        "ar": "لست بحاجة أن تكون عظيماً لتبدأ، لكنك بحاجة أن تبدأ لتكون عظيماً.",
+        "ru": "Не нужно быть великим, чтобы начать, но нужно начать, чтобы стать великим.",
+        "pt": "Você não precisa ser incrível para começar, mas precisa começar para ser incrível."
       }
     }
   ]

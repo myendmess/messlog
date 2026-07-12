@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 05 * * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Render only: no README commit, no YouTube upload; out.mp4 saved as a run artifact for preview"
+        type: boolean
+        default: false
 
 # Least privilege: contents:write only because the job commits the quote to README.
 permissions:
@@ -17,6 +22,8 @@ jobs:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Pick quote and commit
+        env:
+          DRY_RUN: ${{ inputs.dry_run == true }}
         run: |
           git config user.name "myendmess"
           git config user.email "140411362+myendmess@users.noreply.github.com"
@@ -31,6 +38,10 @@ jobs:
           if [ -z "$QUOTE" ] || [ -z "$AUTHOR" ]; then
             echo "::error::pick_quote.py produced empty quote/author"
             exit 1
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry run — skipping README commit."
+            exit 0
           fi
           DATE=$(date -u '+%Y-%m-%d')
 
@@ -66,17 +77,26 @@ jobs:
           fi
 
       - name: Render video
-        if: steps.yt.outputs.ready == 'true'
+        if: steps.yt.outputs.ready == 'true' || inputs.dry_run == true
         run: bash scripts/make_video.sh
 
+      # Dry run: publish nothing — attach the render to the run for preview.
+      - name: Upload render as artifact (dry run)
+        if: inputs.dry_run == true
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: short-preview
+          path: out.mp4
+          retention-days: 3
+
       - name: Set up Python
-        if: steps.yt.outputs.ready == 'true'
+        if: steps.yt.outputs.ready == 'true' && inputs.dry_run != true
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.x'
 
       - name: Upload to YouTube playlist
-        if: steps.yt.outputs.ready == 'true'
+        if: steps.yt.outputs.ready == 'true' && inputs.dry_run != true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
