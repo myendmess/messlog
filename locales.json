@@ -1,9 +1,8 @@
 {
-  "_help": "Target-market localization config. Each enabled market gets the daily quote translated by scripts/localize.py and attached to the SAME YouTube upload as per-language title/description ('localizations') — YouTube then shows viewers the version matching their UI language. 'code' is the BCP-47 code YouTube expects; 'translate_code' is what the translation provider expects when it differs. Hashtags/tags were drafted per-market — have a native speaker review them (machine output converts poorly). Flip 'enabled' to roll a market out or back.",
+  "_help": "Target-market config. For each enabled market, scripts/pick_quote.py pairs the day's pre-translated quote from quotes.json with this market's hashtags/tags, and upload_youtube.py attaches the result to the SAME YouTube upload as per-language title/description ('localizations') — YouTube shows viewers the version matching their UI language. 'code' is the BCP-47 code YouTube expects and must match the translation keys in quotes.json. Hashtags/tags were drafted per-market — have a native speaker review them. Flip 'enabled' to roll a market out or back (only markets with translations in quotes.json will actually attach).",
   "markets": [
     {
       "code": "it",
-      "translate_code": "it",
       "name": "Italiano",
       "market": "Italy",
       "enabled": true,
@@ -12,7 +11,6 @@
     },
     {
       "code": "id",
-      "translate_code": "id",
       "name": "Bahasa Indonesia",
       "market": "Indonesia",
       "enabled": true,
@@ -21,7 +19,6 @@
     },
     {
       "code": "fil",
-      "translate_code": "tl",
       "name": "Filipino",
       "market": "Philippines",
       "enabled": true,
@@ -29,8 +26,15 @@
       "tags": ["inspirasyon", "motibasyon", "hugot lines", "banat"]
     },
     {
+      "code": "hi",
+      "name": "हिन्दी",
+      "market": "India",
+      "enabled": true,
+      "hashtags": "#प्रेरणा #सुविचार #मोटिवेशन #जिंदगी",
+      "tags": ["प्रेरणा", "सुविचार", "मोटिवेशन"]
+    },
+    {
       "code": "vi",
-      "translate_code": "vi",
       "name": "Tiếng Việt",
       "market": "Vietnam",
       "enabled": false,
@@ -38,17 +42,7 @@
       "tags": ["động lực", "câu nói hay", "truyền cảm hứng"]
     },
     {
-      "code": "hi",
-      "translate_code": "hi",
-      "name": "हिन्दी",
-      "market": "India",
-      "enabled": false,
-      "hashtags": "#प्रेरणा #सुविचार #मोटिवेशन #जिंदगी",
-      "tags": ["प्रेरणा", "सुविचार", "मोटिवेशन"]
-    },
-    {
       "code": "ja",
-      "translate_code": "ja",
       "name": "日本語",
       "market": "Japan",
       "enabled": false,
@@ -57,7 +51,6 @@
     },
     {
       "code": "th",
-      "translate_code": "th",
       "name": "ไทย",
       "market": "Thailand",
       "enabled": false,

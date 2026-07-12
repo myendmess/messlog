@@ -37,11 +37,12 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 - Have a **pic** instead of a clip? Convert it first:
   `ffmpeg -loop 1 -i pic.jpg -t 15 -r 30 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -pix_fmt yuv420p assets/backgrounds/pic.mp4`
 
-### Localized titles & descriptions
+### Quote bank & localized titles
 
-- `locales.json` lists target markets (Italy, Indonesia and the Philippines enabled; Vietnam, India, Japan, Thailand ready to flip on).
-- Add a `TRANSLATE_API_KEY` repo secret (Google Cloud Translation API key) and the daily workflow translates each quote and attaches per-language titles/descriptions to the same Short — YouTube shows viewers the version matching their language. No key = step quietly skips.
-- Machine translations convert worse than native copy: have a native speaker review `locales.json` hashtags/tags before scaling a market.
+- Quotes come from `quotes.json` — a curated, pre-translated bank (no quote API, no translation API, no keys). `scripts/pick_quote.py` picks deterministically by date: days since the bank's `epoch`, wrapping (with a log warning) when the runway runs out.
+- **Top up**: ask Claude Code to "add N more days to quotes.json". Append-only — never reorder, so past days keep their quote. Each entry needs translations keyed by the `locales.json` codes.
+- `locales.json` lists target markets (Italian, Indonesian, Filipino and Hindi enabled; Vietnamese, Japanese, Thai ready to flip on). Enabled markets get per-language titles/descriptions attached to the same Short — YouTube shows viewers the version matching their language.
+- Translations were drafted meaning-first, but native-speaker review of `quotes.json` and the `locales.json` hashtags/tags is still the gold standard before scaling a market.
 - Each upload also posts a channel-owner CTA comment (subscribe nudge + the day's track links). The API can't pin comments — pin it in Studio. Needs a refresh token with the `youtube.force-ssl` scope: re-run `scripts/get_refresh_token.py` once and update the `YT_REFRESH_TOKEN` secret; until then the comment step skips itself without failing the upload.
 - Note for this section only: keep headings at `###` level — the daily workflow inserts each new quote above the first `## ` heading in this file.
 

@@ -16,32 +16,23 @@ jobs:
       # Actions are pinned to commit SHAs so a re-pointed tag can't inject code.
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
-      - name: Fetch quote and commit
+      - name: Pick quote and commit
         run: |
           git config user.name "myendmess"
           git config user.email "140411362+myendmess@users.noreply.github.com"
 
-          # -f fails on HTTP errors; retries + timeout so a flaky API can't hang the job.
-          RESPONSE=$(curl -fsS --retry 3 --retry-delay 5 --max-time 20 "https://zenquotes.io/api/random")
-          # jq -e fails the step on null/missing fields — no more "null" commits.
-          QUOTE=$(printf '%s' "$RESPONSE" | jq -er '.[0].q')
-          AUTHOR=$(printf '%s' "$RESPONSE" | jq -er '.[0].a')
+          # No remote quote API anymore: the curated, pre-translated bank in
+          # quotes.json is the source. pick_quote.py sanitizes and writes
+          # quote.txt / author.txt / localized.json deterministically by date.
+          python3 scripts/pick_quote.py
 
-          # The API response is untrusted input that lands in README (rendered
-          # markdown), a commit message, and a YouTube title. Strip angle
-          # brackets/backticks/control chars and cap length before it goes anywhere.
-          sanitize() { printf '%s' "$1" | tr -d '<>`' | tr -d '\000-\037\177'; }
-          QUOTE=$(sanitize "$QUOTE" | cut -c1-300)
-          AUTHOR=$(sanitize "$AUTHOR" | cut -c1-100)
+          QUOTE=$(cat quote.txt)
+          AUTHOR=$(cat author.txt)
           if [ -z "$QUOTE" ] || [ -z "$AUTHOR" ]; then
-            echo "::error::Quote API returned empty/invalid content"
+            echo "::error::pick_quote.py produced empty quote/author"
             exit 1
           fi
           DATE=$(date -u '+%Y-%m-%d')
-
-          # Save the raw quote/author so the video steps use the same quote.
-          printf '%s' "$QUOTE" > quote.txt
-          printf '%s' "$AUTHOR" > author.txt
 
           # Build the new entry and insert it ABOVE the most recent one
           ENTRY_FILE=$(mktemp)
@@ -83,14 +74,6 @@ jobs:
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.x'
-
-      # Optional: translate the quote for the markets enabled in locales.json.
-      # Skips itself (without failing the run) when TRANSLATE_API_KEY is unset.
-      - name: Localize metadata for target markets
-        if: steps.yt.outputs.ready == 'true'
-        env:
-          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
-        run: python scripts/localize.py
 
       - name: Upload to YouTube playlist
         if: steps.yt.outputs.ready == 'true'

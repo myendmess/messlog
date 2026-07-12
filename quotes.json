@@ -1,0 +1,406 @@
+{
+  "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated. Language keys must match locales.json codes.",
+  "epoch": "2026-07-13",
+  "quotes": [
+    {
+      "quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "author": "James Clear",
+      "translations": {
+        "it": "Non sali al livello dei tuoi obiettivi. Scendi al livello dei tuoi sistemi.",
+        "id": "Kamu tidak naik ke tingkat tujuanmu. Kamu turun ke tingkat sistemmu.",
+        "fil": "Hindi ka aangat sa antas ng iyong mga layunin. Bababa ka sa antas ng iyong mga sistema.",
+        "hi": "आप अपने लक्ष्यों के स्तर तक नहीं उठते। आप अपने सिस्टम के स्तर तक गिरते हैं।"
+      }
+    },
+    {
+      "quote": "What stands in the way becomes the way.",
+      "author": "Marcus Aurelius",
+      "translations": {
+        "it": "Ciò che ostacola il cammino diventa il cammino.",
+        "id": "Apa yang menghalangi jalan justru menjadi jalan itu sendiri.",
+        "fil": "Ang humaharang sa daan ang siyang nagiging daan.",
+        "hi": "जो राह में बाधा बनता है, वही राह बन जाता है।"
+      }
+    },
+    {
+      "quote": "We suffer more often in imagination than in reality.",
+      "author": "Seneca",
+      "translations": {
+        "it": "Soffriamo più spesso nell'immaginazione che nella realtà.",
+        "id": "Kita lebih sering menderita dalam bayangan daripada dalam kenyataan.",
+        "fil": "Mas madalas tayong nagdurusa sa isip kaysa sa katotohanan.",
+        "hi": "हम वास्तविकता से अधिक अपनी कल्पना में दुख भोगते हैं।"
+      }
+    },
+    {
+      "quote": "Either you run the day or the day runs you.",
+      "author": "Jim Rohn",
+      "translations": {
+        "it": "O guidi tu la giornata, o la giornata guida te.",
+        "id": "Kamu yang mengendalikan harimu, atau harimu yang mengendalikanmu.",
+        "fil": "Ikaw ang magpapatakbo ng araw mo, o ang araw mo ang magpapatakbo sa iyo.",
+        "hi": "या तो आप दिन को चलाते हैं, या दिन आपको चलाता है।"
+      }
+    },
+    {
+      "quote": "Whether you think you can, or you think you can't — you're right.",
+      "author": "Henry Ford",
+      "translations": {
+        "it": "Che tu creda di farcela o di non farcela, avrai comunque ragione.",
+        "id": "Entah kamu berpikir kamu bisa, atau berpikir kamu tidak bisa — kamu benar.",
+        "fil": "Isipin mong kaya mo, o isipin mong hindi mo kaya — tama ka.",
+        "hi": "आप सोचें कि आप कर सकते हैं, या सोचें कि नहीं कर सकते — दोनों में आप सही हैं।"
+      }
+    },
+    {
+      "quote": "The secret of getting ahead is getting started.",
+      "author": "Mark Twain",
+      "translations": {
+        "it": "Il segreto per andare avanti è cominciare.",
+        "id": "Rahasia untuk maju adalah memulai.",
+        "fil": "Ang sikreto ng pag-usad ay ang pagsisimula.",
+        "hi": "आगे बढ़ने का रहस्य है शुरुआत करना।"
+      }
+    },
+    {
+      "quote": "Do what you can, with what you have, where you are.",
+      "author": "Theodore Roosevelt",
+      "translations": {
+        "it": "Fai ciò che puoi, con ciò che hai, lì dove sei.",
+        "id": "Lakukan apa yang kamu bisa, dengan apa yang kamu punya, di mana pun kamu berada.",
+        "fil": "Gawin mo ang kaya mo, gamit ang mayroon ka, kung nasaan ka man.",
+        "hi": "जो कर सकते हैं करें, जो आपके पास है उसी से, जहाँ भी आप हैं।"
+      }
+    },
+    {
+      "quote": "It always seems impossible until it is done.",
+      "author": "Nelson Mandela",
+      "translations": {
+        "it": "Sembra sempre impossibile, finché non viene fatto.",
+        "id": "Segalanya selalu tampak mustahil sampai berhasil dilakukan.",
+        "fil": "Laging tila imposible hanggang sa ito'y magawa.",
+        "hi": "हर काम तब तक असंभव लगता है जब तक वह हो नहीं जाता।"
+      }
+    },
+    {
+      "quote": "The man who moves a mountain begins by carrying away small stones.",
+      "author": "Confucius",
+      "translations": {
+        "it": "Chi sposta una montagna comincia portando via i sassi più piccoli.",
+        "id": "Orang yang memindahkan gunung memulainya dengan mengangkat batu-batu kecil.",
+        "fil": "Ang taong nagpapagalaw ng bundok ay nagsisimula sa pagbubuhat ng maliliit na bato.",
+        "hi": "पहाड़ हटाने वाला इंसान छोटे पत्थर उठाने से शुरुआत करता है।"
+      }
+    },
+    {
+      "quote": "Fall seven times, stand up eight.",
+      "author": "Japanese proverb",
+      "translations": {
+        "it": "Cadi sette volte, rialzati otto.",
+        "id": "Jatuh tujuh kali, bangkit delapan kali.",
+        "fil": "Pitong beses kang madapa, walong beses kang bumangon.",
+        "hi": "सात बार गिरो, आठ बार उठो।"
+      }
+    },
+    {
+      "quote": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+      "author": "Johann Wolfgang von Goethe",
+      "translations": {
+        "it": "Sapere non basta: dobbiamo applicare. Volere non basta: dobbiamo agire.",
+        "id": "Tahu saja tidak cukup; kita harus menerapkan. Niat saja tidak cukup; kita harus bertindak.",
+        "fil": "Hindi sapat ang malaman; kailangan itong gamitin. Hindi sapat ang gustuhin; kailangan itong gawin.",
+        "hi": "जानना काफ़ी नहीं, अमल करना होगा। चाहना काफ़ी नहीं, करना होगा।"
+      }
+    },
+    {
+      "quote": "Inaction breeds doubt and fear. Action breeds confidence and courage.",
+      "author": "Dale Carnegie",
+      "translations": {
+        "it": "L'inazione genera dubbio e paura. L'azione genera fiducia e coraggio.",
+        "id": "Diam menumbuhkan keraguan dan ketakutan. Bertindak menumbuhkan keyakinan dan keberanian.",
+        "fil": "Ang hindi pagkilos ay nagbubunga ng duda at takot. Ang pagkilos ay nagbubunga ng tiwala at tapang.",
+        "hi": "निष्क्रियता संदेह और डर पैदा करती है। कर्म आत्मविश्वास और साहस पैदा करता है।"
+      }
+    },
+    {
+      "quote": "Don't count the days, make the days count.",
+      "author": "Muhammad Ali",
+      "translations": {
+        "it": "Non contare i giorni, fai in modo che i giorni contino.",
+        "id": "Jangan hitung hari-harimu, buatlah hari-harimu berarti.",
+        "fil": "Huwag mong bilangin ang mga araw, gawin mong mahalaga ang bawat araw.",
+        "hi": "दिन मत गिनो, दिनों को मायने दो।"
+      }
+    },
+    {
+      "quote": "If you're going through hell, keep going.",
+      "author": "Winston Churchill",
+      "translations": {
+        "it": "Se stai attraversando l'inferno, continua a camminare.",
+        "id": "Jika kamu sedang melewati masa tergelap, teruslah melangkah.",
+        "fil": "Kung dumadaan ka sa pinakamahirap, huwag kang huminto.",
+        "hi": "अगर आप सबसे कठिन दौर से गुज़र रहे हैं, तो चलते रहिए।"
+      }
+    },
+    {
+      "quote": "Hard choices, easy life. Easy choices, hard life.",
+      "author": "Jerzy Gregorek",
+      "translations": {
+        "it": "Scelte difficili, vita facile. Scelte facili, vita difficile.",
+        "id": "Pilihan sulit, hidup mudah. Pilihan mudah, hidup sulit.",
+        "fil": "Mahirap na pagpili, madaling buhay. Madaling pagpili, mahirap na buhay.",
+        "hi": "कठिन फ़ैसले, आसान ज़िंदगी। आसान फ़ैसले, कठिन ज़िंदगी।"
+      }
+    },
+    {
+      "quote": "The cave you fear to enter holds the treasure you seek.",
+      "author": "Joseph Campbell",
+      "translations": {
+        "it": "La caverna in cui temi di entrare custodisce il tesoro che cerchi.",
+        "id": "Gua yang paling kamu takuti menyimpan harta yang kamu cari.",
+        "fil": "Ang kuwebang kinatatakutan mong pasukin ang nagtatago ng kayamanang hinahanap mo.",
+        "hi": "जिस गुफा में जाने से आप डरते हैं, वहीं आपका खज़ाना छिपा है।"
+      }
+    },
+    {
+      "quote": "How we spend our days is, of course, how we spend our lives.",
+      "author": "Annie Dillard",
+      "translations": {
+        "it": "Come passiamo le nostre giornate è, naturalmente, come passiamo la nostra vita.",
+        "id": "Cara kita menjalani hari adalah cara kita menjalani hidup.",
+        "fil": "Kung paano natin ginugugol ang ating mga araw ay siya ring paraan ng paggugol natin sa ating buhay.",
+        "hi": "हम अपने दिन जैसे बिताते हैं, वैसे ही हम अपना जीवन बिताते हैं।"
+      }
+    },
+    {
+      "quote": "Motivation is what gets you started. Habit is what keeps you going.",
+      "author": "Jim Ryun",
+      "translations": {
+        "it": "La motivazione ti fa cominciare. L'abitudine ti fa continuare.",
+        "id": "Motivasi membuatmu memulai. Kebiasaan membuatmu terus berjalan.",
+        "fil": "Ang motibasyon ang nagpapasimula sa iyo. Ang ugali ang nagpapatuloy sa iyo.",
+        "hi": "प्रेरणा आपको शुरुआत देती है। आदत आपको चलते रहना सिखाती है।"
+      }
+    },
+    {
+      "quote": "Energy and persistence conquer all things.",
+      "author": "Benjamin Franklin",
+      "translations": {
+        "it": "Energia e perseveranza vincono ogni cosa.",
+        "id": "Semangat dan kegigihan menaklukkan segalanya.",
+        "fil": "Ang sigla at tiyaga ay dumadaig sa lahat ng bagay.",
+        "hi": "ऊर्जा और लगन से हर चीज़ जीती जा सकती है।"
+      }
+    },
+    {
+      "quote": "A year from now you may wish you had started today.",
+      "author": "Karen Lamb",
+      "translations": {
+        "it": "Tra un anno potresti rimpiangere di non aver cominciato oggi.",
+        "id": "Setahun dari sekarang, kamu mungkin berharap telah memulainya hari ini.",
+        "fil": "Isang taon mula ngayon, baka hilingin mong sana'y nagsimula ka na ngayon.",
+        "hi": "आज से एक साल बाद, आप चाहेंगे कि काश आज ही शुरुआत की होती।"
+      }
+    },
+    {
+      "quote": "He who has a why to live can bear almost any how.",
+      "author": "Friedrich Nietzsche",
+      "translations": {
+        "it": "Chi ha un perché per vivere può sopportare quasi ogni come.",
+        "id": "Orang yang punya alasan untuk hidup mampu menanggung hampir segala cara.",
+        "fil": "Ang taong may dahilan para mabuhay ay kayang tiisin ang halos anumang paraan.",
+        "hi": "जिसके पास जीने का 'क्यों' है, वह लगभग हर 'कैसे' सह सकता है।"
+      }
+    },
+    {
+      "quote": "What we fear doing most is usually what we most need to do.",
+      "author": "Tim Ferriss",
+      "translations": {
+        "it": "Ciò che temiamo di più fare è di solito ciò che più abbiamo bisogno di fare.",
+        "id": "Hal yang paling kita takuti biasanya adalah hal yang paling perlu kita lakukan.",
+        "fil": "Ang bagay na pinakakinatatakutan nating gawin ang kadalasang pinakakailangan nating gawin.",
+        "hi": "जिस काम से हम सबसे ज़्यादा डरते हैं, अक्सर वही करना सबसे ज़रूरी होता है।"
+      }
+    },
+    {
+      "quote": "Everything you've ever wanted is on the other side of fear.",
+      "author": "George Addair",
+      "translations": {
+        "it": "Tutto ciò che hai sempre desiderato è dall'altra parte della paura.",
+        "id": "Semua yang pernah kamu inginkan ada di seberang rasa takutmu.",
+        "fil": "Lahat ng minimithi mo ay nasa kabilang panig ng iyong takot.",
+        "hi": "जो कुछ भी आप चाहते हैं, वह डर के उस पार है।"
+      }
+    },
+    {
+      "quote": "Action is the foundational key to all success.",
+      "author": "Pablo Picasso",
+      "translations": {
+        "it": "L'azione è la chiave fondamentale di ogni successo.",
+        "id": "Tindakan adalah kunci dasar dari semua keberhasilan.",
+        "fil": "Ang pagkilos ang pangunahing susi sa lahat ng tagumpay.",
+        "hi": "कर्म ही हर सफलता की बुनियादी कुंजी है।"
+      }
+    },
+    {
+      "quote": "It does not matter how slowly you go as long as you do not stop.",
+      "author": "Confucius",
+      "translations": {
+        "it": "Non importa quanto vai piano, l'importante è non fermarsi.",
+        "id": "Tidak masalah seberapa lambat kamu berjalan, asalkan kamu tidak berhenti.",
+        "fil": "Hindi mahalaga kung gaano ka kabagal, basta't hindi ka humihinto.",
+        "hi": "आप कितनी भी धीमी चाल चलें, फ़र्क नहीं पड़ता — बस रुकिए मत।"
+      }
+    },
+    {
+      "quote": "Discipline is the bridge between goals and accomplishment.",
+      "author": "Jim Rohn",
+      "translations": {
+        "it": "La disciplina è il ponte tra gli obiettivi e i risultati.",
+        "id": "Disiplin adalah jembatan antara tujuan dan pencapaian.",
+        "fil": "Ang disiplina ang tulay sa pagitan ng mga layunin at tagumpay.",
+        "hi": "अनुशासन लक्ष्य और उपलब्धि के बीच का पुल है।"
+      }
+    },
+    {
+      "quote": "Small deeds done are better than great deeds planned.",
+      "author": "Peter Marshall",
+      "translations": {
+        "it": "Piccole azioni compiute valgono più di grandi imprese progettate.",
+        "id": "Perbuatan kecil yang dikerjakan lebih baik daripada rencana besar yang tertunda.",
+        "fil": "Mas mabuti ang maliliit na gawaing natapos kaysa sa dakilang planong hindi nasimulan.",
+        "hi": "किए गए छोटे काम, सोचे गए बड़े कामों से बेहतर हैं।"
+      }
+    },
+    {
+      "quote": "You can't build a reputation on what you are going to do.",
+      "author": "Henry Ford",
+      "translations": {
+        "it": "Non puoi costruire una reputazione su ciò che hai intenzione di fare.",
+        "id": "Kamu tidak bisa membangun reputasi dari apa yang baru akan kamu lakukan.",
+        "fil": "Hindi ka makakabuo ng reputasyon mula sa mga bagay na balak mo pa lang gawin.",
+        "hi": "जो आप करने वाले हैं, उससे पहचान नहीं बनती — जो आपने किया है, उससे बनती है।"
+      }
+    },
+    {
+      "quote": "What is not started today is never finished tomorrow.",
+      "author": "Johann Wolfgang von Goethe",
+      "translations": {
+        "it": "Ciò che non si comincia oggi non sarà mai finito domani.",
+        "id": "Apa yang tidak dimulai hari ini tidak akan pernah selesai esok hari.",
+        "fil": "Ang hindi sinimulan ngayon ay hindi kailanman matatapos bukas.",
+        "hi": "जो आज शुरू नहीं हुआ, वह कल कभी पूरा नहीं होगा।"
+      }
+    },
+    {
+      "quote": "You have power over your mind — not outside events. Realize this, and you will find strength.",
+      "author": "Marcus Aurelius",
+      "translations": {
+        "it": "Hai potere sulla tua mente, non sugli eventi esterni. Comprendilo, e troverai la forza.",
+        "id": "Kamu berkuasa atas pikiranmu — bukan atas kejadian di luar dirimu. Sadari itu, dan kamu akan menemukan kekuatan.",
+        "fil": "May kapangyarihan ka sa iyong isip — hindi sa mga pangyayari sa labas. Unawain mo ito, at makakahanap ka ng lakas.",
+        "hi": "आपका वश अपने मन पर है — बाहरी घटनाओं पर नहीं। इसे समझ लीजिए, और आपको शक्ति मिल जाएगी।"
+      }
+    },
+    {
+      "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "translations": {
+        "it": "Il successo non è definitivo, il fallimento non è fatale: ciò che conta è il coraggio di continuare.",
+        "id": "Keberhasilan bukanlah akhir, kegagalan bukanlah kehancuran: keberanian untuk terus melangkah itulah yang berarti.",
+        "fil": "Ang tagumpay ay hindi katapusan, ang kabiguan ay hindi kamatayan: ang tapang na magpatuloy ang mahalaga.",
+        "hi": "सफलता अंतिम नहीं, असफलता घातक नहीं: मायने रखता है आगे बढ़ते रहने का साहस।"
+      }
+    },
+    {
+      "quote": "What you do every day matters more than what you do once in a while.",
+      "author": "Gretchen Rubin",
+      "translations": {
+        "it": "Ciò che fai ogni giorno conta più di ciò che fai ogni tanto.",
+        "id": "Apa yang kamu lakukan setiap hari lebih berarti daripada apa yang kamu lakukan sesekali.",
+        "fil": "Mas mahalaga ang ginagawa mo araw-araw kaysa sa ginagawa mo paminsan-minsan.",
+        "hi": "जो आप हर दिन करते हैं, वह कभी-कभार किए काम से कहीं ज़्यादा मायने रखता है।"
+      }
+    },
+    {
+      "quote": "A river cuts through rock not because of its power, but because of its persistence.",
+      "author": "James N. Watkins",
+      "translations": {
+        "it": "Un fiume scava la roccia non per la sua forza, ma per la sua costanza.",
+        "id": "Sungai menembus batu bukan karena kekuatannya, melainkan karena kegigihannya.",
+        "fil": "Nabubutas ng ilog ang bato hindi dahil sa lakas nito, kundi dahil sa tiyaga nito.",
+        "hi": "नदी चट्टान को अपनी ताक़त से नहीं, अपनी निरंतरता से काटती है।"
+      }
+    },
+    {
+      "quote": "Be not afraid of going slowly; be afraid only of standing still.",
+      "author": "Chinese proverb",
+      "translations": {
+        "it": "Non temere di andare piano; temi soltanto di restare fermo.",
+        "id": "Jangan takut berjalan lambat; takutlah hanya jika kamu berdiam diri.",
+        "fil": "Huwag matakot sa mabagal na paglakad; matakot lamang sa pananatiling nakatayo.",
+        "hi": "धीरे चलने से मत डरिए; डरिए सिर्फ़ रुक जाने से।"
+      }
+    },
+    {
+      "quote": "The most effective way to do it, is to do it.",
+      "author": "Amelia Earhart",
+      "translations": {
+        "it": "Il modo più efficace per farlo è farlo.",
+        "id": "Cara paling ampuh untuk melakukannya adalah dengan melakukannya.",
+        "fil": "Ang pinakamabisang paraan para gawin ito ay ang gawin ito.",
+        "hi": "किसी काम को करने का सबसे कारगर तरीका है — उसे कर डालना।"
+      }
+    },
+    {
+      "quote": "The successful warrior is the average man, with laser-like focus.",
+      "author": "Bruce Lee",
+      "translations": {
+        "it": "Il guerriero vincente è un uomo comune, con una concentrazione assoluta.",
+        "id": "Pendekar yang berhasil adalah orang biasa dengan fokus yang setajam laser.",
+        "fil": "Ang matagumpay na mandirigma ay karaniwang tao lamang, na may tuon na kasintalas ng laser.",
+        "hi": "सफल योद्धा एक साधारण इंसान ही है, बस उसका ध्यान लेज़र जैसा एकाग्र है।"
+      }
+    },
+    {
+      "quote": "The journey of a thousand miles begins with a single step.",
+      "author": "Lao Tzu",
+      "translations": {
+        "it": "Un viaggio di mille miglia comincia con un solo passo.",
+        "id": "Perjalanan seribu mil dimulai dengan satu langkah.",
+        "fil": "Ang paglalakbay ng isang libong milya ay nagsisimula sa isang hakbang.",
+        "hi": "हज़ार मील का सफ़र एक क़दम से शुरू होता है।"
+      }
+    },
+    {
+      "quote": "No man is free who is not master of himself.",
+      "author": "Epictetus",
+      "translations": {
+        "it": "Nessun uomo è libero se non è padrone di sé stesso.",
+        "id": "Tidak ada orang yang merdeka jika ia belum menguasai dirinya sendiri.",
+        "fil": "Walang taong malaya kung hindi niya kayang pamahalaan ang kanyang sarili.",
+        "hi": "जो अपने आप का स्वामी नहीं, वह स्वतंत्र नहीं।"
+      }
+    },
+    {
+      "quote": "Nothing will work unless you do.",
+      "author": "Maya Angelou",
+      "translations": {
+        "it": "Niente funzionerà, se non lavori tu.",
+        "id": "Tidak ada yang akan berhasil kecuali kamu yang berusaha.",
+        "fil": "Walang uubra kung hindi ka kikilos.",
+        "hi": "कुछ भी काम नहीं करेगा, जब तक आप काम नहीं करेंगे।"
+      }
+    },
+    {
+      "quote": "You don't have to be great to start, but you have to start to be great.",
+      "author": "Zig Ziglar",
+      "translations": {
+        "it": "Non devi essere grande per cominciare, ma devi cominciare per diventare grande.",
+        "id": "Kamu tidak harus hebat untuk memulai, tetapi kamu harus memulai untuk menjadi hebat.",
+        "fil": "Hindi mo kailangang maging dakila para magsimula, pero kailangan mong magsimula para maging dakila.",
+        "hi": "शुरुआत करने के लिए महान होना ज़रूरी नहीं, पर महान बनने के लिए शुरुआत करना ज़रूरी है।"
+      }
+    }
+  ]
+}
