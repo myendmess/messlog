@@ -3,10 +3,11 @@
 # Inputs (in the working directory): quote.txt, author.txt (raw text) — override
 #   with QUOTE_FILE / AUTHOR_FILE for localized renders.
 # Background: a random *.mp4 from assets/backgrounds/ (falls back to a solid color).
-#   Vertical clips cover the frame (center-crop, unchanged legacy path).
-#   Horizontal clips are fitted per BG_FIT: blur (default — full clip letterboxed
-#   over a blurred copy of itself), pan (slow horizontal pan across the clip),
-#   or crop (legacy hard center-crop).
+#   Everything fills the full 9:16 frame by default (BG_FIT=crop, cover-crop) —
+#   full-bleed scenery is the native Shorts look. Source PORTRAIT footage
+#   (1080x1920+) for zero crop loss; landscape clips show their center slice.
+#   BG_FIT=blur (letterbox over blurred self) and BG_FIT=pan (slow pan across
+#   a landscape clip) remain available for experiments.
 # Text: bold white quote with a dark halo (max contrast on ANY footage — a
 #   design-review lesson: decorative fonts and hue-tinted fills collide with
 #   randomly-colored backgrounds), author in brand gold below. The quote block
@@ -19,7 +20,7 @@ set -euo pipefail
 QUOTE_FILE="${QUOTE_FILE:-quote.txt}"
 AUTHOR_FILE="${AUTHOR_FILE:-author.txt}"
 OUT_FILE="${OUT_FILE:-out.mp4}"
-BG_FIT="${BG_FIT:-blur}"
+BG_FIT="${BG_FIT:-crop}"
 FONT_BOLD="${FONT_BOLD:-/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf}"
 FONT_REG="${FONT_REG:-/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf}"
 
