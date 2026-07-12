@@ -45,7 +45,8 @@ jobs:
           fi
           DATE=$(date -u '+%Y-%m-%d')
 
-          # Build the new entry and insert it ABOVE the most recent one
+          # Build the new entry and insert it ABOVE the most recent one in the
+          # quote log (QUOTES.md — the README stays human-edited).
           ENTRY_FILE=$(mktemp)
           printf "## %s\n\n> %s\n\n— %s\n\n" "$DATE" "$QUOTE" "$AUTHOR" > "$ENTRY_FILE"
 
@@ -56,10 +57,10 @@ jobs:
             }
             { print }
             END { if (!ins) while ((getline line < ef) > 0) print line }
-          ' README.md > README.tmp
-          mv README.tmp README.md
+          ' QUOTES.md > QUOTES.tmp
+          mv QUOTES.tmp QUOTES.md
 
-          git add README.md
+          git add QUOTES.md
           git commit -m "$DATE: \"$QUOTE\" — $AUTHOR"
           git pull --rebase origin main
           git push
