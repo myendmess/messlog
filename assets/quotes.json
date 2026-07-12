@@ -1805,82 +1805,290 @@
     {
       "quote": "It is never too late to be what you might have been.",
       "author": "George Eliot",
-      "translations": {}
+      "translations": {
+        "it": "Non è mai troppo tardi per diventare ciò che avresti potuto essere.",
+        "id": "Tidak pernah terlambat untuk menjadi apa yang seharusnya bisa kamu capai.",
+        "fil": "Hindi kailanman huli ang lahat para maging kung ano ang maaari mong naging ikaw.",
+        "hi": "जो आप हो सकते थे, वह बनने में कभी देर नहीं होती।",
+        "es": "Nunca es demasiado tarde para ser lo que podrías haber sido.",
+        "fr": "Il n'est jamais trop tard pour devenir ce que tu aurais pu être.",
+        "de": "Es ist nie zu spät, das zu werden, was du hättest sein können.",
+        "ja": "なりえたはずの自分になるのに、遅すぎることはない。",
+        "zh-CN": "成为你本可以成为的人，永远都不晚。",
+        "ar": "لم يفت الأوان أبداً لتصبح ما كان يمكن أن تكونه.",
+        "ru": "Никогда не поздно стать тем, кем ты мог бы быть.",
+        "pt": "Nunca é tarde demais para ser o que você poderia ter sido."
+      }
     },
     {
       "quote": "For every minute you are angry you lose sixty seconds of happiness.",
       "author": "Ralph Waldo Emerson",
-      "translations": {}
+      "translations": {
+        "it": "Per ogni minuto di rabbia perdi sessanta secondi di felicità.",
+        "id": "Setiap menit kamu marah, kamu kehilangan enam puluh detik kebahagiaan.",
+        "fil": "Sa bawat minutong galit ka, nawawalan ka ng animnapung segundo ng kaligayahan.",
+        "hi": "गुस्से का हर मिनट खुशी के साठ सेकंड छीन लेता है।",
+        "es": "Por cada minuto que estás enojado pierdes sesenta segundos de felicidad.",
+        "fr": "Pour chaque minute de colère, tu perds soixante secondes de bonheur.",
+        "de": "Für jede Minute Zorn verlierst du sechzig Sekunden Glück.",
+        "ja": "怒りの一分ごとに、六十秒分の幸せを失っている。",
+        "zh-CN": "你每生气一分钟，就失去六十秒的快乐。",
+        "ar": "في كل دقيقة تغضب فيها، تخسر ستين ثانية من السعادة.",
+        "ru": "Каждая минута гнева отнимает у тебя шестьдесят секунд счастья.",
+        "pt": "A cada minuto de raiva, você perde sessenta segundos de felicidade."
+      }
     },
     {
       "quote": "If you judge people, you have no time to love them.",
       "author": "Mother Teresa",
-      "translations": {}
+      "translations": {
+        "it": "Se giudichi le persone, non hai tempo per amarle.",
+        "id": "Jika kamu menghakimi orang, kamu tidak punya waktu untuk mencintai mereka.",
+        "fil": "Kung hinuhusgahan mo ang mga tao, wala ka nang panahong mahalin sila.",
+        "hi": "अगर आप लोगों को परखने में लगे रहेंगे, तो उनसे प्रेम करने का समय नहीं बचेगा।",
+        "es": "Si juzgas a las personas, no tienes tiempo para amarlas.",
+        "fr": "Si tu juges les gens, tu n'as pas le temps de les aimer.",
+        "de": "Wenn du Menschen verurteilst, hast du keine Zeit, sie zu lieben.",
+        "ja": "人を裁いていたら、人を愛する時間がなくなる。",
+        "zh-CN": "如果你忙着评判别人，就没有时间去爱他们。",
+        "ar": "إذا كنت تدين الناس، فلن يكون لديك وقت لتحبهم.",
+        "ru": "Если ты судишь людей, у тебя не остаётся времени их любить.",
+        "pt": "Se você julga as pessoas, não tem tempo para amá-las."
+      }
     },
     {
       "quote": "Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.",
       "author": "Jim Henson",
-      "translations": {}
+      "translations": {
+        "it": "La bellezza è negli occhi di chi guarda, e ogni tanto può essere necessario fare un occhio nero a chi guarda in modo stupido o male informato.",
+        "id": "Keindahan ada di mata yang memandang, dan kadang-kadang perlu memberi mata biru kepada pemandang yang bodoh atau keliru.",
+        "fil": "Ang ganda ay nasa mata ng tumitingin, at paminsan-minsan ay maaaring kailanganing bigyan ng pasang mata ang tumitinging hangal o mali ang akala.",
+        "hi": "सुंदरता देखने वाले की नज़र में होती है — और कभी-कभी मूर्ख या नासमझ नज़र वाले की आँख के नीचे एक घूँसा ज़रूरी हो जाता है।",
+        "es": "La belleza está en el ojo del que mira, y de vez en cuando puede ser necesario ponerle un ojo morado a un espectador tonto o mal informado.",
+        "fr": "La beauté est dans l'œil de celui qui regarde, et il peut être nécessaire, de temps en temps, de pocher l'œil d'un spectateur stupide ou mal informé.",
+        "de": "Schönheit liegt im Auge des Betrachters — und hin und wieder muss man einem dummen oder schlecht informierten Betrachter ein blaues Auge verpassen.",
+        "ja": "美は見る者の目に宿る。だから時には、愚かで見当違いな見る者の目にパンチをお見舞いする必要もある。",
+        "zh-CN": "美在观者眼中——所以有时候，有必要给愚蠢或无知的观者一记黑眼圈。",
+        "ar": "الجمال في عين الناظر، وقد يلزم من حين لآخر أن تجعل عين الناظر الأحمق أو الجاهل سوداء.",
+        "ru": "Красота — в глазах смотрящего, и порой бывает необходимо подбить глаз глупому или невежественному смотрящему.",
+        "pt": "A beleza está nos olhos de quem vê — e, de vez em quando, pode ser necessário deixar roxo o olho de quem vê com estupidez ou desinformação."
+      }
     },
     {
       "quote": "Today you are You, that is truer than true. There is no one alive who is Youer than You.",
       "author": "Dr. Seuss",
-      "translations": {}
+      "translations": {
+        "it": "Oggi tu sei Tu, ed è più vero del vero. Non c'è nessuno al mondo più Te di Te.",
+        "id": "Hari ini kamu adalah Kamu, itu lebih benar dari yang benar. Tidak ada seorang pun di dunia yang lebih Kamu daripada Kamu.",
+        "fil": "Ngayon, ikaw ay Ikaw — mas totoo pa iyan sa totoo. Walang sinumang nabubuhay na mas Ikaw kaysa sa Iyo.",
+        "hi": "आज आप 'आप' हैं — यह सच से भी सच्चा है। दुनिया में कोई नहीं जो आपसे बढ़कर 'आप' हो।",
+        "es": "Hoy tú eres Tú, y eso es más verdadero que la verdad. No hay nadie vivo que sea más Tú que Tú.",
+        "fr": "Aujourd'hui tu es Toi, et c'est plus vrai que vrai. Personne au monde n'est plus Toi que Toi.",
+        "de": "Heute bist du Du — das ist wahrer als wahr. Es gibt niemanden auf der Welt, der mehr Du ist als Du.",
+        "ja": "今日のきみはきみ。それは本当よりも本当のこと。きみよりきみらしい人は、この世にひとりもいない。",
+        "zh-CN": "今天你就是你，这比真实还要真实。世上没有人比你更像你。",
+        "ar": "أنت اليوم أنت، وهذا أصدق من الصدق. لا يوجد أحد على قيد الحياة أكثر منك شبهاً بك.",
+        "ru": "Сегодня ты — это Ты, и это вернее верного. Нет на свете никого, кто был бы больше Тобой, чем Ты.",
+        "pt": "Hoje você é Você, e isso é mais verdadeiro que a verdade. Não há ninguém vivo que seja mais Você do que Você."
+      }
     },
     {
       "quote": "If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.",
       "author": "Albert Einstein",
-      "translations": {}
+      "translations": {
+        "it": "Se vuoi che i tuoi figli siano intelligenti, leggi loro le fiabe. Se vuoi che siano più intelligenti, leggi loro più fiabe.",
+        "id": "Jika kamu ingin anak-anakmu cerdas, bacakan mereka dongeng. Jika kamu ingin mereka lebih cerdas, bacakan lebih banyak dongeng.",
+        "fil": "Kung gusto mong maging matalino ang iyong mga anak, basahan sila ng mga kuwentong engkanto. Kung gusto mong lalo silang tumalino, dagdagan mo pa ang mga kuwentong engkanto.",
+        "hi": "अगर आप चाहते हैं कि आपके बच्चे बुद्धिमान बनें, तो उन्हें परियों की कहानियाँ सुनाइए। और भी बुद्धिमान बनाना हो, तो और कहानियाँ सुनाइए।",
+        "es": "Si quieres que tus hijos sean inteligentes, léeles cuentos de hadas. Si quieres que sean más inteligentes, léeles más cuentos de hadas.",
+        "fr": "Si vous voulez que vos enfants soient intelligents, lisez-leur des contes de fées. Si vous voulez qu'ils le soient davantage, lisez-leur plus de contes de fées.",
+        "de": "Wenn ihr wollt, dass eure Kinder intelligent sind, lest ihnen Märchen vor. Wenn ihr wollt, dass sie intelligenter werden, lest ihnen mehr Märchen vor.",
+        "ja": "子どもを賢くしたければ、おとぎ話を読んであげなさい。もっと賢くしたければ、もっとおとぎ話を読んであげなさい。",
+        "zh-CN": "如果你想让孩子聪明，就给他们读童话；想让他们更聪明，就读更多的童话。",
+        "ar": "إن أردت لأطفالك أن يكونوا أذكياء، فاقرأ لهم الحكايات الخيالية. وإن أردتهم أكثر ذكاءً، فاقرأ لهم المزيد منها.",
+        "ru": "Если хотите, чтобы ваши дети были умны, читайте им сказки. Если хотите, чтобы они были ещё умнее, читайте им больше сказок.",
+        "pt": "Se você quer que seus filhos sejam inteligentes, leia contos de fadas para eles. Se quiser que sejam mais inteligentes, leia mais contos de fadas."
+      }
     },
     {
       "quote": "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.",
       "author": "J.K. Rowling",
-      "translations": {}
+      "translations": {
+        "it": "È impossibile vivere senza fallire in qualcosa, a meno di vivere con tanta cautela da non vivere affatto — e in quel caso si fallisce in partenza.",
+        "id": "Mustahil hidup tanpa pernah gagal, kecuali kamu hidup begitu hati-hati sampai seolah tidak pernah hidup sama sekali — dan itu berarti kamu sudah gagal sejak awal.",
+        "fil": "Imposibleng mabuhay nang hindi nabibigo sa anumang bagay, maliban kung mamumuhay ka nang sobrang ingat na para ka na ring hindi nabuhay — at sa gayon, bigo ka na sa simula pa lang.",
+        "hi": "बिना किसी असफलता के जीना असंभव है — जब तक कि आप इतनी सावधानी से न जिएँ कि जीना ही न हुआ हो; और तब तो आप शुरू से ही असफल हैं।",
+        "es": "Es imposible vivir sin fracasar en algo, a menos que vivas con tanta cautela que sea como si no hubieras vivido, en cuyo caso fracasas por defecto.",
+        "fr": "Il est impossible de vivre sans échouer en rien, à moins de vivre avec tant de prudence qu'on pourrait aussi bien ne pas avoir vécu — auquel cas on échoue par défaut.",
+        "de": "Es ist unmöglich zu leben, ohne an irgendetwas zu scheitern — es sei denn, man lebt so vorsichtig, dass man genauso gut gar nicht gelebt haben könnte. Dann aber scheitert man von vornherein.",
+        "ja": "何かに失敗せずに生きることは不可能だ。よほど慎重に生きれば別だが、それではまるで生きなかったのと同じ——その時点で、すでに失敗している。",
+        "zh-CN": "人活着不可能不经历失败，除非你活得小心翼翼，如同没有活过——而那样，你从一开始就失败了。",
+        "ar": "من المستحيل أن تعيش دون أن تفشل في شيء، إلا إذا عشت بحذر شديد حتى كأنك لم تعش أصلاً — وعندها تكون قد فشلت سلفاً.",
+        "ru": "Невозможно прожить жизнь, ни в чём не потерпев неудачи, — разве что жить настолько осторожно, что это будет всё равно что не жить вовсе. Но тогда ты проиграл заранее.",
+        "pt": "É impossível viver sem falhar em algo, a menos que você viva com tanta cautela que seja como se não tivesse vivido — e nesse caso, você já falhou por padrão."
+      }
     },
     {
       "quote": "Logic will get you from A to Z; imagination will get you everywhere.",
       "author": "Albert Einstein",
-      "translations": {}
+      "translations": {
+        "it": "La logica ti porta da A a Z; l'immaginazione ti porta ovunque.",
+        "id": "Logika membawamu dari A ke Z; imajinasi membawamu ke mana saja.",
+        "fil": "Dadalhin ka ng lohika mula A hanggang Z; dadalhin ka ng imahinasyon kahit saan.",
+        "hi": "तर्क आपको A से Z तक ले जाएगा; कल्पना आपको हर जगह ले जाएगी।",
+        "es": "La lógica te llevará de la A a la Z; la imaginación te llevará a todas partes.",
+        "fr": "La logique te mènera de A à Z ; l'imagination te mènera partout.",
+        "de": "Logik bringt dich von A nach Z; Fantasie bringt dich überallhin.",
+        "ja": "論理はAからZまで連れて行ってくれる。想像力はどこへでも連れて行ってくれる。",
+        "zh-CN": "逻辑能带你从A到Z，想象力能带你去任何地方。",
+        "ar": "المنطق يوصلك من الألف إلى الياء، أما الخيال فيوصلك إلى كل مكان.",
+        "ru": "Логика доведёт тебя от А до Я; воображение доставит куда угодно.",
+        "pt": "A lógica te leva de A a Z; a imaginação te leva a qualquer lugar."
+      }
     },
     {
       "quote": "One good thing about music, when it hits you, you feel no pain.",
       "author": "Bob Marley",
-      "translations": {}
+      "translations": {
+        "it": "La cosa bella della musica è che quando ti colpisce non senti dolore.",
+        "id": "Satu hal baik tentang musik: saat ia menghantammu, kamu tidak merasakan sakit.",
+        "fil": "Ang maganda sa musika, kapag tinamaan ka nito, walang sakit na mararamdaman.",
+        "hi": "संगीत की एक अच्छी बात यह है कि जब वह आप पर असर करता है, तो दर्द नहीं होता।",
+        "es": "Lo bueno de la música es que cuando te golpea, no sientes dolor.",
+        "fr": "Ce qu'il y a de bien avec la musique, c'est que quand elle te frappe, tu ne ressens aucune douleur.",
+        "de": "Das Gute an der Musik: Wenn sie dich trifft, spürst du keinen Schmerz.",
+        "ja": "音楽のいいところは、心を打たれても痛みを感じないことだ。",
+        "zh-CN": "音乐的美妙之处在于：当它击中你时，你感觉不到疼痛。",
+        "ar": "الجميل في الموسيقى أنها حين تصيبك لا تشعر بأي ألم.",
+        "ru": "Хорошая штука музыка: когда она бьёт по тебе, боли не чувствуешь.",
+        "pt": "Uma coisa boa da música: quando ela te atinge, você não sente dor."
+      }
     },
     {
       "quote": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
       "author": "J.K. Rowling",
-      "translations": {}
+      "translations": {
+        "it": "Ci vuole molto coraggio per affrontare i propri nemici, ma altrettanto per affrontare i propri amici.",
+        "id": "Dibutuhkan keberanian besar untuk melawan musuh, tetapi keberanian yang sama besar untuk menghadapi teman sendiri.",
+        "fil": "Kailangan ng malaking tapang para harapin ang mga kaaway, ngunit kasinlaki rin ng tapang ang kailangan para harapin ang mga kaibigan.",
+        "hi": "दुश्मनों के सामने खड़े होने के लिए बड़ा साहस चाहिए, पर दोस्तों के सामने खड़े होने के लिए उतना ही।",
+        "es": "Hace falta mucho valor para enfrentarse a los enemigos, pero igual de valor para enfrentarse a los amigos.",
+        "fr": "Il faut beaucoup de courage pour tenir tête à ses ennemis, mais tout autant pour tenir tête à ses amis.",
+        "de": "Es erfordert großen Mut, sich seinen Feinden entgegenzustellen — aber ebenso viel, sich seinen Freunden entgegenzustellen.",
+        "ja": "敵に立ち向かうには大きな勇気がいる。だが友に立ち向かうには、それと同じだけの勇気がいる。",
+        "zh-CN": "对抗敌人需要极大的勇气，而面对朋友挺身而出，同样需要勇气。",
+        "ar": "الوقوف في وجه الأعداء يتطلب شجاعة كبيرة، لكن الوقوف في وجه الأصدقاء يتطلب القدر نفسه منها.",
+        "ru": "Нужна большая смелость, чтобы противостоять врагам, но не меньшая — чтобы противостоять друзьям.",
+        "pt": "É preciso muita coragem para enfrentar nossos inimigos, mas a mesma coragem para enfrentar nossos amigos."
+      }
     },
     {
       "quote": "If you can't explain it to a six year old, you don't understand it yourself.",
       "author": "Albert Einstein",
-      "translations": {}
+      "translations": {
+        "it": "Se non sai spiegarlo a un bambino di sei anni, non l'hai capito nemmeno tu.",
+        "id": "Jika kamu tidak bisa menjelaskannya kepada anak enam tahun, berarti kamu sendiri belum memahaminya.",
+        "fil": "Kung hindi mo ito maipaliwanag sa isang batang anim na taong gulang, hindi mo pa ito talaga naiintindihan.",
+        "hi": "अगर आप किसी बात को छह साल के बच्चे को नहीं समझा सकते, तो आप उसे खुद नहीं समझे हैं।",
+        "es": "Si no puedes explicárselo a un niño de seis años, es que tú tampoco lo entiendes.",
+        "fr": "Si tu ne peux pas l'expliquer à un enfant de six ans, c'est que tu ne le comprends pas toi-même.",
+        "de": "Wenn du es einem Sechsjährigen nicht erklären kannst, hast du es selbst nicht verstanden.",
+        "ja": "六歳の子どもに説明できないなら、自分自身が理解していないということだ。",
+        "zh-CN": "如果你不能把一件事讲给六岁的孩子听懂，说明你自己也没弄明白。",
+        "ar": "إذا لم تستطع شرح الأمر لطفل في السادسة، فأنت نفسك لم تفهمه.",
+        "ru": "Если вы не можете объяснить это шестилетнему ребёнку, вы сами этого не понимаете.",
+        "pt": "Se você não consegue explicar algo para uma criança de seis anos, você mesmo não entendeu."
+      }
     },
     {
       "quote": "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.",
       "author": "Dr. Seuss",
-      "translations": {}
+      "translations": {
+        "it": "Mi piacciono le assurdità: svegliano le cellule del cervello. La fantasia è un ingrediente indispensabile della vita.",
+        "id": "Aku suka hal-hal konyol; itu membangunkan sel-sel otak. Fantasi adalah bahan yang diperlukan dalam hidup.",
+        "fil": "Gusto ko ang kalokohan; ginigising nito ang mga selula ng utak. Ang pantasya ay kailangang sangkap ng buhay.",
+        "hi": "मुझे बेतुकी बातें पसंद हैं — वे दिमाग़ की कोशिकाओं को जगा देती हैं। कल्पना जीवन का ज़रूरी मसाला है।",
+        "es": "Me gustan los disparates: despiertan las células del cerebro. La fantasía es un ingrediente necesario de la vida.",
+        "fr": "J'aime le non-sens : il réveille les cellules du cerveau. La fantaisie est un ingrédient indispensable de la vie.",
+        "de": "Ich mag Unsinn — er weckt die Gehirnzellen auf. Fantasie ist eine notwendige Zutat des Lebens.",
+        "ja": "ナンセンスが好きだ。脳の細胞を目覚めさせてくれる。空想は、生きるのに欠かせない材料なのだ。",
+        "zh-CN": "我喜欢无厘头——它能唤醒脑细胞。幻想是生活的必需成分。",
+        "ar": "أحب العبث؛ فهو يوقظ خلايا الدماغ. الخيال مكوّن ضروري للحياة.",
+        "ru": "Люблю бессмыслицу — она будит клетки мозга. Фантазия — необходимый ингредиент жизни.",
+        "pt": "Gosto do absurdo: ele desperta as células do cérebro. A fantasia é um ingrediente necessário da vida."
+      }
     },
     {
       "quote": "I may not have gone where I intended to go, but I think I have ended up where I needed to be.",
       "author": "Douglas Adams",
-      "translations": {}
+      "translations": {
+        "it": "Forse non sono arrivato dove intendevo andare, ma credo di essere finito dove avevo bisogno di essere.",
+        "id": "Mungkin aku tidak sampai ke tempat yang kutuju, tetapi kurasa aku berakhir di tempat yang kubutuhkan.",
+        "fil": "Maaaring hindi ako nakarating sa pupuntahan ko sana, pero sa tingin ko ay humantong ako kung saan ko kailangang mapunta.",
+        "hi": "शायद मैं वहाँ नहीं पहुँचा जहाँ जाना चाहता था, पर लगता है वहीं पहुँच गया जहाँ मुझे होना चाहिए था।",
+        "es": "Puede que no haya ido adonde pretendía ir, pero creo que he terminado donde necesitaba estar.",
+        "fr": "Je ne suis peut-être pas allé là où je comptais aller, mais je crois avoir fini là où j'avais besoin d'être.",
+        "de": "Vielleicht bin ich nicht dort angekommen, wo ich hinwollte — aber ich glaube, ich bin dort gelandet, wo ich sein musste.",
+        "ja": "行こうとした場所にはたどり着けなかったかもしれない。だが、いるべき場所にたどり着いたのだと思う。",
+        "zh-CN": "我也许没有到达我原本想去的地方，但我想我到达了我需要在的地方。",
+        "ar": "ربما لم أصل إلى حيث قصدت، لكنني أظن أنني انتهيت إلى حيث كنت أحتاج أن أكون.",
+        "ru": "Возможно, я попал не туда, куда собирался, но, кажется, оказался там, где мне нужно было быть.",
+        "pt": "Talvez eu não tenha chegado aonde pretendia ir, mas acho que acabei onde precisava estar."
+      }
     },
     {
       "quote": "It is not a lack of love, but a lack of friendship that makes unhappy marriages.",
       "author": "Friedrich Nietzsche",
-      "translations": {}
+      "translations": {
+        "it": "Non è la mancanza d'amore, ma la mancanza di amicizia a rendere infelici i matrimoni.",
+        "id": "Bukan kurangnya cinta, melainkan kurangnya persahabatan yang membuat pernikahan tidak bahagia.",
+        "fil": "Hindi kakulangan ng pag-ibig, kundi kakulangan ng pagkakaibigan ang nagpapahirap sa mga pagsasama.",
+        "hi": "विवाह प्रेम की कमी से नहीं, मित्रता की कमी से दुखी होते हैं।",
+        "es": "No es la falta de amor, sino la falta de amistad lo que hace infelices los matrimonios.",
+        "fr": "Ce n'est pas le manque d'amour, mais le manque d'amitié qui fait les mariages malheureux.",
+        "de": "Nicht der Mangel an Liebe, sondern der Mangel an Freundschaft macht Ehen unglücklich.",
+        "ja": "結婚を不幸にするのは、愛の欠如ではなく友情の欠如である。",
+        "zh-CN": "使婚姻不幸的，不是缺乏爱情，而是缺乏友情。",
+        "ar": "ليس نقص الحب، بل نقص الصداقة هو ما يجعل الزيجات تعيسة.",
+        "ru": "Несчастливыми браки делает не недостаток любви, а недостаток дружбы.",
+        "pt": "Não é a falta de amor, mas a falta de amizade que torna os casamentos infelizes."
+      }
     },
     {
       "quote": "Good friends, good books, and a sleepy conscience: this is the ideal life.",
       "author": "Mark Twain",
-      "translations": {}
+      "translations": {
+        "it": "Buoni amici, buoni libri e una coscienza tranquilla: questa è la vita ideale.",
+        "id": "Sahabat yang baik, buku yang bagus, dan hati nurani yang tenang: itulah hidup yang ideal.",
+        "fil": "Mabubuting kaibigan, magagandang aklat, at panatag na budhi: iyan ang huwarang buhay.",
+        "hi": "अच्छे दोस्त, अच्छी किताबें और चैन से सोया ज़मीर — यही आदर्श जीवन है।",
+        "es": "Buenos amigos, buenos libros y una conciencia tranquila: esa es la vida ideal.",
+        "fr": "De bons amis, de bons livres et une conscience tranquille : voilà la vie idéale.",
+        "de": "Gute Freunde, gute Bücher und ein ruhiges Gewissen: Das ist das ideale Leben.",
+        "ja": "良い友、良い本、そして安らかな良心。これこそ理想の人生だ。",
+        "zh-CN": "好朋友、好书和一颗安然的良心：这就是理想的生活。",
+        "ar": "أصدقاء طيبون وكتب جيدة وضمير مرتاح: هذه هي الحياة المثالية.",
+        "ru": "Хорошие друзья, хорошие книги и спокойная совесть — вот идеальная жизнь.",
+        "pt": "Bons amigos, bons livros e uma consciência tranquila: essa é a vida ideal."
+      }
     },
     {
       "quote": "Life is what happens to us while we are making other plans.",
       "author": "Allen Saunders",
-      "translations": {}
+      "translations": {
+        "it": "La vita è ciò che ci accade mentre siamo occupati a fare altri piani.",
+        "id": "Hidup adalah apa yang terjadi pada kita saat kita sibuk membuat rencana lain.",
+        "fil": "Ang buhay ay ang nangyayari sa atin habang abala tayo sa paggawa ng ibang mga plano.",
+        "hi": "ज़िंदगी वही है जो हमारे साथ तब घटती है, जब हम दूसरी योजनाएँ बना रहे होते हैं।",
+        "es": "La vida es lo que nos sucede mientras estamos ocupados haciendo otros planes.",
+        "fr": "La vie, c'est ce qui nous arrive pendant que nous sommes occupés à faire d'autres projets.",
+        "de": "Das Leben ist das, was uns zustößt, während wir eifrig andere Pläne schmieden.",
+        "ja": "人生とは、別の計画を立てているあいだに起こる出来事のことだ。",
+        "zh-CN": "生活就是当我们忙着制定其他计划时，发生在我们身上的事。",
+        "ar": "الحياة هي ما يحدث لنا بينما نحن منشغلون بوضع خطط أخرى.",
+        "ru": "Жизнь — это то, что происходит с нами, пока мы строим другие планы.",
+        "pt": "A vida é o que nos acontece enquanto estamos ocupados fazendo outros planos."
+      }
     },
     {
       "quote": "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
