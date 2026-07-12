@@ -1,0 +1,68 @@
+{
+  "_help": "Target-market localization config. Each enabled market gets the daily quote translated by scripts/localize.py and attached to the SAME YouTube upload as per-language title/description ('localizations') — YouTube then shows viewers the version matching their UI language. 'code' is the BCP-47 code YouTube expects; 'translate_code' is what the translation provider expects when it differs. Hashtags/tags were drafted per-market — have a native speaker review them (machine output converts poorly). Flip 'enabled' to roll a market out or back.",
+  "markets": [
+    {
+      "code": "it",
+      "translate_code": "it",
+      "name": "Italiano",
+      "market": "Italy",
+      "enabled": true,
+      "hashtags": "#motivazione #citazioni #frasibelle #ispirazione #crescitapersonale",
+      "tags": ["motivazione", "citazioni", "frasi belle", "ispirazione", "crescita personale"]
+    },
+    {
+      "code": "id",
+      "translate_code": "id",
+      "name": "Bahasa Indonesia",
+      "market": "Indonesia",
+      "enabled": true,
+      "hashtags": "#motivasi #katabijak #katamutiara #inspirasi #semangat",
+      "tags": ["motivasi", "kata bijak", "kata mutiara", "inspirasi hidup"]
+    },
+    {
+      "code": "fil",
+      "translate_code": "tl",
+      "name": "Filipino",
+      "market": "Philippines",
+      "enabled": true,
+      "hashtags": "#inspirasyon #motibasyon #hugot #buhay #paalala",
+      "tags": ["inspirasyon", "motibasyon", "hugot lines", "banat"]
+    },
+    {
+      "code": "vi",
+      "translate_code": "vi",
+      "name": "Tiếng Việt",
+      "market": "Vietnam",
+      "enabled": false,
+      "hashtags": "#độnglực #câunóihay #truyềncảmhứng #sống",
+      "tags": ["động lực", "câu nói hay", "truyền cảm hứng"]
+    },
+    {
+      "code": "hi",
+      "translate_code": "hi",
+      "name": "हिन्दी",
+      "market": "India",
+      "enabled": false,
+      "hashtags": "#प्रेरणा #सुविचार #मोटिवेशन #जिंदगी",
+      "tags": ["प्रेरणा", "सुविचार", "मोटिवेशन"]
+    },
+    {
+      "code": "ja",
+      "translate_code": "ja",
+      "name": "日本語",
+      "market": "Japan",
+      "enabled": false,
+      "hashtags": "#名言 #モチベーション #格言 #人生",
+      "tags": ["名言", "モチベーション", "格言"]
+    },
+    {
+      "code": "th",
+      "translate_code": "th",
+      "name": "ไทย",
+      "market": "Thailand",
+      "enabled": false,
+      "hashtags": "#คำคม #แรงบันดาลใจ #กำลังใจ #ชีวิต",
+      "tags": ["คำคม", "แรงบันดาลใจ", "กำลังใจ"]
+    }
+  ]
+}

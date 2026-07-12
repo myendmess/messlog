@@ -31,10 +31,18 @@ New music can go on the landing page (Spotify embed), into the daily-Short rotat
 
 ### Adding a new Short background
 
-- Drop a `.mp4` into `assets/backgrounds/` — one is picked at random per Short.
-- Any length works (it loops); it's center-cropped to 1080×1920 and darkened 35% for text legibility, so calm, low-detail footage reads best.
+- Drop a `.mp4` into `assets/backgrounds/` — one is picked at random per Short. Any length works (it loops), and it's darkened 35% for text legibility, so calm, low-detail footage reads best.
+- **Vertical clips** are center-cropped to 1080×1920 (as before).
+- **Horizontal clips** now fit natively: by default the whole clip is shown letterboxed over a blurred copy of itself (`BG_FIT=blur`). Set `BG_FIT=pan` for a slow pan across the clip, or `BG_FIT=crop` for the old hard center-crop.
 - Have a **pic** instead of a clip? Convert it first:
   `ffmpeg -loop 1 -i pic.jpg -t 15 -r 30 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -pix_fmt yuv420p assets/backgrounds/pic.mp4`
+
+### Localized titles & descriptions
+
+- `locales.json` lists target markets (Italy, Indonesia and the Philippines enabled; Vietnam, India, Japan, Thailand ready to flip on).
+- Add a `TRANSLATE_API_KEY` repo secret (Google Cloud Translation API key) and the daily workflow translates each quote and attaches per-language titles/descriptions to the same Short — YouTube shows viewers the version matching their language. No key = step quietly skips.
+- Machine translations convert worse than native copy: have a native speaker review `locales.json` hashtags/tags before scaling a market.
+- Each upload also posts a channel-owner CTA comment (subscribe nudge + the day's track links). The API can't pin comments — pin it in Studio. Needs a refresh token with the `youtube.force-ssl` scope: re-run `scripts/get_refresh_token.py` once and update the `YT_REFRESH_TOKEN` secret; until then the comment step skips itself without failing the upload.
 - Note for this section only: keep headings at `###` level — the daily workflow inserts each new quote above the first `## ` heading in this file.
 
 ---

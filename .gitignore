@@ -6,6 +6,7 @@ author.txt
 quote_wrapped.txt
 author_line.txt
 track.txt
+localized.json
 out.mp4
 
 # OAuth secrets — never commit
@@ -13,3 +14,7 @@ client_secret.json
 token.json
 secrets.txt
 __pycache__/
+
+# Local analytics exports — private, never publish
+Analytics/
+*.csv

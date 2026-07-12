@@ -5,6 +5,7 @@ on:
     - cron: '0 05 * * *'
   workflow_dispatch:
 
+# Least privilege: contents:write only because the job commits the quote to README.
 permissions:
   contents: write
 
@@ -12,16 +13,30 @@ jobs:
   daily:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Actions are pinned to commit SHAs so a re-pointed tag can't inject code.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Fetch quote and commit
         run: |
           git config user.name "myendmess"
           git config user.email "140411362+myendmess@users.noreply.github.com"
 
-          RESPONSE=$(curl -s "https://zenquotes.io/api/random")
-          QUOTE=$(echo "$RESPONSE" | jq -r '.[0].q')
-          AUTHOR=$(echo "$RESPONSE" | jq -r '.[0].a')
+          # -f fails on HTTP errors; retries + timeout so a flaky API can't hang the job.
+          RESPONSE=$(curl -fsS --retry 3 --retry-delay 5 --max-time 20 "https://zenquotes.io/api/random")
+          # jq -e fails the step on null/missing fields — no more "null" commits.
+          QUOTE=$(printf '%s' "$RESPONSE" | jq -er '.[0].q')
+          AUTHOR=$(printf '%s' "$RESPONSE" | jq -er '.[0].a')
+
+          # The API response is untrusted input that lands in README (rendered
+          # markdown), a commit message, and a YouTube title. Strip angle
+          # brackets/backticks/control chars and cap length before it goes anywhere.
+          sanitize() { printf '%s' "$1" | tr -d '<>`' | tr -d '\000-\037\177'; }
+          QUOTE=$(sanitize "$QUOTE" | cut -c1-300)
+          AUTHOR=$(sanitize "$AUTHOR" | cut -c1-100)
+          if [ -z "$QUOTE" ] || [ -z "$AUTHOR" ]; then
+            echo "::error::Quote API returned empty/invalid content"
+            exit 1
+          fi
           DATE=$(date -u '+%Y-%m-%d')
 
           # Save the raw quote/author so the video steps use the same quote.
@@ -65,9 +80,17 @@ jobs:
 
       - name: Set up Python
         if: steps.yt.outputs.ready == 'true'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.x'
+
+      # Optional: translate the quote for the markets enabled in locales.json.
+      # Skips itself (without failing the run) when TRANSLATE_API_KEY is unset.
+      - name: Localize metadata for target markets
+        if: steps.yt.outputs.ready == 'true'
+        env:
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+        run: python scripts/localize.py
 
       - name: Upload to YouTube playlist
         if: steps.yt.outputs.ready == 'true'
@@ -77,5 +100,9 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_PLAYLIST_ID: ${{ secrets.YT_PLAYLIST_ID }}
         run: |
-          pip install --quiet google-api-python-client google-auth google-auth-httplib2
+          # Pinned so a compromised/broken new release can't slide into the daily run.
+          pip install --quiet \
+            google-api-python-client==2.198.0 \
+            google-auth==2.55.2 \
+            google-auth-httplib2==0.4.0
           python scripts/upload_youtube.py
