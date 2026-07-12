@@ -183,13 +183,12 @@ def main():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=os.environ["YT_CLIENT_ID"],
         client_secret=os.environ["YT_CLIENT_SECRET"],
-        scopes=[
-            "https://www.googleapis.com/auth/youtube.upload",
-            "https://www.googleapis.com/auth/youtube",
-            # Needed to post the CTA comment; tokens minted before this scope
-            # was added still upload fine — only the comment step will 403.
-            "https://www.googleapis.com/auth/youtube.force-ssl",
-        ],
+        # No scopes declared on purpose: declaring them makes the refresh
+        # request them, and requesting a scope the stored token was never
+        # granted hard-fails the refresh (invalid_scope) — breaking the whole
+        # upload. Left unset, the refresh uses whatever was originally granted:
+        # older tokens still upload (the CTA comment 403s into its fail-soft
+        # path); tokens minted with youtube.force-ssl unlock the comment too.
     )
     youtube = build("youtube", "v3", credentials=creds)
 
