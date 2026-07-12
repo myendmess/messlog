@@ -34,20 +34,52 @@
       "tags": ["प्रेरणा", "सुविचार", "मोटिवेशन"]
     },
     {
+      "code": "es",
+      "name": "Español",
+      "market": "Spain & Latin America",
+      "enabled": true,
+      "hashtags": "#motivación #frases #frasesmotivadoras #inspiración #éxito",
+      "tags": ["motivación", "frases motivadoras", "inspiración", "superación personal"]
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "market": "France & Francophonie",
+      "enabled": true,
+      "hashtags": "#motivation #citations #inspiration #développementpersonnel",
+      "tags": ["citations", "citation du jour", "développement personnel"]
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "market": "Germany / DACH",
+      "enabled": true,
+      "hashtags": "#motivation #zitate #sprüche #inspiration #erfolg",
+      "tags": ["zitate", "sprüche", "weisheiten", "erfolg"]
+    },
+    {
+      "code": "ja",
+      "name": "日本語",
+      "market": "Japan",
+      "enabled": true,
+      "hashtags": "#名言 #モチベーション #格言 #人生",
+      "tags": ["名言", "モチベーション", "格言"]
+    },
+    {
+      "code": "zh-CN",
+      "name": "中文（简体）",
+      "market": "Chinese-speaking audiences (YouTube is unavailable in mainland China — this reaches Taiwan/HK/diaspora readers of Simplified)",
+      "enabled": true,
+      "hashtags": "#励志 #名言 #正能量 #人生 #成长",
+      "tags": ["励志", "名言", "正能量", "励志语录"]
+    },
+    {
       "code": "vi",
       "name": "Tiếng Việt",
       "market": "Vietnam",
       "enabled": false,
       "hashtags": "#độnglực #câunóihay #truyềncảmhứng #sống",
       "tags": ["động lực", "câu nói hay", "truyền cảm hứng"]
-    },
-    {
-      "code": "ja",
-      "name": "日本語",
-      "market": "Japan",
-      "enabled": false,
-      "hashtags": "#名言 #モチベーション #格言 #人生",
-      "tags": ["名言", "モチベーション", "格言"]
     },
     {
       "code": "th",

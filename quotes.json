@@ -1,5 +1,5 @@
 {
-  "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated. Language keys must match locales.json codes.",
+  "_help": "Curated, pre-translated quote bank. scripts/pick_quote.py picks the entry for today: days since 'epoch' (UTC), wrapping modulo the bank size when it runs out. APPEND-ONLY: add new entries at the end and never reorder, so past days keep their mapping. To top up, ask Claude Code to 'add N more days to quotes.json' — translations follow meaning, not words; author names stay untranslated; where a quote originated in a target language, use the authentic original form. Language keys must match locales.json codes.",
   "epoch": "2026-07-13",
   "quotes": [
     {
@@ -9,7 +9,12 @@
         "it": "Non sali al livello dei tuoi obiettivi. Scendi al livello dei tuoi sistemi.",
         "id": "Kamu tidak naik ke tingkat tujuanmu. Kamu turun ke tingkat sistemmu.",
         "fil": "Hindi ka aangat sa antas ng iyong mga layunin. Bababa ka sa antas ng iyong mga sistema.",
-        "hi": "आप अपने लक्ष्यों के स्तर तक नहीं उठते। आप अपने सिस्टम के स्तर तक गिरते हैं।"
+        "hi": "आप अपने लक्ष्यों के स्तर तक नहीं उठते। आप अपने सिस्टम के स्तर तक गिरते हैं।",
+        "es": "No subes al nivel de tus metas. Caes al nivel de tus sistemas.",
+        "fr": "Tu ne t'élèves pas au niveau de tes objectifs. Tu retombes au niveau de tes systèmes.",
+        "de": "Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.",
+        "ja": "人は目標のレベルまで上がるのではなく、仕組みのレベルまで落ちる。",
+        "zh-CN": "你不会升到目标的高度，只会落到系统的水平。"
       }
     },
     {
@@ -19,7 +24,12 @@
         "it": "Ciò che ostacola il cammino diventa il cammino.",
         "id": "Apa yang menghalangi jalan justru menjadi jalan itu sendiri.",
         "fil": "Ang humaharang sa daan ang siyang nagiging daan.",
-        "hi": "जो राह में बाधा बनता है, वही राह बन जाता है।"
+        "hi": "जो राह में बाधा बनता है, वही राह बन जाता है।",
+        "es": "Lo que se interpone en el camino se convierte en el camino.",
+        "fr": "Ce qui bloque le chemin devient le chemin.",
+        "de": "Was im Weg steht, wird zum Weg.",
+        "ja": "行く手を阻むものこそが、道となる。",
+        "zh-CN": "挡路之物，终成道路。"
       }
     },
     {
@@ -29,7 +39,12 @@
         "it": "Soffriamo più spesso nell'immaginazione che nella realtà.",
         "id": "Kita lebih sering menderita dalam bayangan daripada dalam kenyataan.",
         "fil": "Mas madalas tayong nagdurusa sa isip kaysa sa katotohanan.",
-        "hi": "हम वास्तविकता से अधिक अपनी कल्पना में दुख भोगते हैं।"
+        "hi": "हम वास्तविकता से अधिक अपनी कल्पना में दुख भोगते हैं।",
+        "es": "Sufrimos más en la imaginación que en la realidad.",
+        "fr": "Nous souffrons plus souvent en imagination qu'en réalité.",
+        "de": "Wir leiden öfter in der Vorstellung als in der Wirklichkeit.",
+        "ja": "私たちは現実よりも、想像の中で苦しむことの方が多い。",
+        "zh-CN": "我们在想象中受的苦，往往多于现实。"
       }
     },
     {
@@ -39,7 +54,12 @@
         "it": "O guidi tu la giornata, o la giornata guida te.",
         "id": "Kamu yang mengendalikan harimu, atau harimu yang mengendalikanmu.",
         "fil": "Ikaw ang magpapatakbo ng araw mo, o ang araw mo ang magpapatakbo sa iyo.",
-        "hi": "या तो आप दिन को चलाते हैं, या दिन आपको चलाता है।"
+        "hi": "या तो आप दिन को चलाते हैं, या दिन आपको चलाता है।",
+        "es": "O tú diriges el día, o el día te dirige a ti.",
+        "fr": "Soit tu mènes ta journée, soit ta journée te mène.",
+        "de": "Entweder du gestaltest den Tag, oder der Tag gestaltet dich.",
+        "ja": "一日を動かすか、一日に動かされるかだ。",
+        "zh-CN": "不是你掌控这一天，就是这一天掌控你。"
       }
     },
     {
@@ -49,7 +69,12 @@
         "it": "Che tu creda di farcela o di non farcela, avrai comunque ragione.",
         "id": "Entah kamu berpikir kamu bisa, atau berpikir kamu tidak bisa — kamu benar.",
         "fil": "Isipin mong kaya mo, o isipin mong hindi mo kaya — tama ka.",
-        "hi": "आप सोचें कि आप कर सकते हैं, या सोचें कि नहीं कर सकते — दोनों में आप सही हैं।"
+        "hi": "आप सोचें कि आप कर सकते हैं, या सोचें कि नहीं कर सकते — दोनों में आप सही हैं।",
+        "es": "Tanto si crees que puedes como si crees que no puedes, tienes razón.",
+        "fr": "Que tu penses en être capable ou non, tu as raison.",
+        "de": "Ob du glaubst, dass du es kannst, oder dass du es nicht kannst — du hast recht.",
+        "ja": "できると思っても、できないと思っても、どちらも正しい。",
+        "zh-CN": "无论你认为自己行还是不行，你都是对的。"
       }
     },
     {
@@ -59,7 +84,12 @@
         "it": "Il segreto per andare avanti è cominciare.",
         "id": "Rahasia untuk maju adalah memulai.",
         "fil": "Ang sikreto ng pag-usad ay ang pagsisimula.",
-        "hi": "आगे बढ़ने का रहस्य है शुरुआत करना।"
+        "hi": "आगे बढ़ने का रहस्य है शुरुआत करना।",
+        "es": "El secreto para salir adelante es comenzar.",
+        "fr": "Le secret pour avancer, c'est de commencer.",
+        "de": "Das Geheimnis des Vorankommens liegt darin, anzufangen.",
+        "ja": "前に進む秘訣は、まず始めることだ。",
+        "zh-CN": "取得进步的秘诀在于开始行动。"
       }
     },
     {
@@ -69,7 +99,12 @@
         "it": "Fai ciò che puoi, con ciò che hai, lì dove sei.",
         "id": "Lakukan apa yang kamu bisa, dengan apa yang kamu punya, di mana pun kamu berada.",
         "fil": "Gawin mo ang kaya mo, gamit ang mayroon ka, kung nasaan ka man.",
-        "hi": "जो कर सकते हैं करें, जो आपके पास है उसी से, जहाँ भी आप हैं।"
+        "hi": "जो कर सकते हैं करें, जो आपके पास है उसी से, जहाँ भी आप हैं।",
+        "es": "Haz lo que puedas, con lo que tengas, donde estés.",
+        "fr": "Fais ce que tu peux, avec ce que tu as, là où tu es.",
+        "de": "Tu, was du kannst, mit dem, was du hast, dort, wo du bist.",
+        "ja": "今いる場所で、持っているもので、できることをしなさい。",
+        "zh-CN": "在你所在之处，用你所有之物，做你所能之事。"
       }
     },
     {
@@ -79,7 +114,12 @@
         "it": "Sembra sempre impossibile, finché non viene fatto.",
         "id": "Segalanya selalu tampak mustahil sampai berhasil dilakukan.",
         "fil": "Laging tila imposible hanggang sa ito'y magawa.",
-        "hi": "हर काम तब तक असंभव लगता है जब तक वह हो नहीं जाता।"
+        "hi": "हर काम तब तक असंभव लगता है जब तक वह हो नहीं जाता।",
+        "es": "Siempre parece imposible hasta que se hace.",
+        "fr": "Cela semble toujours impossible, jusqu'à ce que ce soit fait.",
+        "de": "Es scheint immer unmöglich, bis es getan ist.",
+        "ja": "何事も、成し遂げるまでは不可能に見えるものだ。",
+        "zh-CN": "凡事在完成之前，看起来总是不可能的。"
       }
     },
     {
@@ -89,7 +129,12 @@
         "it": "Chi sposta una montagna comincia portando via i sassi più piccoli.",
         "id": "Orang yang memindahkan gunung memulainya dengan mengangkat batu-batu kecil.",
         "fil": "Ang taong nagpapagalaw ng bundok ay nagsisimula sa pagbubuhat ng maliliit na bato.",
-        "hi": "पहाड़ हटाने वाला इंसान छोटे पत्थर उठाने से शुरुआत करता है।"
+        "hi": "पहाड़ हटाने वाला इंसान छोटे पत्थर उठाने से शुरुआत करता है।",
+        "es": "El hombre que mueve montañas comienza cargando piedras pequeñas.",
+        "fr": "Celui qui déplace une montagne commence par porter les petites pierres.",
+        "de": "Wer einen Berg versetzt, beginnt damit, kleine Steine wegzutragen.",
+        "ja": "山を動かす者は、小さな石を運ぶことから始める。",
+        "zh-CN": "移山之人，始于搬运小石。"
       }
     },
     {
@@ -99,7 +144,12 @@
         "it": "Cadi sette volte, rialzati otto.",
         "id": "Jatuh tujuh kali, bangkit delapan kali.",
         "fil": "Pitong beses kang madapa, walong beses kang bumangon.",
-        "hi": "सात बार गिरो, आठ बार उठो।"
+        "hi": "सात बार गिरो, आठ बार उठो।",
+        "es": "Cáete siete veces, levántate ocho.",
+        "fr": "Tombe sept fois, relève-toi huit.",
+        "ja": "七転び八起き。",
+        "de": "Siebenmal hinfallen, achtmal aufstehen.",
+        "zh-CN": "跌倒七次，爬起八次。"
       }
     },
     {
@@ -109,7 +159,12 @@
         "it": "Sapere non basta: dobbiamo applicare. Volere non basta: dobbiamo agire.",
         "id": "Tahu saja tidak cukup; kita harus menerapkan. Niat saja tidak cukup; kita harus bertindak.",
         "fil": "Hindi sapat ang malaman; kailangan itong gamitin. Hindi sapat ang gustuhin; kailangan itong gawin.",
-        "hi": "जानना काफ़ी नहीं, अमल करना होगा। चाहना काफ़ी नहीं, करना होगा।"
+        "hi": "जानना काफ़ी नहीं, अमल करना होगा। चाहना काफ़ी नहीं, करना होगा।",
+        "es": "Saber no es suficiente; debemos aplicar. Querer no es suficiente; debemos hacer.",
+        "fr": "Savoir ne suffit pas, il faut appliquer. Vouloir ne suffit pas, il faut agir.",
+        "de": "Es ist nicht genug zu wissen, man muss es auch anwenden; es ist nicht genug zu wollen, man muss es auch tun.",
+        "ja": "知るだけでは足りない、活かさなければ。望むだけでは足りない、行動しなければ。",
+        "zh-CN": "知道不够，必须运用；想要不够，必须去做。"
       }
     },
     {
@@ -119,7 +174,12 @@
         "it": "L'inazione genera dubbio e paura. L'azione genera fiducia e coraggio.",
         "id": "Diam menumbuhkan keraguan dan ketakutan. Bertindak menumbuhkan keyakinan dan keberanian.",
         "fil": "Ang hindi pagkilos ay nagbubunga ng duda at takot. Ang pagkilos ay nagbubunga ng tiwala at tapang.",
-        "hi": "निष्क्रियता संदेह और डर पैदा करती है। कर्म आत्मविश्वास और साहस पैदा करता है।"
+        "hi": "निष्क्रियता संदेह और डर पैदा करती है। कर्म आत्मविश्वास और साहस पैदा करता है।",
+        "es": "La inacción genera duda y miedo. La acción genera confianza y valor.",
+        "fr": "L'inaction nourrit le doute et la peur. L'action nourrit la confiance et le courage.",
+        "de": "Untätigkeit erzeugt Zweifel und Angst. Handeln erzeugt Zuversicht und Mut.",
+        "ja": "何もしなければ疑いと恐れが育ち、行動すれば自信と勇気が育つ。",
+        "zh-CN": "不行动滋生疑虑和恐惧，行动带来自信和勇气。"
       }
     },
     {
@@ -129,7 +189,12 @@
         "it": "Non contare i giorni, fai in modo che i giorni contino.",
         "id": "Jangan hitung hari-harimu, buatlah hari-harimu berarti.",
         "fil": "Huwag mong bilangin ang mga araw, gawin mong mahalaga ang bawat araw.",
-        "hi": "दिन मत गिनो, दिनों को मायने दो।"
+        "hi": "दिन मत गिनो, दिनों को मायने दो।",
+        "es": "No cuentes los días, haz que los días cuenten.",
+        "fr": "Ne compte pas les jours, fais en sorte que les jours comptent.",
+        "de": "Zähle nicht die Tage, lass die Tage zählen.",
+        "ja": "日々を数えるな。日々を意味あるものにしろ。",
+        "zh-CN": "不要数日子，要让日子有价值。"
       }
     },
     {
@@ -139,7 +204,12 @@
         "it": "Se stai attraversando l'inferno, continua a camminare.",
         "id": "Jika kamu sedang melewati masa tergelap, teruslah melangkah.",
         "fil": "Kung dumadaan ka sa pinakamahirap, huwag kang huminto.",
-        "hi": "अगर आप सबसे कठिन दौर से गुज़र रहे हैं, तो चलते रहिए।"
+        "hi": "अगर आप सबसे कठिन दौर से गुज़र रहे हैं, तो चलते रहिए।",
+        "es": "Si estás pasando por un infierno, sigue adelante.",
+        "fr": "Si tu traverses l'enfer, continue d'avancer.",
+        "de": "Wenn du durch die Hölle gehst, geh weiter.",
+        "ja": "地獄の中を進んでいるなら、そのまま進み続けろ。",
+        "zh-CN": "如果你正在经历至暗时刻，继续走下去。"
       }
     },
     {
@@ -149,7 +219,12 @@
         "it": "Scelte difficili, vita facile. Scelte facili, vita difficile.",
         "id": "Pilihan sulit, hidup mudah. Pilihan mudah, hidup sulit.",
         "fil": "Mahirap na pagpili, madaling buhay. Madaling pagpili, mahirap na buhay.",
-        "hi": "कठिन फ़ैसले, आसान ज़िंदगी। आसान फ़ैसले, कठिन ज़िंदगी।"
+        "hi": "कठिन फ़ैसले, आसान ज़िंदगी। आसान फ़ैसले, कठिन ज़िंदगी।",
+        "es": "Decisiones difíciles, vida fácil. Decisiones fáciles, vida difícil.",
+        "fr": "Choix difficiles, vie facile. Choix faciles, vie difficile.",
+        "de": "Schwere Entscheidungen, leichtes Leben. Leichte Entscheidungen, schweres Leben.",
+        "ja": "難しい選択は楽な人生を、楽な選択は難しい人生をつくる。",
+        "zh-CN": "艰难的选择，轻松的人生；轻松的选择，艰难的人生。"
       }
     },
     {
@@ -159,7 +234,12 @@
         "it": "La caverna in cui temi di entrare custodisce il tesoro che cerchi.",
         "id": "Gua yang paling kamu takuti menyimpan harta yang kamu cari.",
         "fil": "Ang kuwebang kinatatakutan mong pasukin ang nagtatago ng kayamanang hinahanap mo.",
-        "hi": "जिस गुफा में जाने से आप डरते हैं, वहीं आपका खज़ाना छिपा है।"
+        "hi": "जिस गुफा में जाने से आप डरते हैं, वहीं आपका खज़ाना छिपा है।",
+        "es": "La cueva a la que temes entrar guarda el tesoro que buscas.",
+        "fr": "La grotte où tu crains d'entrer recèle le trésor que tu cherches.",
+        "de": "In der Höhle, die du fürchtest, liegt der Schatz, den du suchst.",
+        "ja": "入るのを恐れている洞窟にこそ、探している宝が眠っている。",
+        "zh-CN": "你害怕进入的洞穴，藏着你寻找的宝藏。"
       }
     },
     {
@@ -169,7 +249,12 @@
         "it": "Come passiamo le nostre giornate è, naturalmente, come passiamo la nostra vita.",
         "id": "Cara kita menjalani hari adalah cara kita menjalani hidup.",
         "fil": "Kung paano natin ginugugol ang ating mga araw ay siya ring paraan ng paggugol natin sa ating buhay.",
-        "hi": "हम अपने दिन जैसे बिताते हैं, वैसे ही हम अपना जीवन बिताते हैं।"
+        "hi": "हम अपने दिन जैसे बिताते हैं, वैसे ही हम अपना जीवन बिताते हैं।",
+        "es": "Cómo pasamos nuestros días es, por supuesto, cómo pasamos nuestra vida.",
+        "fr": "Notre façon de passer nos journées est, bien sûr, notre façon de passer notre vie.",
+        "de": "Wie wir unsere Tage verbringen, so verbringen wir natürlich auch unser Leben.",
+        "ja": "日々の過ごし方が、そのまま人生の過ごし方になる。",
+        "zh-CN": "我们如何度过每一天，便是如何度过一生。"
       }
     },
     {
@@ -179,7 +264,12 @@
         "it": "La motivazione ti fa cominciare. L'abitudine ti fa continuare.",
         "id": "Motivasi membuatmu memulai. Kebiasaan membuatmu terus berjalan.",
         "fil": "Ang motibasyon ang nagpapasimula sa iyo. Ang ugali ang nagpapatuloy sa iyo.",
-        "hi": "प्रेरणा आपको शुरुआत देती है। आदत आपको चलते रहना सिखाती है।"
+        "hi": "प्रेरणा आपको शुरुआत देती है। आदत आपको चलते रहना सिखाती है।",
+        "es": "La motivación te pone en marcha. El hábito te mantiene en camino.",
+        "fr": "La motivation te fait démarrer. L'habitude te fait continuer.",
+        "de": "Motivation bringt dich in Gang. Gewohnheit hält dich in Bewegung.",
+        "ja": "始める力はモチベーション、続ける力は習慣だ。",
+        "zh-CN": "动力让你开始，习惯让你坚持。"
       }
     },
     {
@@ -189,7 +279,12 @@
         "it": "Energia e perseveranza vincono ogni cosa.",
         "id": "Semangat dan kegigihan menaklukkan segalanya.",
         "fil": "Ang sigla at tiyaga ay dumadaig sa lahat ng bagay.",
-        "hi": "ऊर्जा और लगन से हर चीज़ जीती जा सकती है।"
+        "hi": "ऊर्जा और लगन से हर चीज़ जीती जा सकती है।",
+        "es": "La energía y la constancia conquistan todas las cosas.",
+        "fr": "L'énergie et la persévérance viennent à bout de tout.",
+        "de": "Energie und Beharrlichkeit überwinden alles.",
+        "ja": "活力と粘り強さは、すべてを制する。",
+        "zh-CN": "精力与坚持能征服一切。"
       }
     },
     {
@@ -199,7 +294,12 @@
         "it": "Tra un anno potresti rimpiangere di non aver cominciato oggi.",
         "id": "Setahun dari sekarang, kamu mungkin berharap telah memulainya hari ini.",
         "fil": "Isang taon mula ngayon, baka hilingin mong sana'y nagsimula ka na ngayon.",
-        "hi": "आज से एक साल बाद, आप चाहेंगे कि काश आज ही शुरुआत की होती।"
+        "hi": "आज से एक साल बाद, आप चाहेंगे कि काश आज ही शुरुआत की होती।",
+        "es": "Dentro de un año quizás desearás haber empezado hoy.",
+        "fr": "Dans un an, tu regretteras peut-être de ne pas avoir commencé aujourd'hui.",
+        "de": "In einem Jahr wirst du dir vielleicht wünschen, du hättest heute angefangen.",
+        "ja": "一年後、今日始めていればよかったと思うかもしれない。",
+        "zh-CN": "一年后的你，也许会希望今天就已开始。"
       }
     },
     {
@@ -209,7 +309,12 @@
         "it": "Chi ha un perché per vivere può sopportare quasi ogni come.",
         "id": "Orang yang punya alasan untuk hidup mampu menanggung hampir segala cara.",
         "fil": "Ang taong may dahilan para mabuhay ay kayang tiisin ang halos anumang paraan.",
-        "hi": "जिसके पास जीने का 'क्यों' है, वह लगभग हर 'कैसे' सह सकता है।"
+        "hi": "जिसके पास जीने का 'क्यों' है, वह लगभग हर 'कैसे' सह सकता है।",
+        "es": "Quien tiene un porqué para vivir puede soportar casi cualquier cómo.",
+        "fr": "Celui qui a un pourquoi pour vivre peut supporter presque n'importe quel comment.",
+        "de": "Wer ein Warum zum Leben hat, erträgt fast jedes Wie.",
+        "ja": "生きる「なぜ」を持つ者は、ほとんどどんな「どうやって」にも耐えられる。",
+        "zh-CN": "知道为什么而活的人，几乎能承受任何一种生活。"
       }
     },
     {
@@ -219,7 +324,12 @@
         "it": "Ciò che temiamo di più fare è di solito ciò che più abbiamo bisogno di fare.",
         "id": "Hal yang paling kita takuti biasanya adalah hal yang paling perlu kita lakukan.",
         "fil": "Ang bagay na pinakakinatatakutan nating gawin ang kadalasang pinakakailangan nating gawin.",
-        "hi": "जिस काम से हम सबसे ज़्यादा डरते हैं, अक्सर वही करना सबसे ज़रूरी होता है।"
+        "hi": "जिस काम से हम सबसे ज़्यादा डरते हैं, अक्सर वही करना सबसे ज़रूरी होता है।",
+        "es": "Lo que más tememos hacer suele ser lo que más necesitamos hacer.",
+        "fr": "Ce que nous craignons le plus de faire est souvent ce que nous avons le plus besoin de faire.",
+        "de": "Was wir am meisten fürchten zu tun, ist meist genau das, was wir am dringendsten tun müssen.",
+        "ja": "最も恐れていることこそ、たいてい最もやるべきことだ。",
+        "zh-CN": "我们最害怕做的事，往往正是我们最需要做的事。"
       }
     },
     {
@@ -229,7 +339,12 @@
         "it": "Tutto ciò che hai sempre desiderato è dall'altra parte della paura.",
         "id": "Semua yang pernah kamu inginkan ada di seberang rasa takutmu.",
         "fil": "Lahat ng minimithi mo ay nasa kabilang panig ng iyong takot.",
-        "hi": "जो कुछ भी आप चाहते हैं, वह डर के उस पार है।"
+        "hi": "जो कुछ भी आप चाहते हैं, वह डर के उस पार है।",
+        "es": "Todo lo que siempre has querido está al otro lado del miedo.",
+        "fr": "Tout ce que tu as toujours voulu se trouve de l'autre côté de la peur.",
+        "de": "Alles, was du dir je gewünscht hast, liegt auf der anderen Seite der Angst.",
+        "ja": "望むものはすべて、恐れの向こう側にある。",
+        "zh-CN": "你想要的一切，都在恐惧的另一边。"
       }
     },
     {
@@ -239,7 +354,12 @@
         "it": "L'azione è la chiave fondamentale di ogni successo.",
         "id": "Tindakan adalah kunci dasar dari semua keberhasilan.",
         "fil": "Ang pagkilos ang pangunahing susi sa lahat ng tagumpay.",
-        "hi": "कर्म ही हर सफलता की बुनियादी कुंजी है।"
+        "hi": "कर्म ही हर सफलता की बुनियादी कुंजी है।",
+        "es": "La acción es la clave fundamental de todo éxito.",
+        "fr": "L'action est la clé fondamentale de tout succès.",
+        "de": "Handeln ist der Grundschlüssel zu jedem Erfolg.",
+        "ja": "行動こそ、あらゆる成功の基本の鍵だ。",
+        "zh-CN": "行动是一切成功的根本关键。"
       }
     },
     {
@@ -249,7 +369,12 @@
         "it": "Non importa quanto vai piano, l'importante è non fermarsi.",
         "id": "Tidak masalah seberapa lambat kamu berjalan, asalkan kamu tidak berhenti.",
         "fil": "Hindi mahalaga kung gaano ka kabagal, basta't hindi ka humihinto.",
-        "hi": "आप कितनी भी धीमी चाल चलें, फ़र्क नहीं पड़ता — बस रुकिए मत।"
+        "hi": "आप कितनी भी धीमी चाल चलें, फ़र्क नहीं पड़ता — बस रुकिए मत।",
+        "es": "No importa lo despacio que vayas, mientras no te detengas.",
+        "fr": "Peu importe la lenteur de ton pas, pourvu que tu ne t'arrêtes pas.",
+        "de": "Es ist egal, wie langsam du gehst, solange du nicht stehen bleibst.",
+        "ja": "どんなに歩みが遅くとも、止まりさえしなければよい。",
+        "zh-CN": "走得慢没有关系，只要你不停下脚步。"
       }
     },
     {
@@ -259,7 +384,12 @@
         "it": "La disciplina è il ponte tra gli obiettivi e i risultati.",
         "id": "Disiplin adalah jembatan antara tujuan dan pencapaian.",
         "fil": "Ang disiplina ang tulay sa pagitan ng mga layunin at tagumpay.",
-        "hi": "अनुशासन लक्ष्य और उपलब्धि के बीच का पुल है।"
+        "hi": "अनुशासन लक्ष्य और उपलब्धि के बीच का पुल है।",
+        "es": "La disciplina es el puente entre las metas y los logros.",
+        "fr": "La discipline est le pont entre les objectifs et leur accomplissement.",
+        "de": "Disziplin ist die Brücke zwischen Zielen und Erfolgen.",
+        "ja": "規律とは、目標と達成をつなぐ橋である。",
+        "zh-CN": "自律是连接目标与成就的桥梁。"
       }
     },
     {
@@ -269,7 +399,12 @@
         "it": "Piccole azioni compiute valgono più di grandi imprese progettate.",
         "id": "Perbuatan kecil yang dikerjakan lebih baik daripada rencana besar yang tertunda.",
         "fil": "Mas mabuti ang maliliit na gawaing natapos kaysa sa dakilang planong hindi nasimulan.",
-        "hi": "किए गए छोटे काम, सोचे गए बड़े कामों से बेहतर हैं।"
+        "hi": "किए गए छोटे काम, सोचे गए बड़े कामों से बेहतर हैं।",
+        "es": "Las pequeñas obras hechas valen más que las grandes obras planeadas.",
+        "fr": "De petites actions accomplies valent mieux que de grandes actions planifiées.",
+        "de": "Kleine Taten, die getan werden, sind besser als große Taten, die geplant werden.",
+        "ja": "実行された小さな行いは、計画されただけの大きな行いに勝る。",
+        "zh-CN": "做成的小事，胜过计划中的大事。"
       }
     },
     {
@@ -279,7 +414,12 @@
         "it": "Non puoi costruire una reputazione su ciò che hai intenzione di fare.",
         "id": "Kamu tidak bisa membangun reputasi dari apa yang baru akan kamu lakukan.",
         "fil": "Hindi ka makakabuo ng reputasyon mula sa mga bagay na balak mo pa lang gawin.",
-        "hi": "जो आप करने वाले हैं, उससे पहचान नहीं बनती — जो आपने किया है, उससे बनती है।"
+        "hi": "जो आप करने वाले हैं, उससे पहचान नहीं बनती — जो आपने किया है, उससे बनती है।",
+        "es": "No puedes construir una reputación sobre lo que vas a hacer.",
+        "fr": "On ne bâtit pas une réputation sur ce qu'on a l'intention de faire.",
+        "de": "Du kannst dir keinen Ruf auf dem aufbauen, was du erst noch tun willst.",
+        "ja": "これからやるつもりのことで、評判は築けない。",
+        "zh-CN": "声誉无法建立在你打算做的事情上。"
       }
     },
     {
@@ -289,7 +429,12 @@
         "it": "Ciò che non si comincia oggi non sarà mai finito domani.",
         "id": "Apa yang tidak dimulai hari ini tidak akan pernah selesai esok hari.",
         "fil": "Ang hindi sinimulan ngayon ay hindi kailanman matatapos bukas.",
-        "hi": "जो आज शुरू नहीं हुआ, वह कल कभी पूरा नहीं होगा।"
+        "hi": "जो आज शुरू नहीं हुआ, वह कल कभी पूरा नहीं होगा।",
+        "es": "Lo que no se empieza hoy nunca se termina mañana.",
+        "fr": "Ce qui n'est pas commencé aujourd'hui ne sera jamais terminé demain.",
+        "de": "Was heute nicht begonnen wird, wird morgen nicht vollendet.",
+        "ja": "今日始めなかったことは、明日終わることはない。",
+        "zh-CN": "今天没有开始的事，明天永远无法完成。"
       }
     },
     {
@@ -299,7 +444,12 @@
         "it": "Hai potere sulla tua mente, non sugli eventi esterni. Comprendilo, e troverai la forza.",
         "id": "Kamu berkuasa atas pikiranmu — bukan atas kejadian di luar dirimu. Sadari itu, dan kamu akan menemukan kekuatan.",
         "fil": "May kapangyarihan ka sa iyong isip — hindi sa mga pangyayari sa labas. Unawain mo ito, at makakahanap ka ng lakas.",
-        "hi": "आपका वश अपने मन पर है — बाहरी घटनाओं पर नहीं। इसे समझ लीजिए, और आपको शक्ति मिल जाएगी।"
+        "hi": "आपका वश अपने मन पर है — बाहरी घटनाओं पर नहीं। इसे समझ लीजिए, और आपको शक्ति मिल जाएगी।",
+        "es": "Tienes poder sobre tu mente, no sobre los acontecimientos externos. Comprende esto y hallarás fuerza.",
+        "fr": "Tu as pouvoir sur ton esprit, pas sur les événements extérieurs. Comprends-le, et tu trouveras la force.",
+        "de": "Du hast Macht über deinen Geist — nicht über äußere Ereignisse. Erkenne das, und du wirst Stärke finden.",
+        "ja": "支配できるのは自分の心であって、外の出来事ではない。それに気づけば、力が湧いてくる。",
+        "zh-CN": "你能掌控的是自己的心，而非外界之事。明白这一点，你就会找到力量。"
       }
     },
     {
@@ -309,7 +459,12 @@
         "it": "Il successo non è definitivo, il fallimento non è fatale: ciò che conta è il coraggio di continuare.",
         "id": "Keberhasilan bukanlah akhir, kegagalan bukanlah kehancuran: keberanian untuk terus melangkah itulah yang berarti.",
         "fil": "Ang tagumpay ay hindi katapusan, ang kabiguan ay hindi kamatayan: ang tapang na magpatuloy ang mahalaga.",
-        "hi": "सफलता अंतिम नहीं, असफलता घातक नहीं: मायने रखता है आगे बढ़ते रहने का साहस।"
+        "hi": "सफलता अंतिम नहीं, असफलता घातक नहीं: मायने रखता है आगे बढ़ते रहने का साहस।",
+        "es": "El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar.",
+        "fr": "Le succès n'est pas définitif, l'échec n'est pas fatal : c'est le courage de continuer qui compte.",
+        "de": "Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Es ist der Mut weiterzumachen, der zählt.",
+        "ja": "成功は終わりではなく、失敗は致命傷ではない。大事なのは続ける勇気だ。",
+        "zh-CN": "成功不是终点，失败并非末日：重要的是继续前行的勇气。"
       }
     },
     {
@@ -319,7 +474,12 @@
         "it": "Ciò che fai ogni giorno conta più di ciò che fai ogni tanto.",
         "id": "Apa yang kamu lakukan setiap hari lebih berarti daripada apa yang kamu lakukan sesekali.",
         "fil": "Mas mahalaga ang ginagawa mo araw-araw kaysa sa ginagawa mo paminsan-minsan.",
-        "hi": "जो आप हर दिन करते हैं, वह कभी-कभार किए काम से कहीं ज़्यादा मायने रखता है।"
+        "hi": "जो आप हर दिन करते हैं, वह कभी-कभार किए काम से कहीं ज़्यादा मायने रखता है।",
+        "es": "Lo que haces cada día importa más que lo que haces de vez en cuando.",
+        "fr": "Ce que tu fais chaque jour compte plus que ce que tu fais de temps en temps.",
+        "de": "Was du jeden Tag tust, zählt mehr als das, was du ab und zu tust.",
+        "ja": "たまにやることより、毎日やることの方が大切だ。",
+        "zh-CN": "你每天做的事，比你偶尔做的事更重要。"
       }
     },
     {
@@ -329,7 +489,12 @@
         "it": "Un fiume scava la roccia non per la sua forza, ma per la sua costanza.",
         "id": "Sungai menembus batu bukan karena kekuatannya, melainkan karena kegigihannya.",
         "fil": "Nabubutas ng ilog ang bato hindi dahil sa lakas nito, kundi dahil sa tiyaga nito.",
-        "hi": "नदी चट्टान को अपनी ताक़त से नहीं, अपनी निरंतरता से काटती है।"
+        "hi": "नदी चट्टान को अपनी ताक़त से नहीं, अपनी निरंतरता से काटती है।",
+        "es": "Un río atraviesa la roca no por su fuerza, sino por su constancia.",
+        "fr": "La rivière creuse la roche non par sa force, mais par sa persévérance.",
+        "de": "Ein Fluss durchdringt den Fels nicht durch seine Kraft, sondern durch seine Beharrlichkeit.",
+        "ja": "川が岩を穿つのは、力ではなく粘り強さゆえだ。",
+        "zh-CN": "河水穿石，靠的不是力量，而是坚持。"
       }
     },
     {
@@ -339,7 +504,12 @@
         "it": "Non temere di andare piano; temi soltanto di restare fermo.",
         "id": "Jangan takut berjalan lambat; takutlah hanya jika kamu berdiam diri.",
         "fil": "Huwag matakot sa mabagal na paglakad; matakot lamang sa pananatiling nakatayo.",
-        "hi": "धीरे चलने से मत डरिए; डरिए सिर्फ़ रुक जाने से।"
+        "hi": "धीरे चलने से मत डरिए; डरिए सिर्फ़ रुक जाने से।",
+        "es": "No temas avanzar despacio; teme solamente quedarte quieto.",
+        "fr": "Ne crains pas d'avancer lentement ; crains seulement de rester immobile.",
+        "de": "Fürchte dich nicht vor dem langsamen Gehen, fürchte nur den Stillstand.",
+        "ja": "ゆっくり進むことを恐れるな。恐れるべきは立ち止まることだけだ。",
+        "zh-CN": "不怕慢，只怕站。"
       }
     },
     {
@@ -349,7 +519,12 @@
         "it": "Il modo più efficace per farlo è farlo.",
         "id": "Cara paling ampuh untuk melakukannya adalah dengan melakukannya.",
         "fil": "Ang pinakamabisang paraan para gawin ito ay ang gawin ito.",
-        "hi": "किसी काम को करने का सबसे कारगर तरीका है — उसे कर डालना।"
+        "hi": "किसी काम को करने का सबसे कारगर तरीका है — उसे कर डालना।",
+        "es": "La manera más eficaz de hacerlo, es hacerlo.",
+        "fr": "La façon la plus efficace de le faire, c'est de le faire.",
+        "de": "Der wirksamste Weg, etwas zu tun, ist, es zu tun.",
+        "ja": "何かを成す最も確実な方法は、実際にやることだ。",
+        "zh-CN": "做成一件事最有效的方法，就是动手去做。"
       }
     },
     {
@@ -359,7 +534,12 @@
         "it": "Il guerriero vincente è un uomo comune, con una concentrazione assoluta.",
         "id": "Pendekar yang berhasil adalah orang biasa dengan fokus yang setajam laser.",
         "fil": "Ang matagumpay na mandirigma ay karaniwang tao lamang, na may tuon na kasintalas ng laser.",
-        "hi": "सफल योद्धा एक साधारण इंसान ही है, बस उसका ध्यान लेज़र जैसा एकाग्र है।"
+        "hi": "सफल योद्धा एक साधारण इंसान ही है, बस उसका ध्यान लेज़र जैसा एकाग्र है।",
+        "es": "El guerrero exitoso es el hombre común, con un enfoque láser.",
+        "fr": "Le guerrier qui réussit est un homme ordinaire, doté d'une concentration extrême.",
+        "de": "Der erfolgreiche Krieger ist ein gewöhnlicher Mensch mit messerscharfem Fokus.",
+        "ja": "成功する戦士とは、レーザーのような集中力を持つ、ごく普通の人間だ。",
+        "zh-CN": "成功的战士只是普通人，却有着激光般的专注。"
       }
     },
     {
@@ -369,7 +549,12 @@
         "it": "Un viaggio di mille miglia comincia con un solo passo.",
         "id": "Perjalanan seribu mil dimulai dengan satu langkah.",
         "fil": "Ang paglalakbay ng isang libong milya ay nagsisimula sa isang hakbang.",
-        "hi": "हज़ार मील का सफ़र एक क़दम से शुरू होता है।"
+        "hi": "हज़ार मील का सफ़र एक क़दम से शुरू होता है।",
+        "es": "Un viaje de mil millas comienza con un solo paso.",
+        "fr": "Un voyage de mille lieues commence par un premier pas.",
+        "de": "Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.",
+        "ja": "千里の道も一歩から。",
+        "zh-CN": "千里之行，始于足下。"
       }
     },
     {
@@ -379,7 +564,12 @@
         "it": "Nessun uomo è libero se non è padrone di sé stesso.",
         "id": "Tidak ada orang yang merdeka jika ia belum menguasai dirinya sendiri.",
         "fil": "Walang taong malaya kung hindi niya kayang pamahalaan ang kanyang sarili.",
-        "hi": "जो अपने आप का स्वामी नहीं, वह स्वतंत्र नहीं।"
+        "hi": "जो अपने आप का स्वामी नहीं, वह स्वतंत्र नहीं।",
+        "es": "Nadie es libre si no es dueño de sí mismo.",
+        "fr": "Nul n'est libre s'il n'est maître de lui-même.",
+        "de": "Kein Mensch ist frei, der nicht Herr über sich selbst ist.",
+        "ja": "自分自身を制する者でなければ、自由な人間とは言えない。",
+        "zh-CN": "不能主宰自己的人，谈不上自由。"
       }
     },
     {
@@ -389,7 +579,12 @@
         "it": "Niente funzionerà, se non lavori tu.",
         "id": "Tidak ada yang akan berhasil kecuali kamu yang berusaha.",
         "fil": "Walang uubra kung hindi ka kikilos.",
-        "hi": "कुछ भी काम नहीं करेगा, जब तक आप काम नहीं करेंगे।"
+        "hi": "कुछ भी काम नहीं करेगा, जब तक आप काम नहीं करेंगे।",
+        "es": "Nada funcionará a menos que tú lo hagas.",
+        "fr": "Rien ne fonctionnera si tu ne t'y mets pas.",
+        "de": "Nichts funktioniert, wenn du es nicht tust.",
+        "ja": "あなたが動かなければ、何も動かない。",
+        "zh-CN": "你不努力，一切都不会奏效。"
       }
     },
     {
@@ -399,7 +594,12 @@
         "it": "Non devi essere grande per cominciare, ma devi cominciare per diventare grande.",
         "id": "Kamu tidak harus hebat untuk memulai, tetapi kamu harus memulai untuk menjadi hebat.",
         "fil": "Hindi mo kailangang maging dakila para magsimula, pero kailangan mong magsimula para maging dakila.",
-        "hi": "शुरुआत करने के लिए महान होना ज़रूरी नहीं, पर महान बनने के लिए शुरुआत करना ज़रूरी है।"
+        "hi": "शुरुआत करने के लिए महान होना ज़रूरी नहीं, पर महान बनने के लिए शुरुआत करना ज़रूरी है।",
+        "es": "No tienes que ser grande para empezar, pero tienes que empezar para ser grande.",
+        "fr": "Tu n'as pas besoin d'être excellent pour commencer, mais tu dois commencer pour devenir excellent.",
+        "de": "Du musst nicht großartig sein, um anzufangen, aber du musst anfangen, um großartig zu werden.",
+        "ja": "始めるために偉大である必要はない。偉大になるためには始めるしかない。",
+        "zh-CN": "开始不需要伟大，但要伟大必须开始。"
       }
     }
   ]
