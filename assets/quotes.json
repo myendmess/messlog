@@ -1445,102 +1445,362 @@
     {
       "quote": "The difference between genius and stupidity is: genius has its limits.",
       "author": "Alexandre Dumas fils",
-      "translations": {}
+      "translations": {
+        "it": "La differenza tra il genio e la stupidità è che il genio ha i suoi limiti.",
+        "id": "Perbedaan antara kejeniusan dan kebodohan: kejeniusan ada batasnya.",
+        "fil": "Ang pagkakaiba ng henyo at katangahan: may hangganan ang henyo.",
+        "hi": "प्रतिभा और मूर्खता में फ़र्क यह है कि प्रतिभा की एक सीमा होती है।",
+        "es": "La diferencia entre el genio y la estupidez es que el genio tiene sus límites.",
+        "fr": "La différence entre le génie et la bêtise, c'est que le génie a ses limites.",
+        "de": "Der Unterschied zwischen Genie und Dummheit: Das Genie hat seine Grenzen.",
+        "ja": "天才と愚かさの違いはこうだ。天才には限界がある。",
+        "zh-CN": "天才与愚蠢的区别在于：天才是有极限的。",
+        "ar": "الفرق بين العبقرية والغباء أن للعبقرية حدوداً.",
+        "ru": "Разница между гением и глупостью в том, что у гения есть пределы.",
+        "pt": "A diferença entre a genialidade e a estupidez é que a genialidade tem limites."
+      }
     },
     {
       "quote": "There is no friend as loyal as a book.",
       "author": "Ernest Hemingway",
-      "translations": {}
+      "translations": {
+        "it": "Non c'è amico più leale di un libro.",
+        "id": "Tidak ada sahabat yang lebih setia daripada sebuah buku.",
+        "fil": "Walang kaibigang mas tapat kaysa sa isang aklat.",
+        "hi": "किताब से वफ़ादार कोई दोस्त नहीं होता।",
+        "es": "No hay amigo tan leal como un libro.",
+        "fr": "Il n'y a pas d'ami plus loyal qu'un livre.",
+        "de": "Es gibt keinen treueren Freund als ein Buch.",
+        "ja": "本ほど忠実な友はいない。",
+        "zh-CN": "没有比书更忠诚的朋友了。",
+        "ar": "لا صديق أوفى من كتاب.",
+        "ru": "Нет друга преданнее книги.",
+        "pt": "Não há amigo tão leal quanto um livro."
+      }
     },
     {
       "quote": "When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.",
       "author": "Helen Keller",
-      "translations": {}
+      "translations": {
+        "it": "Quando una porta della felicità si chiude, un'altra si apre; ma spesso guardiamo così a lungo quella chiusa da non vedere quella che si è aperta per noi.",
+        "id": "Ketika satu pintu kebahagiaan tertutup, pintu lain terbuka; tetapi sering kali kita terlalu lama menatap pintu yang tertutup hingga tidak melihat pintu yang telah terbuka untuk kita.",
+        "fil": "Kapag nagsara ang isang pinto ng kaligayahan, may ibang bumubukas; ngunit kadalasan, matagal nating tinititigan ang saradong pinto kaya hindi natin nakikita ang pintong binuksan para sa atin.",
+        "hi": "जब खुशी का एक दरवाज़ा बंद होता है, तो दूसरा खुलता है; पर हम अक्सर बंद दरवाज़े को इतनी देर तक देखते रहते हैं कि हमारे लिए खुला दरवाज़ा दिखता ही नहीं।",
+        "es": "Cuando una puerta de la felicidad se cierra, otra se abre; pero a menudo miramos tanto tiempo la puerta cerrada que no vemos la que se ha abierto para nosotros.",
+        "fr": "Quand une porte du bonheur se ferme, une autre s'ouvre ; mais souvent nous fixons si longtemps la porte fermée que nous ne voyons pas celle qui s'est ouverte pour nous.",
+        "de": "Wenn sich eine Tür zum Glück schließt, öffnet sich eine andere; doch oft starren wir so lange auf die geschlossene Tür, dass wir die nicht sehen, die sich für uns geöffnet hat.",
+        "ja": "幸せの扉がひとつ閉じると、別の扉が開く。だが閉じた扉ばかり見つめて、開かれた扉に気づかないことがあまりに多い。",
+        "zh-CN": "当一扇幸福之门关闭时，另一扇会打开；但我们常常盯着关闭的门太久，而看不见为我们敞开的那一扇。",
+        "ar": "عندما يُغلق باب من أبواب السعادة، يُفتح آخر؛ لكننا كثيراً ما نطيل النظر إلى الباب المغلق حتى لا نرى الباب الذي فُتح لنا.",
+        "ru": "Когда одна дверь к счастью закрывается, открывается другая; но мы часто так долго смотрим на закрытую дверь, что не замечаем той, что открылась для нас.",
+        "pt": "Quando uma porta da felicidade se fecha, outra se abre; mas muitas vezes olhamos tanto tempo para a porta fechada que não vemos a que foi aberta para nós."
+      }
     },
     {
       "quote": "Life isn't about finding yourself. Life is about creating yourself.",
       "author": "George Bernard Shaw",
-      "translations": {}
+      "translations": {
+        "it": "La vita non consiste nel trovare sé stessi, ma nel crearsi.",
+        "id": "Hidup bukan tentang menemukan dirimu. Hidup adalah tentang menciptakan dirimu.",
+        "fil": "Ang buhay ay hindi tungkol sa paghahanap sa sarili. Ang buhay ay tungkol sa paglikha ng sarili.",
+        "hi": "जीवन खुद को खोजने का नाम नहीं, खुद को गढ़ने का नाम है।",
+        "es": "La vida no se trata de encontrarte a ti mismo, sino de crearte a ti mismo.",
+        "fr": "La vie, ce n'est pas se trouver. La vie, c'est se créer.",
+        "de": "Im Leben geht es nicht darum, sich selbst zu finden, sondern sich selbst zu erschaffen.",
+        "ja": "人生とは自分探しではない。自分を創り上げることだ。",
+        "zh-CN": "人生不在于找到自我，而在于创造自我。",
+        "ar": "الحياة ليست أن تجد نفسك، بل أن تصنع نفسك.",
+        "ru": "Жизнь — это не поиск себя. Жизнь — это созидание себя.",
+        "pt": "A vida não é sobre encontrar a si mesmo. A vida é sobre criar a si mesmo."
+      }
     },
     {
-      "quote": "A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.",
+      "quote": "A reader lives a thousand lives before he dies. The man who never reads lives only one.",
       "author": "George R.R. Martin",
-      "translations": {}
+      "translations": {
+        "it": "Un lettore vive mille vite prima di morire. Chi non legge mai ne vive una sola.",
+        "id": "Seorang pembaca menjalani seribu kehidupan sebelum mati. Orang yang tak pernah membaca hanya menjalani satu.",
+        "fil": "Ang mambabasa ay nabubuhay ng isanlibong buhay bago mamatay. Ang taong hindi nagbabasa ay isa lang ang buhay.",
+        "hi": "पढ़ने वाला मरने से पहले हज़ार ज़िंदगियाँ जीता है। जो कभी नहीं पढ़ता, वह सिर्फ़ एक।",
+        "es": "Un lector vive mil vidas antes de morir. El que nunca lee vive solo una.",
+        "fr": "Un lecteur vit mille vies avant de mourir. Celui qui ne lit jamais n'en vit qu'une seule.",
+        "de": "Ein Leser lebt tausend Leben, bevor er stirbt. Wer nie liest, lebt nur eines.",
+        "ja": "本を読む者は死ぬまでに千の人生を生きる。読まない者の人生はひとつだけだ。",
+        "zh-CN": "读书的人死前经历千种人生，不读书的人只活一次。",
+        "ar": "القارئ يعيش ألف حياة قبل أن يموت، أما من لا يقرأ فيعيش حياة واحدة فقط.",
+        "ru": "Читатель проживает тысячу жизней, прежде чем умереть. Тот, кто не читает, живёт лишь одну.",
+        "pt": "Um leitor vive mil vidas antes de morrer. Quem nunca lê vive apenas uma."
+      }
     },
     {
       "quote": "You can never get a cup of tea large enough or a book long enough to suit me.",
       "author": "C.S. Lewis",
-      "translations": {}
+      "translations": {
+        "it": "Per me non esiste una tazza di tè abbastanza grande né un libro abbastanza lungo.",
+        "id": "Bagiku tidak pernah ada cangkir teh yang cukup besar atau buku yang cukup panjang.",
+        "fil": "Para sa akin, walang tasang tsaa na sapat kalaki o aklat na sapat kahaba.",
+        "hi": "मेरे लिए न कभी चाय का प्याला काफ़ी बड़ा होता है, न कोई किताब काफ़ी लंबी।",
+        "es": "Para mí nunca hay una taza de té lo bastante grande ni un libro lo bastante largo.",
+        "fr": "Pour moi, il n'existe pas de tasse de thé assez grande ni de livre assez long.",
+        "de": "Für mich gibt es keine Tasse Tee, die groß genug, und kein Buch, das lang genug wäre.",
+        "ja": "私にとって、十分に大きなティーカップも、十分に長い本も存在しない。",
+        "zh-CN": "对我来说，茶杯永远不够大，书永远不够长。",
+        "ar": "لا يوجد كوب شاي كبير بما يكفي ولا كتاب طويل بما يكفي ليرضيني.",
+        "ru": "Для меня не бывает ни слишком большой чашки чая, ни слишком длинной книги.",
+        "pt": "Para mim, nunca existe uma xícara de chá grande o suficiente nem um livro longo o suficiente."
+      }
     },
     {
       "quote": "You believe lies so you eventually learn to trust no one but yourself.",
       "author": "Marilyn Monroe",
-      "translations": {}
+      "translations": {
+        "it": "Credi alle bugie, finché impari a non fidarti di nessuno tranne che di te stessa.",
+        "id": "Kamu memercayai kebohongan sampai akhirnya belajar untuk tidak percaya pada siapa pun kecuali dirimu sendiri.",
+        "fil": "Naniniwala ka sa mga kasinungalingan hanggang matutunan mong walang pagkatiwalaan kundi ang sarili mo.",
+        "hi": "आप झूठों पर यक़ीन करते हैं, और आख़िरकार सीख जाते हैं कि खुद के सिवा किसी पर भरोसा न करें।",
+        "es": "Crees mentiras hasta que al final aprendes a no confiar en nadie más que en ti misma.",
+        "fr": "On croit des mensonges jusqu'à apprendre à ne faire confiance qu'à soi-même.",
+        "de": "Man glaubt Lügen, bis man schließlich lernt, niemandem zu vertrauen außer sich selbst.",
+        "ja": "嘘を信じてしまうから、やがて自分以外の誰も信じないことを学ぶのだ。",
+        "zh-CN": "你相信过谎言，最终学会除了自己谁也不信。",
+        "ar": "تصدق الأكاذيب حتى تتعلم في النهاية ألا تثق بأحد سوى نفسك.",
+        "ru": "Ты веришь лжи, пока в конце концов не научишься доверять только самой себе.",
+        "pt": "Você acredita em mentiras até finalmente aprender a não confiar em ninguém além de si mesma."
+      }
     },
     {
       "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
       "author": "Albert Einstein",
-      "translations": {}
+      "translations": {
+        "it": "La vita è come andare in bicicletta: per mantenere l'equilibrio devi continuare a muoverti.",
+        "id": "Hidup itu seperti mengendarai sepeda. Agar tetap seimbang, kamu harus terus bergerak.",
+        "fil": "Ang buhay ay parang pagbibisikleta. Para manatiling balanse, kailangan mong patuloy na umandar.",
+        "hi": "ज़िंदगी साइकिल चलाने जैसी है। संतुलन बनाए रखने के लिए चलते रहना ज़रूरी है।",
+        "es": "La vida es como montar en bicicleta. Para mantener el equilibrio, debes seguir adelante.",
+        "fr": "La vie, c'est comme une bicyclette : il faut avancer pour ne pas perdre l'équilibre.",
+        "de": "Das Leben ist wie Fahrradfahren. Um die Balance zu halten, musst du in Bewegung bleiben.",
+        "ja": "人生は自転車のようなものだ。倒れないためには走り続けなければならない。",
+        "zh-CN": "人生就像骑自行车，要保持平衡就得不断前进。",
+        "ar": "الحياة مثل ركوب الدراجة؛ لكي تحافظ على توازنك عليك أن تستمر في التقدم.",
+        "ru": "Жизнь — как езда на велосипеде: чтобы сохранить равновесие, нужно продолжать двигаться.",
+        "pt": "A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso continuar em movimento."
+      }
     },
     {
       "quote": "Only in the darkness can you see the stars.",
       "author": "Martin Luther King Jr.",
-      "translations": {}
+      "translations": {
+        "it": "Solo nell'oscurità puoi vedere le stelle.",
+        "id": "Hanya dalam kegelapan kamu bisa melihat bintang-bintang.",
+        "fil": "Sa dilim mo lamang makikita ang mga bituin.",
+        "hi": "तारे अंधेरे में ही दिखाई देते हैं।",
+        "es": "Solo en la oscuridad puedes ver las estrellas.",
+        "fr": "Ce n'est que dans l'obscurité qu'on peut voir les étoiles.",
+        "de": "Nur in der Dunkelheit kann man die Sterne sehen.",
+        "ja": "闇の中でこそ、星は見える。",
+        "zh-CN": "只有在黑暗中，你才能看见星星。",
+        "ar": "في الظلام وحده يمكنك رؤية النجوم.",
+        "ru": "Только во тьме можно увидеть звёзды.",
+        "pt": "Só na escuridão você pode ver as estrelas."
+      }
     },
     {
       "quote": "It matters not what someone is born, but what they grow to be.",
       "author": "J.K. Rowling",
-      "translations": {}
+      "translations": {
+        "it": "Non importa come si nasce, ma ciò che si diventa.",
+        "id": "Yang penting bukan bagaimana seseorang dilahirkan, melainkan menjadi apa dia tumbuh.",
+        "fil": "Hindi mahalaga kung ano ang kapanganakan ng isang tao, kundi kung ano ang kanyang kinahinatnan.",
+        "hi": "मायने यह नहीं रखता कि कोई कैसे जन्मा, बल्कि यह कि वह बड़ा होकर क्या बना।",
+        "es": "No importa cómo nace alguien, sino en qué se convierte.",
+        "fr": "Peu importe ce que l'on est à la naissance ; ce qui compte, c'est ce que l'on devient.",
+        "de": "Es zählt nicht, als was jemand geboren wird, sondern was aus ihm wird.",
+        "ja": "生まれが何であるかは問題ではない。どんな人間に育つかが大事なのだ。",
+        "zh-CN": "一个人的出身并不重要，重要的是他成长为什么样的人。",
+        "ar": "لا يهم كيف وُلد المرء، بل ما يصير إليه.",
+        "ru": "Неважно, кем человек родился, — важно, кем он вырос.",
+        "pt": "Não importa como alguém nasce, mas o que essa pessoa se torna."
+      }
     },
     {
       "quote": "Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.",
       "author": "James Baldwin",
-      "translations": {}
+      "translations": {
+        "it": "L'amore non comincia e non finisce come crediamo. L'amore è una battaglia, l'amore è una guerra; l'amore è crescere.",
+        "id": "Cinta tidak bermula dan berakhir seperti yang kita kira. Cinta adalah pertarungan, cinta adalah perang; cinta adalah proses menjadi dewasa.",
+        "fil": "Ang pag-ibig ay hindi nagsisimula at nagtatapos gaya ng inaakala natin. Ang pag-ibig ay labanan, ang pag-ibig ay digmaan; ang pag-ibig ay pagtanda.",
+        "hi": "प्रेम वैसे शुरू और ख़त्म नहीं होता जैसा हम समझते हैं। प्रेम एक संघर्ष है, एक युद्ध है; प्रेम बड़े होने का नाम है।",
+        "es": "El amor no empieza ni termina como creemos. El amor es una batalla, el amor es una guerra; el amor es madurar.",
+        "fr": "L'amour ne commence pas et ne finit pas comme nous le croyons. L'amour est une bataille, l'amour est une guerre ; l'amour, c'est grandir.",
+        "de": "Liebe beginnt und endet nicht so, wie wir es uns vorstellen. Liebe ist ein Kampf, Liebe ist ein Krieg; Liebe heißt erwachsen werden.",
+        "ja": "愛は、私たちが思うようには始まりも終わりもしない。愛は闘いであり、戦争であり、そして成長そのものだ。",
+        "zh-CN": "爱并不像我们以为的那样开始和结束。爱是搏斗，是战争；爱是一场成长。",
+        "ar": "الحب لا يبدأ ولا ينتهي كما نظن. الحب معركة، الحب حرب؛ الحب نضوج.",
+        "ru": "Любовь не начинается и не заканчивается так, как нам кажется. Любовь — это битва, любовь — это война; любовь — это взросление.",
+        "pt": "O amor não começa nem termina como pensamos. O amor é uma batalha, o amor é uma guerra; o amor é um amadurecimento."
+      }
     },
     {
       "quote": "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
       "author": "Dr. Seuss",
-      "translations": {}
+      "translations": {
+        "it": "Più leggi, più cose saprai. Più impari, più lontano andrai.",
+        "id": "Semakin banyak kamu membaca, semakin banyak yang kamu tahu. Semakin banyak kamu belajar, semakin jauh kamu melangkah.",
+        "fil": "Habang dumarami ang binabasa mo, dumarami ang nalalaman mo. Habang dumarami ang natututuhan mo, dumarami ang mararating mo.",
+        "hi": "जितना ज़्यादा पढ़ोगे, उतना ज़्यादा जानोगे। जितना ज़्यादा सीखोगे, उतनी दूर जाओगे।",
+        "es": "Cuanto más leas, más cosas sabrás. Cuanto más aprendas, a más lugares irás.",
+        "fr": "Plus tu liras, plus tu sauras. Plus tu apprendras, plus loin tu iras.",
+        "de": "Je mehr du liest, desto mehr weißt du. Je mehr du lernst, desto weiter kommst du.",
+        "ja": "読めば読むほど多くを知り、学べば学ぶほど遠くへ行ける。",
+        "zh-CN": "读得越多，知道得越多；学得越多，走得越远。",
+        "ar": "كلما قرأت أكثر، عرفت أكثر. وكلما تعلمت أكثر، وصلت إلى أماكن أبعد.",
+        "ru": "Чем больше читаешь, тем больше знаешь. Чем больше учишься, тем дальше пойдёшь.",
+        "pt": "Quanto mais você lê, mais coisas sabe. Quanto mais aprende, mais lugares alcança."
+      }
     },
     {
       "quote": "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
       "author": "J.K. Rowling",
-      "translations": {}
+      "translations": {
+        "it": "Certo che sta accadendo nella tua testa, Harry. Ma perché mai questo dovrebbe significare che non è reale?",
+        "id": "Tentu saja ini terjadi di dalam kepalamu, Harry. Tapi mengapa itu berarti semua ini tidak nyata?",
+        "fil": "Siyempre, nangyayari ito sa loob ng isip mo, Harry. Pero bakit naman ibig sabihin niyon ay hindi ito totoo?",
+        "hi": "बेशक यह सब तुम्हारे दिमाग़ में हो रहा है, हैरी। पर इसका यह मतलब क्यों हो कि यह सच नहीं है?",
+        "es": "Claro que está pasando dentro de tu cabeza, Harry, pero ¿por qué iba a significar eso que no es real?",
+        "fr": "Bien sûr que ça se passe dans ta tête, Harry. Mais pourquoi faudrait-il en conclure que ce n'est pas réel ?",
+        "de": "Natürlich passiert es in deinem Kopf, Harry. Aber warum um alles in der Welt sollte das heißen, dass es nicht real ist?",
+        "ja": "もちろん、これは君の頭の中で起きていることだよ、ハリー。だが、だからといって現実でないことになるかね？",
+        "zh-CN": "这当然发生在你的脑海里，哈利，但为什么这就意味着它不是真的呢？",
+        "ar": "بالطبع هذا يحدث داخل رأسك يا هاري، ولكن لماذا يعني ذلك أنه ليس حقيقياً؟",
+        "ru": "Конечно, это происходит у тебя в голове, Гарри. Но с чего бы это значило, что это не по-настоящему?",
+        "pt": "Claro que está acontecendo dentro da sua cabeça, Harry, mas por que isso significaria que não é real?"
+      }
     },
     {
       "quote": "The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.",
       "author": "Bob Marley",
-      "translations": {}
+      "translations": {
+        "it": "La verità è che tutti ti faranno soffrire. Devi solo trovare le persone per cui vale la pena soffrire.",
+        "id": "Kenyataannya, semua orang akan menyakitimu. Kamu hanya perlu menemukan orang-orang yang layak diperjuangkan.",
+        "fil": "Ang totoo, lahat ng tao ay may masasaktan sa iyo. Kailangan mo lang hanapin ang mga taong sulit pagtiisan.",
+        "hi": "सच यह है कि हर कोई आपको कभी न कभी दुख देगा। बस उन्हें ढूँढ़ना है जिनके लिए दुख सहना भी सार्थक हो।",
+        "es": "La verdad es que todos te van a hacer daño. Solo tienes que encontrar a quienes valga la pena sufrir.",
+        "fr": "La vérité, c'est que tout le monde te fera souffrir. Il s'agit juste de trouver ceux qui valent la peine qu'on souffre pour eux.",
+        "de": "Die Wahrheit ist: Jeder wird dich irgendwann verletzen. Du musst nur die finden, für die sich das Leiden lohnt.",
+        "ja": "実のところ、誰もが君を傷つける。傷ついてもいいと思える相手を見つければいいのだ。",
+        "zh-CN": "事实是，每个人都会伤害你。你只需找到那些值得你为之受苦的人。",
+        "ar": "الحقيقة أن الجميع سيؤذونك، وما عليك إلا أن تجد من يستحقون أن تتألم من أجلهم.",
+        "ru": "Правда в том, что тебя будут ранить все. Нужно лишь найти тех, ради кого стоит страдать.",
+        "pt": "A verdade é que todo mundo vai te machucar. Você só precisa encontrar aqueles por quem vale a pena sofrer."
+      }
     },
     {
       "quote": "Not all of us can do great things. But we can do small things with great love.",
       "author": "Mother Teresa",
-      "translations": {}
+      "translations": {
+        "it": "Non tutti possiamo fare grandi cose, ma possiamo fare piccole cose con grande amore.",
+        "id": "Tidak semua dari kita bisa melakukan hal-hal besar. Tetapi kita bisa melakukan hal-hal kecil dengan cinta yang besar.",
+        "fil": "Hindi lahat tayo ay kayang gumawa ng mga dakilang bagay. Ngunit kaya nating gumawa ng maliliit na bagay nang may dakilang pagmamahal.",
+        "hi": "हम सब बड़े काम नहीं कर सकते। पर छोटे काम बड़े प्रेम से कर सकते हैं।",
+        "es": "No todos podemos hacer grandes cosas, pero podemos hacer cosas pequeñas con un gran amor.",
+        "fr": "Nous ne pouvons pas tous faire de grandes choses, mais nous pouvons faire de petites choses avec un grand amour.",
+        "de": "Nicht jeder von uns kann Großes vollbringen. Aber wir können kleine Dinge mit großer Liebe tun.",
+        "ja": "誰もが偉大なことをできるわけではない。けれど、小さなことに大きな愛を込めることはできる。",
+        "zh-CN": "并非人人都能做伟大的事，但我们可以带着伟大的爱去做小事。",
+        "ar": "ليس بوسعنا جميعاً أن نصنع أشياء عظيمة، لكن بوسعنا أن نصنع أشياء صغيرة بحب عظيم.",
+        "ru": "Не все из нас способны на великие дела. Но мы можем делать малые дела с великой любовью.",
+        "pt": "Nem todos podemos fazer grandes coisas. Mas podemos fazer pequenas coisas com grande amor."
+      }
     },
     {
       "quote": "To the well-organized mind, death is but the next great adventure.",
       "author": "J.K. Rowling",
-      "translations": {}
+      "translations": {
+        "it": "Per una mente ben organizzata, la morte non è che la prossima grande avventura.",
+        "id": "Bagi pikiran yang tertata baik, kematian hanyalah petualangan besar berikutnya.",
+        "fil": "Para sa maayos na isipan, ang kamatayan ay ang susunod lamang na dakilang pakikipagsapalaran.",
+        "hi": "सुव्यवस्थित मन के लिए मृत्यु अगला महान अभियान भर है।",
+        "es": "Para una mente bien organizada, la muerte no es más que la siguiente gran aventura.",
+        "fr": "Pour un esprit bien organisé, la mort n'est jamais qu'une grande aventure de plus.",
+        "de": "Für einen gut geordneten Geist ist der Tod nur das nächste große Abenteuer.",
+        "ja": "整った心にとって、死は次なる大いなる冒険にすぎない。",
+        "zh-CN": "对于头脑清明的人来说，死亡不过是下一场伟大的冒险。",
+        "ar": "بالنسبة للعقل المنظم، ليس الموت سوى المغامرة العظيمة التالية.",
+        "ru": "Для хорошо организованного ума смерть — это всего лишь следующее великое приключение.",
+        "pt": "Para uma mente bem organizada, a morte é apenas a próxima grande aventura."
+      }
     },
     {
       "quote": "All you need is love. But a little chocolate now and then doesn't hurt.",
       "author": "Charles M. Schulz",
-      "translations": {}
+      "translations": {
+        "it": "L'amore è tutto ciò che serve. Ma un po' di cioccolato ogni tanto non guasta.",
+        "id": "Cinta adalah segalanya yang kau butuhkan. Tapi sedikit cokelat sesekali tidak ada salahnya.",
+        "fil": "Pag-ibig lang ang kailangan mo. Pero ang kaunting tsokolate paminsan-minsan ay hindi masama.",
+        "hi": "प्यार ही सब कुछ है। पर बीच-बीच में थोड़ी चॉकलेट भी बुरी नहीं।",
+        "es": "Todo lo que necesitas es amor. Pero un poco de chocolate de vez en cuando no hace daño.",
+        "fr": "L'amour suffit à tout. Mais un peu de chocolat de temps en temps ne fait pas de mal.",
+        "de": "Alles, was du brauchst, ist Liebe. Aber ein bisschen Schokolade ab und zu schadet nicht.",
+        "ja": "必要なのは愛だけ。でも、ときどき少しのチョコレートがあっても悪くない。",
+        "zh-CN": "爱就是你所需要的一切。不过偶尔来点巧克力也无妨。",
+        "ar": "كل ما تحتاجه هو الحب، لكن قليلاً من الشوكولاتة بين الحين والآخر لا يضر.",
+        "ru": "Всё, что тебе нужно, — это любовь. Но немного шоколада время от времени не повредит.",
+        "pt": "Tudo o que você precisa é de amor. Mas um pouco de chocolate de vez em quando não faz mal."
+      }
     },
     {
       "quote": "We read to know we're not alone.",
       "author": "William Nicholson",
-      "translations": {}
+      "translations": {
+        "it": "Leggiamo per sapere che non siamo soli.",
+        "id": "Kita membaca untuk tahu bahwa kita tidak sendirian.",
+        "fil": "Nagbabasa tayo upang malamang hindi tayo nag-iisa.",
+        "hi": "हम पढ़ते हैं ताकि जान सकें कि हम अकेले नहीं हैं।",
+        "es": "Leemos para saber que no estamos solos.",
+        "fr": "Nous lisons pour savoir que nous ne sommes pas seuls.",
+        "de": "Wir lesen, um zu wissen, dass wir nicht allein sind.",
+        "ja": "私たちは、ひとりではないと知るために読むのだ。",
+        "zh-CN": "我们读书，是为了知道自己并不孤单。",
+        "ar": "نقرأ لنعرف أننا لسنا وحدنا.",
+        "ru": "Мы читаем, чтобы знать, что мы не одиноки.",
+        "pt": "Lemos para saber que não estamos sozinhos."
+      }
     },
     {
       "quote": "Any fool can know. The point is to understand.",
       "author": "Albert Einstein",
-      "translations": {}
+      "translations": {
+        "it": "Qualsiasi sciocco può sapere. Il punto è capire.",
+        "id": "Orang bodoh mana pun bisa tahu. Intinya adalah memahami.",
+        "fil": "Kahit sinong hangal ay maaaring makaalam. Ang mahalaga ay makaunawa.",
+        "hi": "जानना तो कोई भी मूर्ख सकता है। असली बात है समझना।",
+        "es": "Cualquier tonto puede saber. La cuestión es comprender.",
+        "fr": "N'importe quel imbécile peut savoir. L'important, c'est de comprendre.",
+        "de": "Jeder Narr kann wissen. Worauf es ankommt, ist zu verstehen.",
+        "ja": "知ることは愚か者にもできる。肝心なのは理解することだ。",
+        "zh-CN": "知道，任何蠢人都做得到。关键在于理解。",
+        "ar": "أي أحمق يمكنه أن يعرف، لكن المغزى هو أن تفهم.",
+        "ru": "Знать может любой дурак. Суть в том, чтобы понимать.",
+        "pt": "Qualquer tolo pode saber. O importante é compreender."
+      }
     },
     {
       "quote": "I have always imagined that Paradise will be a kind of library.",
       "author": "Jorge Luis Borges",
-      "translations": {}
+      "translations": {
+        "it": "Ho sempre immaginato il Paradiso come una specie di biblioteca.",
+        "id": "Aku selalu membayangkan Surga sebagai semacam perpustakaan.",
+        "fil": "Lagi kong iniisip na ang Paraiso ay isang uri ng aklatan.",
+        "hi": "मैंने हमेशा कल्पना की है कि स्वर्ग किसी पुस्तकालय जैसा होगा।",
+        "es": "Siempre imaginé que el Paraíso sería algún tipo de biblioteca.",
+        "fr": "J'ai toujours imaginé le Paradis comme une sorte de bibliothèque.",
+        "de": "Ich habe mir das Paradies immer als eine Art Bibliothek vorgestellt.",
+        "ja": "私はいつも、楽園とは図書館のような場所だろうと想像してきた。",
+        "zh-CN": "我一直想象，天堂应该是图书馆的模样。",
+        "ar": "لطالما تخيلت أن الجنة نوع من المكتبات.",
+        "ru": "Я всегда представлял себе рай чем-то вроде библиотеки.",
+        "pt": "Sempre imaginei que o Paraíso seria uma espécie de biblioteca."
+      }
     },
     {
       "quote": "It is never too late to be what you might have been.",
