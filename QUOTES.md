@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-13
+
+> What stands in the way becomes the way.
+
+— Marcus Aurelius
+
 ## 2026-07-12
 
 > You do not rise to the level of your goals. You fall to the level of your systems.
