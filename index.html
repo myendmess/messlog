@@ -206,22 +206,17 @@
       </section>
 
       <section class="glass card">
-        <span class="card__kicker">// streaming</span>
-        <h2 class="card__title">Listen on Spotify</h2>
-        <p class="card__sub">The same track, streaming.</p>
-        <iframe
-          id="sp-embed"
-          class="spotify"
-          src="https://open.spotify.com/embed/track/3T4WZ84ukDuik3TAlz6HCX?utm_source=generator"
-          width="100%" height="152" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy" allowfullscreen></iframe>
-      </section>
-
-      <section class="glass card">
         <span class="card__kicker">// singles</span>
         <h2 class="card__title">Singles</h2>
-        <p class="card__sub">Fresh releases outside the album — <strong>Ascend</strong> just joined the daily-Shorts rotation.</p>
+        <p class="card__sub"><strong>Vespero</strong> and <strong>Ascend</strong> — the releases scoring the daily Shorts.</p>
+        <iframe
+          class="spotify"
+          src="https://open.spotify.com/embed/track/3T4WZ84ukDuik3TAlz6HCX?utm_source=generator"
+          title="my&amp;mess — Vespero"
+          width="100%" height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy" allowfullscreen></iframe>
+        <div style="height: 0.9rem"></div>
         <iframe
           class="spotify"
           src="https://open.spotify.com/embed/track/4tTIxKIcHRc6f6EeuwLxqg?utm_source=generator"
@@ -267,16 +262,12 @@
         if (!t) return;
         const name = document.getElementById('track-name');
         const yt = document.getElementById('yt-embed');
-        const sp = document.getElementById('sp-embed');
         if (name) name.textContent = `${t.artist} · ${t.name}`;
         // Only reassign src when it actually changes, to avoid a redundant reload.
+        // (Spotify embeds live in the static Singles/Albums cards below.)
         if (yt && t.youtube_id) {
           const u = `https://www.youtube.com/embed/${t.youtube_id}`;
           if (yt.src !== u) yt.src = u;
-        }
-        if (sp && t.spotify_track_id) {
-          const u = `https://open.spotify.com/embed/track/${t.spotify_track_id}?utm_source=generator`;
-          if (sp.src !== u) sp.src = u;
         }
       })
       .catch(() => {});
