@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-15
+
+> Either you run the day or the day runs you.
+
+— Jim Rohn
+
 ## 2026-07-14
 
 > We suffer more often in imagination than in reality.
