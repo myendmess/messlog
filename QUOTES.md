@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-17
+
+> The secret of getting ahead is getting started.
+
+— Mark Twain
+
 ## 2026-07-16
 
 > Whether you think you can, or you think you can't — you're right.
