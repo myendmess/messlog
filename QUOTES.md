@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-23
+
+> Inaction breeds doubt and fear. Action breeds confidence and courage.
+
+— Dale Carnegie
+
 ## 2026-07-22
 
 > Knowing is not enough; we must apply. Willing is not enough; we must do.
