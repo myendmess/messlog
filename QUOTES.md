@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-25
+
+> If you're going through hell, keep going.
+
+— Winston Churchill
+
 ## 2026-07-24
 
 > Don't count the days, make the days count.
