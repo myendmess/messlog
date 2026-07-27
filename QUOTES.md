@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-27
+
+> The cave you fear to enter holds the treasure you seek.
+
+— Joseph Campbell
+
 ## 2026-07-26
 
 > Hard choices, easy life. Easy choices, hard life.
