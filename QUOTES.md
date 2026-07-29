@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-29
+
+> Motivation is what gets you started. Habit is what keeps you going.
+
+— Jim Ryun
+
 ## 2026-07-28
 
 > How we spend our days is, of course, how we spend our lives.
