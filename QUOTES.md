@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-07-31
+
+> A year from now you may wish you had started today.
+
+— Karen Lamb
+
 ## 2026-07-30
 
 > Energy and persistence conquer all things.
