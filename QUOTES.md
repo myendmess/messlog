@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-01
+
+> He who has a why to live can bear almost any how.
+
+— Friedrich Nietzsche
+
 ## 2026-07-31
 
 > A year from now you may wish you had started today.
