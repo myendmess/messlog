@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-02
+
+> What we fear doing most is usually what we most need to do.
+
+— Tim Ferriss
+
 ## 2026-08-01
 
 > He who has a why to live can bear almost any how.
