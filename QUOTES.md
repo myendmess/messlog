@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-03
+
+> Everything you've ever wanted is on the other side of fear.
+
+— George Addair
+
 ## 2026-08-02
 
 > What we fear doing most is usually what we most need to do.
