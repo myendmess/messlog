@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-04
+
+> Action is the foundational key to all success.
+
+— Pablo Picasso
+
 ## 2026-08-03
 
 > Everything you've ever wanted is on the other side of fear.
