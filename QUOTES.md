@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-06
+
+> Discipline is the bridge between goals and accomplishment.
+
+— Jim Rohn
+
 ## 2026-08-05
 
 > It does not matter how slowly you go as long as you do not stop.
