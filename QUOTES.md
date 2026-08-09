@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-09
+
+> What is not started today is never finished tomorrow.
+
+— Johann Wolfgang von Goethe
+
 ## 2026-08-08
 
 > You can't build a reputation on what you are going to do.
