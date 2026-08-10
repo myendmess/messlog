@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-10
+
+> You have power over your mind — not outside events. Realize this, and you will find strength.
+
+— Marcus Aurelius
+
 ## 2026-08-09
 
 > What is not started today is never finished tomorrow.
