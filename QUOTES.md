@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-11
+
+> Success is not final, failure is not fatal: it is the courage to continue that counts.
+
+— Winston Churchill
+
 ## 2026-08-10
 
 > You have power over your mind — not outside events. Realize this, and you will find strength.
