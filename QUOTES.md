@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-14
+
+> Be not afraid of going slowly; be afraid only of standing still.
+
+— Chinese proverb
+
 ## 2026-08-13
 
 > A river cuts through rock not because of its power, but because of its persistence.
