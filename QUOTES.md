@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-18
+
+> No man is free who is not master of himself.
+
+— Epictetus
+
 ## 2026-08-17
 
 > The journey of a thousand miles begins with a single step.
