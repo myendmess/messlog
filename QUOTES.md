@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-21
+
+> The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.
+
+— Albert Einstein
+
 ## 2026-08-20
 
 > You don't have to be great to start, but you have to start to be great.
