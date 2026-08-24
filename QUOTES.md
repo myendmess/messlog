@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-24
+
+> The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.
+
+— Jane Austen
+
 ## 2026-08-23
 
 > There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.
