@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-25
+
+> Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.
+
+— Marilyn Monroe
+
 ## 2026-08-24
 
 > The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.
