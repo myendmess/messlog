@@ -28,6 +28,11 @@ from googleapiclient.http import MediaFileUpload
 _UNSAFE = re.compile(r"[<>\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 BASE_HASHTAGS = "#motivation #quotes #shorts #daily #inspiration"
+# Was an owner comment posted after each upload. The Data API cannot pin a
+# comment, and an unpinned comment on a Short is buried, so it only paid off if
+# someone pinned it by hand every day — on a pipeline whose point is running
+# unattended. In the description it costs nothing and is always visible.
+SUBSCRIBE_NUDGE = "One quote, every day — subscribe so tomorrow's finds you \U0001F64F"
 BASE_TAGS = ["motivation", "quotes", "shorts", "daily", "inspiration"]
 TAGS_CHAR_BUDGET = 470  # YouTube caps tags at 500 chars BY ITS OWN COUNTING (see budget_tags)
 # The daily Short has one shot a day: a 5xx or a dropped connection used to
@@ -117,8 +122,11 @@ def build_title(counter, quote, author):
     return f"{prefix}{body}{suffix}"
 
 
-def build_description(quote, author, credit, hashtags):
-    return f'"{quote}"\n\n— {author}\n\n{credit}{hashtags}'
+def build_description(quote, author, credit, hashtags, nudge=""):
+    """Video description. `nudge` is opt-in per call: it is English-only, so the
+    default upload carries it and the per-language localizations do not."""
+    nudge = f"{nudge}\n\n" if nudge else ""
+    return f'"{quote}"\n\n— {author}\n\n{nudge}{credit}{hashtags}'
 
 
 def load_localizations(counter, author, credit):
@@ -146,33 +154,6 @@ def load_localizations(counter, author, credit):
         }
         extra_tags += [sanitize(str(t)) for t in m.get("tags", []) if sanitize(str(t))]
     return localizations, extra_tags
-
-
-def cta_text():
-    """Owner-comment CTA: subscribe nudge + the actual track's links + a reply
-    hook. Reuses music_credit() so the comment plugs the song really used."""
-    return (
-        "One quote, every day — subscribe so tomorrow's finds you 🙏\n\n"
-        + music_credit()
-        + "Which quote should tomorrow bring? Tell me below 👇"
-    )
-
-
-def post_cta_comment(youtube, video_id):
-    """Post the CTA as a channel-owner comment on the fresh upload.
-
-    The Data API has no endpoint for pinning — pin it manually in Studio.
-    Requires the youtube.force-ssl scope (re-run get_refresh_token.py if the
-    stored token predates it)."""
-    youtube.commentThreads().insert(
-        part="snippet",
-        body={
-            "snippet": {
-                "videoId": video_id,
-                "topLevelComment": {"snippet": {"textOriginal": cta_text()}},
-            }
-        },
-    ).execute()
 
 
 def budget_tags(base, extra):
@@ -224,9 +205,8 @@ def main():
         # No scopes declared on purpose: declaring them makes the refresh
         # request them, and requesting a scope the stored token was never
         # granted hard-fails the refresh (invalid_scope) — breaking the whole
-        # upload. Left unset, the refresh uses whatever was originally granted:
-        # older tokens still upload (the CTA comment 403s into its fail-soft
-        # path); tokens minted with youtube.force-ssl unlock the comment too.
+        # upload. Left unset, the refresh uses whatever was originally granted,
+        # so a token minted at any point in this project's history still works.
     )
     youtube = build("youtube", "v3", credentials=creds)
 
@@ -241,7 +221,7 @@ def main():
     body = {
         "snippet": {
             "title": build_title(counter, quote, author),
-            "description": build_description(quote, author, credit, BASE_HASHTAGS),
+            "description": build_description(quote, author, credit, BASE_HASHTAGS, SUBSCRIBE_NUDGE),
             "tags": budget_tags(BASE_TAGS, extra_tags),
             "categoryId": "22",  # People & Blogs
             "defaultLanguage": "en",
@@ -282,15 +262,6 @@ def main():
         },
     ).execute(num_retries=API_RETRIES)
     print(f"Added to playlist {playlist_id}")
-
-    # Fail-soft: a missing scope or comment hiccup must never fail the upload.
-    try:
-        post_cta_comment(youtube, video_id)
-        print("CTA comment posted — pin it in Studio when you get a chance.")
-    except Exception as e:
-        print(f"CTA comment failed ({type(e).__name__}) — post it manually. "
-              "If this is a 403, re-run scripts/get_refresh_token.py to mint a "
-              "token with the youtube.force-ssl scope and update YT_REFRESH_TOKEN.")
 
 
 if __name__ == "__main__":

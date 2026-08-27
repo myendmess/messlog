@@ -12,10 +12,14 @@ GitHub repo secrets: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
 """
 from google_auth_oauthlib.flow import InstalledAppFlow
 
+# Least privilege: upload the video, and manage the playlist it goes into.
+# youtube.force-ssl was here for the owner CTA comment; that was dropped in
+# favour of a line in the description, so the extra permission is no longer
+# requested. Existing tokens keep working — upload_youtube.py declares no
+# scopes when refreshing.
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube",
-    "https://www.googleapis.com/auth/youtube.force-ssl",  # posting the CTA comment
 ]
 
 flow = InstalledAppFlow.from_client_secrets_file("client_secret.json", SCOPES)
