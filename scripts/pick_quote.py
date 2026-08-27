@@ -17,7 +17,13 @@ for local testing.
 import json
 import re
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
+
+# Warn this many days before the localized stretch of the bank runs out. The
+# bank is thousands of entries deep but only its first stretch carries
+# translations, so multi-market reach ends long before quotes do — and it ends
+# silently, one English-only Short at a time, unless something says so first.
+LOCALIZATION_RUNWAY_WARN_DAYS = 30
 
 QUOTES_FILE = "assets/quotes.json"
 LOCALES_FILE = "assets/locales.json"
@@ -32,6 +38,22 @@ def sanitize(text, limit=300):
     text = _UNSAFE.sub("", str(text))
     text = re.sub(r"\s+", " ", text).strip()
     return text[:limit].strip()
+
+
+def localization_runway(quotes, idx, codes):
+    """How many consecutive upcoming entries still carry a usable translation.
+
+    Counts forward from today's entry and stops at the first one that has no
+    translation for any enabled market — that entry is the day the channel
+    goes English-only. Returns the number of localized days left, today
+    included (0 means today is already English-only)."""
+    runway = 0
+    for i in range(idx, len(quotes)):
+        translations = quotes[i].get("translations") or {}
+        if not any(sanitize(translations.get(c, "")) for c in codes):
+            break
+        runway += 1
+    return runway
 
 
 def write(path, text):
@@ -88,6 +110,32 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(localized, f, ensure_ascii=False, indent=2)
     print(f"Wrote {OUTPUT_FILE} ({', '.join(localized) or 'no locales'})")
+
+    # Surface the localization cliff. Without this the pipeline degrades in
+    # silence: uploads keep succeeding, the run stays green, and every Short
+    # quietly reaches only English speakers. ::warning:: puts it on the run
+    # summary the same way an exhausted quote bank is flagged.
+    codes = [m["code"] for m in markets]
+    if not localized:
+        print(f"::warning::Entry {idx} has no translations — this Short ships "
+              f"English-only to all {len(codes)} enabled markets. "
+              "Top up translations in quotes.json.")
+        return
+
+    missing = [c for c in codes if c not in localized]
+    if missing:
+        print(f"::warning::Entry {idx} has no translation for: {', '.join(missing)} "
+              f"({len(localized)} of {len(codes)} markets localized).")
+
+    runway = localization_runway(quotes, idx, codes)
+    if runway <= LOCALIZATION_RUNWAY_WARN_DAYS:
+        last_day = today + timedelta(days=runway - 1)
+        print(f"::warning::Only {runway} localized day(s) left in the bank "
+              f"(through {last_day}) — after that every Short ships English-only. "
+              "Top up translations in quotes.json.")
+    else:
+        print(f"Localization runway: {runway} days "
+              f"(through {today + timedelta(days=runway - 1)}).")
 
 
 if __name__ == "__main__":
