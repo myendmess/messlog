@@ -2,17 +2,36 @@ name: Daily Quote
 
 on:
   schedule:
-    - cron: '0 05 * * *'
+    # Off the top of the hour on purpose: GitHub queues `schedule` events on
+    # shared infrastructure and silently DROPS them when that queue is
+    # congested, which is worst at :00. On 2026-08-27 the 05:00 event never
+    # arrived and no Short was published that morning.
+    - cron: '17 5 * * *'
+    # Catch-up: if the morning event was dropped, this one still publishes the
+    # day's quote. When the morning run landed, the "already published today?"
+    # guard below makes this a no-op.
+    - cron: '17 13 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Render only: no README commit, no YouTube upload; out.mp4 saved as a run artifact for preview"
         type: boolean
         default: false
+      force_publish:
+        description: "Re-render and re-upload even if today is already in QUOTES.md (recovers a run that committed but failed to upload)"
+        type: boolean
+        default: false
 
 # Least privilege: contents:write only because the job commits the quote to README.
 permissions:
   contents: write
+
+# One publication at a time. Two crons, manual dispatches and late-arriving
+# dropped events can otherwise overlap, and two runs racing produce a duplicate
+# Short. Queued rather than cancelled: a catch-up run must still get its turn.
+concurrency:
+  group: daily-quote
+  cancel-in-progress: false
 
 jobs:
   daily:
@@ -22,11 +41,36 @@ jobs:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Pick quote and commit
+        id: publish
         env:
           DRY_RUN: ${{ inputs.dry_run == true }}
+          FORCE_PUBLISH: ${{ inputs.force_publish == true }}
         run: |
           git config user.name "myendmess"
           git config user.email "140411362+myendmess@users.noreply.github.com"
+
+          DATE=$(date -u '+%Y-%m-%d')
+
+          # Idempotency guard. Two scheduled runs a day, plus manual dispatches
+          # and late-arriving dropped events, mean this job can start when the
+          # day is already done. QUOTES.md is the publication record: if today
+          # is in it there is nothing to commit and nothing to upload, so every
+          # later step is skipped via `published`. The pattern tolerates
+          # trailing whitespace — humans are invited to fix mistakes in this
+          # file, and a stray space must not silently re-publish the day.
+          ALREADY=false
+          if grep -q "^##[[:space:]]*$DATE[[:space:]]*$" QUOTES.md; then
+            ALREADY=true
+          fi
+
+          # A dry run only renders, so it never consults the record; force_publish
+          # deliberately overrides it to recover a day whose upload failed after
+          # the commit landed.
+          if [ "$DRY_RUN" != "true" ] && [ "$ALREADY" = "true" ] && [ "$FORCE_PUBLISH" != "true" ]; then
+            echo "::notice::$DATE is already in QUOTES.md — already published today, nothing to do."
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
           # No remote quote API anymore: the curated, pre-translated bank in
           # quotes.json is the source. pick_quote.py sanitizes and writes
@@ -41,9 +85,9 @@ jobs:
           fi
           if [ "$DRY_RUN" = "true" ]; then
             echo "Dry run — skipping README commit."
+            echo "published=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          DATE=$(date -u '+%Y-%m-%d')
 
           # Build the new entry and insert it ABOVE the most recent one in the
           # quote log (QUOTES.md — the README stays human-edited).
@@ -60,13 +104,43 @@ jobs:
           ' QUOTES.md > QUOTES.tmp
           mv QUOTES.tmp QUOTES.md
 
+          # force_publish on a day already logged: re-render and re-upload to
+          # recover it, but do not add a second entry to the record.
+          if [ "$ALREADY" = "true" ]; then
+            echo "::notice::$DATE is already logged — force_publish set, re-publishing without a new entry."
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           git add QUOTES.md
           git commit -m "$DATE: \"$QUOTE\" — $AUTHOR"
-          git pull --rebase origin main
+
+          # A conflicting rebase exits non-zero and would kill the step under
+          # `bash -e` mid-rebase, leaving a detached HEAD. Fail deliberately instead.
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            echo "::error::Could not rebase onto origin/main — $DATE left unpublished."
+            exit 1
+          fi
+
+          # Did our commit actually survive the rebase? Counting "## $DATE"
+          # headings cannot answer this: the entry is date-deterministic, so a
+          # concurrent run produces a byte-identical patch and rebase silently
+          # drops ours as already-applied — one heading, not two, and the push
+          # below would no-op while we went on to upload a duplicate Short.
+          # Commits ahead of origin/main is the signal that cannot be faked.
+          if [ "$(git rev-list --count origin/main..HEAD)" -eq 0 ]; then
+            echo "::notice::$DATE was published by a concurrent run — skipping upload."
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           git push
+          echo "published=true" >> "$GITHUB_OUTPUT"
 
       - name: Check YouTube secrets
         id: yt
+        if: steps.publish.outputs.published == 'true'
         env:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
@@ -78,12 +152,12 @@ jobs:
           fi
 
       - name: Render video
-        if: steps.yt.outputs.ready == 'true' || inputs.dry_run == true
+        if: steps.publish.outputs.published == 'true' && (steps.yt.outputs.ready == 'true' || inputs.dry_run == true)
         run: bash scripts/make_video.sh
 
       # Dry run: publish nothing — attach the render to the run for preview.
       - name: Upload render as artifact (dry run)
-        if: inputs.dry_run == true
+        if: steps.publish.outputs.published == 'true' && inputs.dry_run == true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: short-preview
@@ -91,13 +165,13 @@ jobs:
           retention-days: 3
 
       - name: Set up Python
-        if: steps.yt.outputs.ready == 'true' && inputs.dry_run != true
+        if: steps.publish.outputs.published == 'true' && steps.yt.outputs.ready == 'true' && inputs.dry_run != true
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.x'
 
       - name: Upload to YouTube playlist
-        if: steps.yt.outputs.ready == 'true' && inputs.dry_run != true
+        if: steps.publish.outputs.published == 'true' && steps.yt.outputs.ready == 'true' && inputs.dry_run != true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}

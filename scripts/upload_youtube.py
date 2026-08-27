@@ -30,6 +30,10 @@ _UNSAFE = re.compile(r"[<>\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 BASE_HASHTAGS = "#motivation #quotes #shorts #daily #inspiration"
 BASE_TAGS = ["motivation", "quotes", "shorts", "daily", "inspiration"]
 TAGS_CHAR_BUDGET = 470  # YouTube caps tags at 500 chars BY ITS OWN COUNTING (see budget_tags)
+# The daily Short has one shot a day: a 5xx or a dropped connection used to
+# fail the whole run and cost that day's publication. google-api-python-client
+# retries these itself with exponential backoff when asked to.
+API_RETRIES = 5
 
 
 def sanitize(text):
@@ -201,7 +205,7 @@ def insert_video(youtube, part, body):
     # not execute(). chunksize=-1 sends the whole file in a single chunk.
     response = None
     while response is None:
-        _status, response = request.next_chunk()
+        _status, response = request.next_chunk(num_retries=API_RETRIES)
     return response["id"]
 
 
@@ -266,6 +270,8 @@ def main():
         video_id = insert_video(youtube, part, body)
     print(f"Uploaded: https://youtu.be/{video_id}")
 
+    # Retried too: the video is already public at this point, so failing here
+    # would leave it orphaned outside the playlist with no clean way back.
     youtube.playlistItems().insert(
         part="snippet",
         body={
@@ -274,7 +280,7 @@ def main():
                 "resourceId": {"kind": "youtube#video", "videoId": video_id},
             }
         },
-    ).execute()
+    ).execute(num_retries=API_RETRIES)
     print(f"Added to playlist {playlist_id}")
 
     # Fail-soft: a missing scope or comment hiccup must never fail the upload.
