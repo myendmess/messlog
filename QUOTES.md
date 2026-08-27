@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-27
+
+> It is better to be hated for what you are than to be loved for what you are not.
+
+— André Gide
+
 ## 2026-08-26
 
 > Try not to become a man of success. Rather become a man of value.
