@@ -2,22 +2,24 @@ name: Daily Quote
 
 on:
   schedule:
-    # Off the top of the hour on purpose: GitHub queues `schedule` events on
-    # shared infrastructure and silently DROPS them when that queue is
-    # congested, which is worst at :00. On 2026-08-27 the 05:00 event never
-    # arrived and no Short was published that morning.
+    # These are currently DEAD WEIGHT, kept deliberately.
+    #
+    # Since 2026-08-26 GitHub has not delivered a single scheduled event for
+    # this repository: seven consecutive misses across two independent
+    # workflows, including a throwaway one created minutes earlier with no
+    # secrets and no history. Every workflow_dispatch in the same window
+    # started within seconds. This is a known GitHub-side regression — see
+    # github.com/orgs/community/discussions/185355, where GitHub state that a
+    # change was rolled back and "any commit pushed to the default branch will
+    # resync the impacted scheduled workflows". Four such commits have landed
+    # here since, with no effect.
+    #
+    # Publication is therefore driven by an external scheduler calling the
+    # workflow_dispatch API. These entries stay so that the moment GitHub
+    # fixes delivery, the repo goes back to scheduling itself for free — and
+    # the idempotency guard below makes a doubled-up day a harmless no-op.
     - cron: '17 5 * * *'
-    # Catch-up: if the morning event was dropped, this one still publishes the
-    # day's quote. When the morning run landed, the "already published today?"
-    # guard below makes this a no-op.
     - cron: '17 13 * * *'
-    # TEMPORARY probe (2026-08-28): three scheduled events in a row were
-    # dropped (08-27 05:00, 08-28 05:17, 08-28 13:17) while every
-    # workflow_dispatch ran instantly. This one-off entry tests whether
-    # schedule delivery works at all for this repo. Today is already
-    # published, so if it fires the idempotency guard skips it — no
-    # duplicate Short. REMOVE THIS LINE once the question is answered.
-    - cron: '57 13 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
