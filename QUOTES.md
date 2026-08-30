@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-08-30
+
+> A day without sunshine is like, you know, night.
+
+— Steve Martin
+
 ## 2026-08-29
 
 > A woman is like a tea bag; you never know how strong it is until it's in hot water.
