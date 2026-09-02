@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-02
+
+> But better to get hurt by the truth than comforted with a lie.
+
+— Khaled Hosseini
+
 ## 2026-09-01
 
 > It takes courage to grow up and become who you really are.
