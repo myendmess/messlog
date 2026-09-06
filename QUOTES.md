@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-06
+
+> A person's a person, no matter how small.
+
+— Dr. Seuss
+
 ## 2026-09-05
 
 > Never tell the truth to people who are not worthy of it.
