@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-09
+
+> A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.
+
+— Jane Austen
+
 ## 2026-09-08
 
 > Anyone who has never made a mistake has never tried anything new.
