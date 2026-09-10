@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-10
+
+> Some day you will be old enough to start reading fairy tales again.
+
+— C.S. Lewis
+
 ## 2026-09-09
 
 > A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.
