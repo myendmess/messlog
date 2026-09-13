@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-13
+
+> Some people never go crazy. What truly horrible lives they must lead.
+
+— Charles Bukowski
+
 ## 2026-09-12
 
 > A lie can travel half way around the world while the truth is putting on its shoes.
