@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-16
+
+> The reason I talk to myself is because I'm the only one whose answers I accept.
+
+— George Carlin
+
 ## 2026-09-15
 
 > Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!
