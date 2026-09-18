@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-18
+
+> The question isn't who is going to let me; it's who is going to stop me.
+
+— Ayn Rand
+
 ## 2026-09-17
 
 > I am free of all prejudice. I hate everyone equally.
