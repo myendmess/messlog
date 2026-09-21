@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-21
+
+> Not all those who wander are lost.
+
+— J.R.R. Tolkien
+
 ## 2026-09-20
 
 > You don't forget the face of the person who was your last hope.
