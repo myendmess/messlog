@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-22
+
+> Do not pity the dead, Harry. Pity the living, and, above all those who live without love.
+
+— J.K. Rowling
+
 ## 2026-09-21
 
 > Not all those who wander are lost.
