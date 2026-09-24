@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-24
+
+> I have never let my schooling interfere with my education.
+
+— Mark Twain
+
 ## 2026-09-23
 
 > There is nothing to writing. All you do is sit down at a typewriter and bleed.
