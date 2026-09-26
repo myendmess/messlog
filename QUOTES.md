@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-26
+
+> Do one thing every day that scares you.
+
+— Eleanor Roosevelt
+
 ## 2026-09-25
 
 > There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.
