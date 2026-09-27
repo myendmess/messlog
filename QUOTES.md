@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-09-27
+
+> I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.
+
+— Marilyn Monroe
+
 ## 2026-09-26
 
 > Do one thing every day that scares you.
