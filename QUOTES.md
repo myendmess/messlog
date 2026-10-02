@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-02
+
+> When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.
+
+— Helen Keller
+
 ## 2026-10-01
 
 > There is no friend as loyal as a book.
