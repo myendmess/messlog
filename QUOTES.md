@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-04
+
+> A reader lives a thousand lives before he dies. The man who never reads lives only one.
+
+— George R.R. Martin
+
 ## 2026-10-03
 
 > Life isn't about finding yourself. Life is about creating yourself.
