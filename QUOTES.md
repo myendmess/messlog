@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-06
+
+> You believe lies so you eventually learn to trust no one but yourself.
+
+— Marilyn Monroe
+
 ## 2026-10-05
 
 > You can never get a cup of tea large enough or a book long enough to suit me.
