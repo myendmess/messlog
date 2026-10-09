@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-09
+
+> It matters not what someone is born, but what they grow to be.
+
+— J.K. Rowling
+
 ## 2026-10-08
 
 > Only in the darkness can you see the stars.
