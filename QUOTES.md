@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-11
+
+> The more that you read, the more things you will know. The more that you learn, the more places you'll go.
+
+— Dr. Seuss
+
 ## 2026-10-10
 
 > Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.
