@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-13
+
+> The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.
+
+— Bob Marley
+
 ## 2026-10-12
 
 > Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?
