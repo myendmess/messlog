@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-16
+
+> All you need is love. But a little chocolate now and then doesn't hurt.
+
+— Charles M. Schulz
+
 ## 2026-10-15
 
 > To the well-organized mind, death is but the next great adventure.
