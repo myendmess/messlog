@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-19
+
+> I have always imagined that Paradise will be a kind of library.
+
+— Jorge Luis Borges
+
 ## 2026-10-18
 
 > Any fool can know. The point is to understand.
