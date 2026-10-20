@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-20
+
+> It is never too late to be what you might have been.
+
+— George Eliot
+
 ## 2026-10-19
 
 > I have always imagined that Paradise will be a kind of library.
