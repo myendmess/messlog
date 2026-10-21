@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-21
+
+> For every minute you are angry you lose sixty seconds of happiness.
+
+— Ralph Waldo Emerson
+
 ## 2026-10-20
 
 > It is never too late to be what you might have been.
