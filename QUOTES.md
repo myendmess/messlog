@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-22
+
+> If you judge people, you have no time to love them.
+
+— Mother Teresa
+
 ## 2026-10-21
 
 > For every minute you are angry you lose sixty seconds of happiness.
