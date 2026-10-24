@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-24
+
+> Today you are You, that is truer than true. There is no one alive who is Youer than You.
+
+— Dr. Seuss
+
 ## 2026-10-23
 
 > Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.
