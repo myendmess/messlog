@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-26
+
+> It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.
+
+— J.K. Rowling
+
 ## 2026-10-25
 
 > If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.
