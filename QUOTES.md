@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-28
+
+> One good thing about music, when it hits you, you feel no pain.
+
+— Bob Marley
+
 ## 2026-10-27
 
 > Logic will get you from A to Z; imagination will get you everywhere.
