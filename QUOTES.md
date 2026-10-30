@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-30
+
+> If you can't explain it to a six year old, you don't understand it yourself.
+
+— Albert Einstein
+
 ## 2026-10-29
 
 > It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.
