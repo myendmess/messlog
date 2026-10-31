@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-10-31
+
+> I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.
+
+— Dr. Seuss
+
 ## 2026-10-30
 
 > If you can't explain it to a six year old, you don't understand it yourself.
