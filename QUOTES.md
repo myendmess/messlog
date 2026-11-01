@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-01
+
+> I may not have gone where I intended to go, but I think I have ended up where I needed to be.
+
+— Douglas Adams
+
 ## 2026-10-31
 
 > I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.
