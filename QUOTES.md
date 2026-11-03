@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-03
+
+> Good friends, good books, and a sleepy conscience: this is the ideal life.
+
+— Mark Twain
+
 ## 2026-11-02
 
 > It is not a lack of love, but a lack of friendship that makes unhappy marriages.
