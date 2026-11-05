@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-05
+
+> Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
+
+— Bernard M. Baruch
+
 ## 2026-11-04
 
 > Life is what happens to us while we are making other plans.
