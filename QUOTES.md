@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-09
+
+> No one can make you feel inferior without your consent.
+
+— Eleanor Roosevelt
+
 ## 2026-11-08
 
 > Be the change that you wish to see in the world.
