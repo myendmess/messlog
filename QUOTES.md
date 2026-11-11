@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-11
+
+> Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.
+
+— Martin Luther King Jr.
+
 ## 2026-11-10
 
 > Live as if you were to die tomorrow. Learn as if you were to live forever.
