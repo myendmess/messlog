@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-13
+
+> We accept the love we think we deserve.
+
+— Stephen Chbosky
+
 ## 2026-11-12
 
 > Without music, life would be a mistake.
