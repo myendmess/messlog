@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-14
+
+> It does not do to dwell on dreams and forget to live.
+
+— J.K. Rowling
+
 ## 2026-11-13
 
 > We accept the love we think we deserve.
