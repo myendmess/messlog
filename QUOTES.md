@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-16
+
+> Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.
+
+— Neil Gaiman
+
 ## 2026-11-15
 
 > We are all in the gutter, but some of us are looking at the stars.
