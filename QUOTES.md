@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-19
+
+> I love deadlines. I love the whooshing noise they make as they go by.
+
+— Douglas Adams
+
 ## 2026-11-18
 
 > Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.
