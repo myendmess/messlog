@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-21
+
+> Everything you can imagine is real.
+
+— Pablo Picasso
+
 ## 2026-11-20
 
 > Love is that condition in which the happiness of another person is essential to your own.
