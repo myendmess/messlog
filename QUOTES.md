@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-22
+
+> There is no greater agony than bearing an untold story inside you.
+
+— Maya Angelou
+
 ## 2026-11-21
 
 > Everything you can imagine is real.
