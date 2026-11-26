@@ -7,9 +7,25 @@ and") measure about 1010px. One leaves half the frame empty, the other runs
 off a 1080px frame. Which you get depends on the letters the day's quote
 happens to contain, so the overflow arrived at random and looked intermittent.
 
-What finally pushed it over the edge: GitHub's runners moved to FFmpeg 8,
-whose drawtext shapes text through libharfbuzz and measures glyphs
-differently from the FFmpeg 6 these numbers were tuned against.
+Across the 8319-entry bank, 26 columns produced lines up to 1176px — 48px
+off each edge of a 1080px frame. All-caps quotes are the worst, capitals
+being much wider than lowercase. About 1 day in 213 clipped outright, and
+many more rendered with only a few pixels to spare.
+
+The second, and more visible, half is the trailing space. `fold -s` breaks
+*after* the space, so every line but the last ended in one. Under the
+FFmpeg 8 now on GitHub's runners that trailing space draws as a .notdef
+box: the column of empty rectangles down the right-hand edge of the Shorts.
+The last line, having no trailing space, was the only one without a box —
+which is exactly what the broken renders showed. The box also adds its own
+advance (38px at 64px, against 22px for a space), pushing marginal lines
+the rest of the way off the frame.
+
+To be clear about what did NOT change: FFmpeg 7+ shapes drawtext through
+libharfbuzz, but shaping is not the culprit. Shaping these lines through
+HarfBuzz 8 gives advances identical to the plain hmtx sum below, 2px
+narrower where a kern pair applies — never wider. The widths were always
+unbounded; FFmpeg 8 only made the failure visible.
 
 Widths here are measured from the font file itself — TrueType `hmtx` advance
 widths, looked up through `cmap`. No third-party module, so there is nothing
@@ -36,8 +52,9 @@ import struct
 import sys
 
 # The frame is 1080 wide. 80px of air each side keeps the text clear of the
-# edge and of the Shorts UI rail, and leaves headroom for FFmpeg 8 measuring a
-# little wider than the advance-width sum below.
+# edge and of the Shorts UI rail. It is also margin against the measurement
+# being wrong: a line would have to render 16.5% wider than measured to reach
+# the frame edge, and the HarfBuzz check above puts the real error at 0%.
 DEFAULT_MAX_W = 1080 - 2 * 80
 
 # The quote block is drawn at y=(h-text_h)/2-320 and the author line lands near
