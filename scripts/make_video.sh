@@ -37,16 +37,36 @@ if ! command -v ffmpeg >/dev/null 2>&1; then
   sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 fi
 
-# drawtext does not auto-wrap, so wrap on spaces to fit the frame width.
-fold -s -w 26 "$QUOTE_FILE" > quote_wrapped.txt
+# drawtext does not auto-wrap. Wrap to a width measured from the font file
+# itself — see scripts/wrap_quote.py for why the old `fold -s -w 26` character
+# wrap put text off both edges of the frame and a box at the end of every line.
+# The wrapper also picks the font size, so a long quote shrinks instead of
+# overflowing; it prints "<fontsize> <line_spacing>".
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WRAP=$(python3 "$SCRIPT_DIR/wrap_quote.py" "$QUOTE_FILE" quote_wrapped.txt "$FONT_BOLD") || WRAP=""
+QUOTE_SIZE="${WRAP%% *}"; QUOTE_SPACING="${WRAP##* }"
+case "${QUOTE_SIZE}:${QUOTE_SPACING}" in
+  *[!0-9:]*|:*|*:) WRAP="" ;;   # non-numeric or empty -> fall back below
+esac
+if [ -z "$WRAP" ]; then
+  # Never lose the daily Short to a wrapper problem. 22 columns rather than the
+  # old 26 so even wide characters stay inside the frame, and strip the trailing
+  # space `fold -s` leaves on every line — FFmpeg 8 draws that as a .notdef box.
+  echo "::warning::wrap_quote.py failed — falling back to a fixed-width wrap." >&2
+  fold -s -w 22 "$QUOTE_FILE" | sed 's/[[:space:]]*$//' > quote_wrapped.txt
+  QUOTE_SIZE=64; QUOTE_SPACING=18
+fi
+
 printf '— %s' "$(cat "$AUTHOR_FILE")" > author_line.txt
+AUTHOR_SIZE=$(python3 "$SCRIPT_DIR/wrap_quote.py" --fit author_line.txt "$FONT_REG" 920 44) || AUTHOR_SIZE=44
+case "$AUTHOR_SIZE" in ''|*[!0-9]*) AUTHOR_SIZE=44 ;; esac
 
 DUR=15
-echo "Quote font: $FONT_BOLD"
+echo "Quote font: $FONT_BOLD (${QUOTE_SIZE}px), author ${AUTHOR_SIZE}px"
 
 # White + dark halo reads on any background; quote block lifted above center
 # so the lower half of the frame shows the scenery; author in brand gold.
-TEXT="drawtext=fontfile=${FONT_BOLD}:textfile=quote_wrapped.txt:fontcolor=white:borderw=4:bordercolor=black@0.85:fontsize=64:line_spacing=18:x=(w-text_w)/2:y=(h-text_h)/2-320,drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=44:borderw=2:bordercolor=black@0.6:x=(w-text_w)/2:y=(h-text_h)/2+160"
+TEXT="drawtext=fontfile=${FONT_BOLD}:textfile=quote_wrapped.txt:fontcolor=white:borderw=4:bordercolor=black@0.85:fontsize=${QUOTE_SIZE}:line_spacing=${QUOTE_SPACING}:x=(w-text_w)/2:y=(h-text_h)/2-320,drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=${AUTHOR_SIZE}:borderw=2:bordercolor=black@0.6:x=(w-text_w)/2:y=(h-text_h)/2+160"
 COVER="scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
 
 shopt -s nullglob
