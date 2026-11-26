@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-26
+
+> So, this is my life. And I want you to know that I am both happy and sad and I'm still trying to figure out how that could be.
+
+— Stephen Chbosky
+
 ## 2026-11-25
 
 > Who are you to judge the life I live?I know I'm not perfect-and I don't live to be-but before you start pointing fingers...make sure you hands are clean!
