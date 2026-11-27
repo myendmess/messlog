@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-27
+
+> Things change. And friends leave. Life doesn't stop for anybody.
+
+— Stephen Chbosky
+
 ## 2026-11-26
 
 > So, this is my life. And I want you to know that I am both happy and sad and I'm still trying to figure out how that could be.
