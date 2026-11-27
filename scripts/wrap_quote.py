@@ -12,14 +12,16 @@ off each edge of a 1080px frame. All-caps quotes are the worst, capitals
 being much wider than lowercase. About 1 day in 213 clipped outright, and
 many more rendered with only a few pixels to spare.
 
-The second, and more visible, half is the trailing space. `fold -s` breaks
-*after* the space, so every line but the last ended in one. Under the
-FFmpeg 8 now on GitHub's runners that trailing space draws as a .notdef
-box: the column of empty rectangles down the right-hand edge of the Shorts.
-The last line, having no trailing space, was the only one without a box —
-which is exactly what the broken renders showed. The box also adds its own
-advance (38px at 64px, against 22px for a space), pushing marginal lines
-the rest of the way off the frame.
+The separate, more visible fault is the column of empty rectangles down the
+right-hand edge. That is FFmpeg bug #21565: drawtext hands the "\n" ending
+every non-final line to HarfBuzz, which shapes it as a .notdef box. The
+last line has no newline after it, so it was the only line without a box.
+Fixed upstream in b91ac0b1ce, but GitHub's runners are on an 8.0.x build
+that predates it, so this script works around it instead: each wrapped line
+is written to its own file with no newline at all, and make_video.sh draws
+each as its own drawtext layer, so no newline ever reaches the filter.
+(A trailing space does the same thing, which is a second reason the lines
+below are right-stripped.)
 
 To be clear about what did NOT change: FFmpeg 7+ shapes drawtext through
 libharfbuzz, but shaping is not the culprit. Shaping these lines through
@@ -41,15 +43,27 @@ the only one without a box.
 
 Usage:
     wrap_quote.py <quote.txt> <out.txt> <font.ttf> [max_width] [max_height]
-        Wrap the quote; prints "<fontsize> <line_spacing>".
+        Wrap the quote; prints "<fontsize> <line_spacing>". Writes <out.txt>
+        (the wrapped text, for the run log), one <out>_NNN.txt per line, and
+        <out>_layout.txt — "<x> <y> <file>" per line, for make_video.sh to
+        turn into one drawtext layer each.
     wrap_quote.py --fit <text.txt> <font.ttf> <max_width> <max_size>
         Size a single unwrapped line (the author credit); prints "<fontsize>".
 
 make_video.sh feeds the printed sizes to drawtext, so the shrink-to-fit
 decision and the render always agree.
 """
+import glob
+import os
 import struct
 import sys
+
+# Frame geometry, and where make_video.sh's drawtext expression puts the quote
+# block: y=(h-text_h)/2-320. Positions are computed here now that each line is
+# drawn separately, so these have to agree with that layout.
+FRAME_W = 1080
+FRAME_H = 1920
+QUOTE_Y_OFFSET = -320
 
 # The frame is 1080 wide. 80px of air each side keeps the text clear of the
 # edge and of the Shorts UI rail. It is also margin against the measurement
@@ -268,16 +282,41 @@ def main():
         print(f"::warning::quote does not fit at {chosen}px "
               f"({len(lines)} lines); broke a long word to fit", file=sys.stderr)
 
+    # wrap() builds lines from whitespace-split words so these are already
+    # clean; strip anyway, because a trailing space is the other thing FFmpeg 8
+    # draws as a .notdef box.
+    lines = [l.rstrip() for l in lines]
+
     widest = max(font.width(l, chosen) for l in lines)
     block_h = len(lines) * font.line_height(chosen) + (len(lines) - 1) * LINE_SPACING
     print(f"wrap: {len(lines)} lines @ {chosen}px — "
           f"widest {widest:.0f}px / {max_w}px, block {block_h:.0f}px / {max_h}px",
           file=sys.stderr)
 
-    # rstrip every line: a trailing space renders as a .notdef box under
-    # FFmpeg 8's harfbuzz shaping.
+    # Readable copy for the run log; the render does not use it.
     with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(l.rstrip() for l in lines) + "\n")
+        f.write("\n".join(lines) + "\n")
+
+    # One file and one layout row per line. Nothing here contains a newline:
+    # FFmpeg 8 would shape it into a .notdef box (#21565). Because each line is
+    # now positioned explicitly rather than by drawtext's own multi-line
+    # centring, the block is laid out here: lines left-aligned, block centred.
+    line_h = font.line_height(chosen)
+    x = round((FRAME_W - widest) / 2)
+    y_top = (FRAME_H - block_h) / 2 + QUOTE_Y_OFFSET
+    base, _ = os.path.splitext(out_path)
+    # Clear a previous run's files, so a shorter wrap cannot leave orphans
+    # lying next to the new ones.
+    for stale in glob.glob(f"{base}_*.txt"):
+        os.remove(stale)
+    rows = []
+    for i, line in enumerate(lines):
+        path = f"{base}_{i:03d}.txt"
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(line)       # deliberately no trailing newline
+        rows.append(f"{x} {round(y_top + i * (line_h + LINE_SPACING))} {path}")
+    with open(f"{base}_layout.txt", "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(rows) + "\n")
 
     print(f"{chosen} {LINE_SPACING}")
 

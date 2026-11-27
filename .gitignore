@@ -4,6 +4,8 @@ log.txt
 quote.txt
 author.txt
 quote_wrapped.txt
+# per-line render files + layout manifest (scripts/wrap_quote.py)
+quote_wrapped_*.txt
 author_line.txt
 track.txt
 localized.json

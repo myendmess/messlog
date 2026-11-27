@@ -55,6 +55,22 @@ if [ -z "$WRAP" ]; then
   echo "::warning::wrap_quote.py failed — falling back to a fixed-width wrap." >&2
   fold -s -w 22 "$QUOTE_FILE" | sed 's/[[:space:]]*$//' > quote_wrapped.txt
   QUOTE_SIZE=64; QUOTE_SPACING=18
+  # Same per-line layout the wrapper would have produced, without the font
+  # metrics: let drawtext centre each line itself, and space them by the
+  # nominal line height. Ragged-centred rather than a left-aligned block, but
+  # it publishes and it carries no newlines.
+  rm -f quote_wrapped_[0-9][0-9][0-9].txt
+  : > quote_wrapped_layout.txt
+  N=$(wc -l < quote_wrapped.txt); [ -s quote_wrapped.txt ] && N=$((N + 1))
+  PITCH=$(( QUOTE_SIZE * 117 / 100 + QUOTE_SPACING ))
+  TOP=$(( (1920 - (N * PITCH - QUOTE_SPACING)) / 2 - 320 ))
+  I=0
+  while IFS= read -r LINE || [ -n "$LINE" ]; do
+    printf '%s' "$LINE" > "$(printf 'quote_wrapped_%03d.txt' "$I")"
+    printf '(w-text_w)/2 %d %s\n' "$((TOP + I * PITCH))" \
+      "$(printf 'quote_wrapped_%03d.txt' "$I")" >> quote_wrapped_layout.txt
+    I=$((I + 1))
+  done < quote_wrapped.txt
 fi
 
 printf '— %s' "$(cat "$AUTHOR_FILE")" > author_line.txt
@@ -66,7 +82,25 @@ echo "Quote font: $FONT_BOLD (${QUOTE_SIZE}px), author ${AUTHOR_SIZE}px"
 
 # White + dark halo reads on any background; quote block lifted above center
 # so the lower half of the frame shows the scenery; author in brand gold.
-TEXT="drawtext=fontfile=${FONT_BOLD}:textfile=quote_wrapped.txt:fontcolor=white:borderw=4:bordercolor=black@0.85:fontsize=${QUOTE_SIZE}:line_spacing=${QUOTE_SPACING}:x=(w-text_w)/2:y=(h-text_h)/2-320,drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=${AUTHOR_SIZE}:borderw=2:bordercolor=black@0.6:x=(w-text_w)/2:y=(h-text_h)/2+160"
+# One drawtext layer per line, positioned by quote_wrapped_layout.txt.
+# A multi-line textfile would be simpler, but FFmpeg 8's drawtext passes the
+# newline ending every non-final line to HarfBuzz, which shapes it as a
+# .notdef box — the rectangles that appeared at the end of each line in the
+# published Shorts (FFmpeg #21565, fixed upstream in b91ac0b1ce, not yet in
+# the runners' 8.0.x). Drawing line by line keeps newlines out of the filter.
+QUOTE_LAYERS=""
+while read -r LX LY LFILE; do
+  [ -n "$LFILE" ] || continue
+  QUOTE_LAYERS="${QUOTE_LAYERS:+${QUOTE_LAYERS},}drawtext=fontfile=${FONT_BOLD}:textfile=${LFILE}:fontcolor=white:borderw=4:bordercolor=black@0.85:fontsize=${QUOTE_SIZE}:x=${LX}:y=${LY}"
+done < quote_wrapped_layout.txt
+if [ -z "$QUOTE_LAYERS" ]; then
+  echo "::error::no quote layout produced — refusing to render an empty Short" >&2
+  exit 1
+fi
+
+# author_line.txt is written with printf and no trailing newline, so the author
+# credit never hit the bug above and stays a single drawtext.
+TEXT="${QUOTE_LAYERS},drawtext=fontfile=${FONT_REG}:textfile=author_line.txt:fontcolor=0xffd166:fontsize=${AUTHOR_SIZE}:borderw=2:bordercolor=black@0.6:x=(w-text_w)/2:y=(h-text_h)/2+160"
 COVER="scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
 
 shopt -s nullglob
