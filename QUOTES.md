@@ -6,6 +6,12 @@ Every quote ever published by the [daily pipeline](README.md) — one per day, n
      first "## " heading below. Keep every heading in this intro at "#" level
      and edit entries only to fix mistakes — order is the publication record. -->
 
+## 2026-11-28
+
+> The only way out of the labyrinth of suffering is to forgive.
+
+— John Green
+
 ## 2026-11-27
 
 > Things change. And friends leave. Life doesn't stop for anybody.
